@@ -1,0 +1,13 @@
+/* TEAM: DEVELOPMENT SEED */
+
+UI/UX Designer: Ricardo Mestre
+Site: http://developmentseed.org
+Twitter: @ricardoduplos
+Location: Lisbon, Portugal
+
+/* SITE */
+
+Last update: 2016/04/05
+Standards: HTML5, CSS3, RWD
+Components: Collecticons, jQuery
+Software: Sublime Text, Adobe Illustrator CC, GitHub (Mac)

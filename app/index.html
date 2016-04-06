@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Style guide and UI components library.">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+    <title>OpenAerialMap Design System</title>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hotosm" />
+    <meta name="twitter:title" content="OpenAerialMap Design System">
+    <meta name="twitter:description" content="Style guide and UI components library." />
+    <meta name="twitter:image:src" content="assets/graphics/meta/default-meta-image.png" /
+    <!--/ Twitter --> 
+
+    <!-- OG -->
+    <meta property="og:site_name" content="OpenAerialMap Design System" />
+    <meta property="og:title" content="OpenAerialMap Design System" />
+    <meta property="og:url" content="https://github.com/developmentseed/oam-design-system" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Style guide and UI components library." />
+    <meta property="og:image" content="assets/graphics/meta/default-meta-image.png" />
+    <!--/ OG -->
+
+    <link rel="shortcut icon" href="assets/graphics/meta/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/graphics/meta/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/graphics/meta/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/graphics/meta/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/graphics/meta/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/graphics/meta/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/graphics/meta/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/graphics/meta/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/graphics/meta/apple-touch-icon-152x152.png" />
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" />
+
+    <!-- build:css assets/styles/vendor.css -->
+    <!-- endbuild -->
+
+    <!-- build:css assets/styles/main.css -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <!-- endbuild -->
+    <link rel="author" type="text/plain" href="humans.txt" />
+    
+  </head>
+  <body class="theme-hero">
+
+    <div class="site-canvas">
+
+      <header class="site-header" role="banner">
+        <div class="inner">
+          <div class="site-headline">
+            <h1 class="site-title">
+              <a href="/" title="Visit homepage">
+                <img src='assets/graphics/layout/oam-logo-h-neg.svg' width='167' height='32' alt='OpenAerialMap logo' class="site-title__logo" />
+                <span class="site-title__text">OpenAerialMap</span>
+                <small class="site-title__label">Design System</small>
+              </a>
+            </h1>        
+          </div>
+          <nav class="site-prime-nav" role="navigation">
+            <h2 class="toggle-menu"><a href="#global-menu" title="Show menu"><span>Browse</span></a></h2>
+            <div class="menu-wrapper">
+              <ul class="global-menu" id="global-menu">
+                <li>
+                  <a href="/" title="Visit page" class="global-menu-item global-menu-item--active"><span>Item 1</span></a>
+                </li>
+                <li>
+                  <a href="item-2.html" title="Visit page" class="global-menu-item"><span>Item 2</span></a>
+                </li>
+                <li>
+                  <a href="item-3.html" title="Visit page" class="global-menu-item"><span>Item 3</span></a>
+                </li>
+                <li>
+                  <a href="item-4.html" title="Visit page" class="global-menu-item"><span>Item 4</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class="site-body" role="main">
+        <div class="inner">
+          <section class="page page--demo">
+            <header class="page__header">
+              <div class="inner">
+                <div class="page__headline">
+                  <h1 class="page__title">Components</h1>
+                  <div class="page__introduction">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>         
+            </header>
+            <div class="page__body">
+              <div class="inner">
+
+                <!-- Page content -->
+                <div class="page__content">
+
+                  <h2>Typography</h2>
+
+                  <h3>Paragraphs</h3>
+                  <p class="lead">This is a lead paragraph. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.</p>
+                  <p>This is a regular paragraph. Use <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> tags to denote text: <strong>consectetur adipiscing</strong> elit. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sem eu, <em>vestibulum ultrices</em> purus. Nunc in tortor eu tellus ultricies euismod. Duis massa mi, pharetra eu nisl non, scelerisque laoreet diam. Fusce in malesuada justo. Aenean vulputate mi a pharetra tristique.</p>
+                  <p>Nulla scelerisque <a href="#" title="Visit link">suscipit suscipit</a>. Maecenas a libero justo.</p>
+                  
+                  <h3>Blockquotes</h3>
+                  <blockquote>
+                    <p>As my fellow HTML5 Doctor, Oli Studholme has showed, people seldom quote exactly 
+                    – so sacrosanctity of the quoted text isn’t a useful ideal – and in print etc, 
+                    citations almost always appear as part of the quotation – it’s highly conventional.</p>
+                    <footer>
+                      <cite><a href="http://www.brucelawson.co.uk/2013/on-citing-quotations-again/">Bruce Lawson</a></cite>
+                    </footer>
+                  </blockquote>
+
+                  <h3>Lists</h3>
+
+                  <h4>Unordered</h4>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit
+                      <ul>
+                        <li>Phasellus iaculis neque</li>
+                        <li>Purus sodales ultricies</li>
+                        <li>Vestibulum laoreet porttitor sem</li>
+                        <li>Ac tristique libero volutpat at</li>
+                      </ul>
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                  </ul>
+
+                  <h4>Ordered</h4>
+                  <ol>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit
+                      <ul>
+                        <li>Phasellus iaculis neque</li>
+                        <li>Purus sodales ultricies</li>
+                        <li>Vestibulum laoreet porttitor sem</li>
+                        <li>Ac tristique libero volutpat at</li>
+                      </ul>
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                  </ol>
+
+                  <h4>Descriptive</h4>
+                  <dl>
+                    <dt>Description list term</dt>
+                    <dd>A description list is perfect for defining terms.</dd>
+
+                    <dt>Euismod lorem ipsum dolor sit amet</dt>
+                    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                    <dd>Third.</dd>
+
+                    <dt>Malesuada porta</dt>
+                    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+
+                    <dt>Yet another term</dt>
+                    <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                  </dl>
+
+                  <h4>Horizontal descriptive</h4>
+                  <dl class="dl-horizontal">
+                    <dt>Description list term</dt>
+                    <dd>A description list is perfect for defining terms.</dd>
+
+                    <dt>Euismod lorem ipsum dolor sit amet</dt>
+                    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                    <dd>Third.</dd>
+
+                    <dt>Malesuada porta</dt>
+                    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+
+                    <dt>Yet another term</dt>
+                    <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                  </dl>
+
+                  <h3>Dividers</h3>
+                  <hr />
+
+                  <h3>Code</h3>
+<pre><code>// Logs &quot;Hello World!&quot;
+// in the browser's developer console
+console.log(&quot;Hello World!&quot;);
+</code></pre>
+
+                  <h2>Tables</h2>
+
+                  <div class="">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+                <!--/ Page content -->
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer" role="contentinfo">
+        <div class="inner">
+          <p>Made with love by <a href="https://developmentseed.org" title="Visit Development Seed website">Development Seed</a> and <a href="http://hot.openstreetmap.org/" title="Visit the Humanitarian OpenStreetMap Team website">HOT</a>.</p>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js assets/scripts/vendor.js -->
+    <script src="assets/scripts/vendor.js"></script>
+    <!-- endbuild -->
+    <!-- build:js assets/scripts/bundle.js -->
+    <script src="assets/scripts/bundle.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

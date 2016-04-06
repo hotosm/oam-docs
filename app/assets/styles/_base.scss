@@ -1,0 +1,265 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after, input[type="search"] {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  color: $base-font-color;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-style: $base-font-style;
+  min-width: $row-min-width;
+}
+
+
+/* Links
+   ========================================================================== */
+
+a {
+  cursor: pointer;
+  color: $link-color;
+  text-decoration: none;
+  transition: opacity 0.24s ease 0s;
+}
+
+a:visited {
+  color: $link-color;
+}
+
+a:hover {
+  opacity: 0.64;
+  outline: none;
+}
+
+a:active {
+  outline: none;
+  transform: translate(0, 1px);
+}
+
+
+/* Rows
+   ========================================================================== */
+
+.row {
+  @extend .clearfix;
+  padding-left: $global-spacing;
+  padding-right: $global-spacing;
+  @include media(small-up) {
+    padding-left: $global-spacing * 2;
+    padding-right: $global-spacing * 2;
+  }
+  @include media(xlarge-up) {
+    padding-left: $global-spacing * 4;
+    padding-right: $global-spacing * 4;
+  }
+}
+
+.row--centered {
+  max-width: $row-max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ==========================================================================
+   Structure
+   ========================================================================== */
+
+.site-canvas {
+  background: tint($base-color, 96%);
+}
+
+
+/* Header
+   ========================================================================== */
+
+.site-header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  color: $base-font-color;
+  padding: $global-spacing 0;
+  box-shadow: inset 0 -1px 0 0 rgba($base-color, 0.12);
+  > .inner {
+    @extend .row, .row--centered;
+  }
+  .theme-hero & {
+    background: none;
+    color: #fff;
+    @extend .antialiased;
+    box-shadow: inset 0 -1px 0 0 rgba(#fff, 0.12);
+  }
+  @include media(medium-up) {
+    padding: ($global-spacing * 2) 0;
+    .theme-compact & {
+      padding: $global-spacing 0;
+    }
+  }
+}
+
+/* Headline */
+
+.site-headline {
+  float: left;
+  margin: -0.5rem 0;
+}
+
+.site-title {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 0;
+  line-height: initial;
+  a {
+    &, &:visited, &:hover {
+      color: inherit;
+    }
+  }
+  * {
+    vertical-align: top;
+    display: inline-block;
+  }
+  &__logo {
+    width: auto;
+    height: 2rem;
+  }
+  &__text {
+    @extend .visually-hidden;
+  }
+  &__label {
+    @extend .antialiased;
+    margin: 0.45rem 0 0 0.5rem;
+    background: rgba($base-color, 0.48);
+    color: #fff;
+    border-radius: $global-radius;
+    padding: 0 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+  }
+}
+
+/* Navigation */
+
+.site-prime-nav {
+  float: right;
+  margin: -0.5rem 0;
+  font-weight: $base-font-bold;
+  .toggle-menu {
+    display: none; // Temporary. Needs mobile-first styling.
+  }
+}
+
+.menu-wrapper {
+  display: none; // Temporary. Needs mobile-first styling.
+  @include media(medium-up) {
+    display: block;
+    float: left;
+  }
+}
+
+.global-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @include media(medium-up) {
+    float: left;
+    > li {
+      float: left;
+      margin: 0 ($global-spacing / 2) 0 0;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.global-menu-item {
+  display: block;
+  line-height: 2rem;
+  font-size: 1rem;
+  padding: 0 $global-spacing;
+  border-radius: $global-radius;
+  &, &:visited {
+    color: $base-font-color;
+  }
+  .theme-hero & {
+    &, &:visited {
+      color: #fff;
+    }
+  }
+  &--active {
+    background: rgba($base-color, 0.04);
+    .theme-hero & {
+      background: rgba(#fff, 0.12);
+    }
+  }
+}
+
+
+/* Body
+   ========================================================================== */
+
+.site-body {
+  @extend .clearfix;
+}
+
+
+/* Footer
+   ========================================================================== */
+
+.site-footer {
+  box-shadow: inset 0 1px 0 0 $base-alpha-color;
+  background: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  color: rgba($base-font-color, 0.64);
+  > .inner {
+    @extend .row, .row--centered;
+  }
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Temporary
+   ========================================================================== */
+
+.page--demo {
+  .page__header {
+    text-align: left;
+    background-image: url("../graphics/layout/oam-logo-symbol.svg");
+    &:before {
+      background: linear-gradient(rgba($base-color, 0.64), rgba($base-color, 0.80), rgba($base-color, 0.92));
+    }
+  }
+  .page__headline,
+  .page__content {
+    @include col(12/12);
+    @include media(medium-up) {
+      @include col(10/12, $offset: 1/12);
+    }
+    @include media(large-up) {
+      @include col(8/12, $offset: 2/12);
+    }
+  }
+  .page__content {
+    @extend .prose;
+  }
+}

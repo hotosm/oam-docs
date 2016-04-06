@@ -1,0 +1,15 @@
+## Dependencies
+node_modules
+bower_components
+.sass-cache
+test/bower_components
+
+## Build
+dist
+.tmp
+npm-debug.log
+
+## Locals
+app/assets/styles/_collecticons.scss
+app/assets/scripts/config/local.js
+.resources/
