@@ -3,7 +3,7 @@
    ========================================================================== */
 
 p, ul, ol, dl, pre, blockquote {
-  margin-bottom: $global-spacing;
+  margin: 0 0 $global-spacing 0;
 }
 
 
@@ -55,6 +55,7 @@ ol ol, ol ul, ul ol, ul ul {
 
 ul, ol {
   list-style-position: outside;
+  padding: 0;
   margin-left: $global-spacing + ($global-spacing / 2);
 }
 
@@ -71,7 +72,7 @@ dt {
 }
 
 dd {
-  margin-bottom: $global-spacing / 2;
+  margin: 0 0 ($global-spacing / 2) 0;
   &:last-child {
     margin-bottom: 0;
   }
@@ -286,17 +287,6 @@ h4, h5, h6 {
 /* Prose specific */
 
 .prose {
-  h1:not(:first-child),
-  h2:not(:first-child),
-  h3:not(:first-child),
-  h4:not(:first-child),
-  h5:not(:first-child),
-  h6:not(:first-child) {
-    margin-top: $global-spacing * 2;
-    @include media(medium-up) {
-      margin-top: $global-spacing * 3;
-    }
-  }
   h1 {
     @include heading(1.75rem, xlarge-up);   // 28, 32, 36, 40
   }

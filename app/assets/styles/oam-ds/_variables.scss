@@ -1,25 +1,29 @@
 /* ==========================================================================
-   Colors
+   Variables
    ========================================================================== */
 
-$base-color: #1f3b45;                   // Midnight Blue
-$primary-color: #439ab4;                // Blue
-$secondary-color: #68c39f;              // Green
-// $tertiary-color: #ffffff;            // Undefined
+/* Colors
+   ========================================================================== */
 
-$alert-color: #ea4f54;                  // Red
-$success-color: $secondary-color;       // Green
-$warning-color: #f6d55f;                // Yellow
-$info-color: $primary-color;            // Blue
+$base-color: #1f3b45;                           // Midnight Blue
+$primary-color: #439ab4;                        // Blue
+$secondary-color: #68c39f;                      // Green
+// $tertiary-color: #ffffff;                    // Undefined
+
+$alert-color: #ea4f54;                          // Red
+$success-color: $secondary-color;               // Green
+$warning-color: #f6d55f;                        // Yellow
+$info-color: $primary-color;                    // Blue
 
 $link-color: $primary-color;
 $base-alpha-color: rgba($base-color, 0.12);
 $base-semi-alpha-color: rgba($base-color, 0.08);
 
 
-/* ==========================================================================
-   Typography
+/* Typography
    ========================================================================== */
+
+$root-font-size: 16px;
 
 /**
  * $base-* refers to the base styles when there's nothing else to override them.
@@ -32,12 +36,13 @@ $base-font-light: 300;
 $base-font-regular: 400;
 $base-font-bold: 700;
 $base-font-weight: $base-font-light;
+$base-font-size: 1rem;
+$base-line-height: 1rem;
 
 $code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 
-/* ==========================================================================
-   Decoration
+/* Decoration
    ========================================================================== */
 
 /* Border radius */
@@ -47,8 +52,7 @@ $semi-radius: $global-radius/2;
 $global-rounded: 60rem;
 
 
-/* ==========================================================================
-   Spacing and media queries
+/* Spacing and media queries
    ========================================================================== */
 
 /* Rows */

@@ -2,82 +2,8 @@
    Base
    ========================================================================== */
 
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
 
-*, *:before, *:after, input[type="search"] {
-  box-sizing: inherit;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  background: #fff;
-  color: $base-font-color;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: $base-font-family;
-  font-weight: $base-font-weight;
-  font-style: $base-font-style;
-  min-width: $row-min-width;
-}
-
-
-/* Links
-   ========================================================================== */
-
-a {
-  cursor: pointer;
-  color: $link-color;
-  text-decoration: none;
-  transition: opacity 0.24s ease 0s;
-}
-
-a:visited {
-  color: $link-color;
-}
-
-a:hover {
-  opacity: 0.64;
-  outline: none;
-}
-
-a:active {
-  outline: none;
-  transform: translate(0, 1px);
-}
-
-
-/* Rows
-   ========================================================================== */
-
-.row {
-  @extend .clearfix;
-  padding-left: $global-spacing;
-  padding-right: $global-spacing;
-  @include media(small-up) {
-    padding-left: $global-spacing * 2;
-    padding-right: $global-spacing * 2;
-  }
-  @include media(xlarge-up) {
-    padding-left: $global-spacing * 4;
-    padding-right: $global-spacing * 4;
-  }
-}
-
-.row--centered {
-  max-width: $row-max-width;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* ==========================================================================
-   Structure
+/* Site canvas
    ========================================================================== */
 
 .site-canvas {
@@ -125,14 +51,14 @@ a:active {
   white-space: nowrap;
   font-size: 0;
   line-height: initial;
+  *, & {
+    vertical-align: top;
+    display: inline-block;
+  }
   a {
     &, &:visited, &:hover {
       color: inherit;
     }
-  }
-  * {
-    vertical-align: top;
-    display: inline-block;
   }
   &__logo {
     width: auto;
@@ -242,13 +168,13 @@ a:active {
    ========================================================================== */
 
 .page--demo {
-  .page__header {
-    text-align: left;
-    background-image: url("../graphics/layout/oam-logo-symbol.svg");
-    &:before {
-      background: linear-gradient(rgba($base-color, 0.64), rgba($base-color, 0.80), rgba($base-color, 0.92));
-    }
-  }
+  // .page__header {
+  //   text-align: left;
+  //   background-image: url("../graphics/layout/oam-logo-symbol.svg");
+  //   &:before {
+  //     background: linear-gradient(rgba($base-color, 0.64), rgba($base-color, 0.80), rgba($base-color, 0.92));
+  //   }
+  // }
   .page__headline,
   .page__content {
     @include col(12/12);
