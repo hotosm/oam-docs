@@ -1,5 +1,15 @@
 /* TEAM: DEVELOPMENT SEED */
 
+Developer: Daniel da Silva
+Site: http://developmentseed.org
+Twitter: @danielfdsilva
+Location: Lisbon, Portugal
+
+Developer/Strategist: Nate Smith
+Site: http://developmentseed.org
+Twitter: @nas_smith
+Location: Lisbon, Portugal
+
 UI/UX Designer: Ricardo Mestre
 Site: http://developmentseed.org
 Twitter: @ricardoduplos
