@@ -25,10 +25,6 @@ $base-semi-alpha-color: rgba($base-color, 0.08);
 
 $root-font-size: 16px;
 
-/**
- * $base-* refers to the base styles when there's nothing else to override them.
- */
-
 $base-font-color: $base-color;
 $base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-style: normal;
@@ -37,7 +33,7 @@ $base-font-regular: 400;
 $base-font-bold: 700;
 $base-font-weight: $base-font-light;
 $base-font-size: 1rem;
-$base-line-height: 1rem;
+$base-line-height: 1.5;
 
 $code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -47,9 +43,8 @@ $code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 /* Border radius */
 
-$global-radius: 0.25rem;
-$semi-radius: $global-radius/2;
-$global-rounded: 60rem;
+$base-border-radius: 0.25rem;
+$full-border-radius: 60rem;
 
 
 /* Spacing and media queries

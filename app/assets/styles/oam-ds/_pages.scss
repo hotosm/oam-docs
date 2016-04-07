@@ -7,7 +7,7 @@
     position: relative;
     text-align: center;
     color: inherit;
-    padding: ($global-spacing * 5) 0 ($global-spacing * 2) 0;
+    padding: ($global-spacing * 2) 0;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -21,10 +21,6 @@
     > .inner {
       @extend .row;
       @extend .row--centered;
-    }
-
-    .theme-compact & {
-      padding: ($global-spacing * 4) 0 ($global-spacing * 1.5) 0;
     }
 
     .theme-hero & {
@@ -45,23 +41,20 @@
       }
 
       @include media(small-up) {
-        margin-bottom: ($global-spacing * 2);
+        margin-bottom: ($global-spacing * 3);
       }
 
       @include media(large-up) {
-        margin-bottom: ($global-spacing * 3);
+        margin-bottom: ($global-spacing * 4);
       }
     }
 
     @include media(medium-up) {
-      padding: ($global-spacing * 8) 0 ($global-spacing * 3) 0;
-      .theme-compact & {
-        padding: ($global-spacing * 4) 0 ($global-spacing * 1.5) 0;
-      }
+      padding: ($global-spacing * 3) 0;
     }
 
     @include media(large-up) {
-      padding: ($global-spacing * 8) 0 ($global-spacing * 4) 0;
+      padding: ($global-spacing * 4) 0;
     }
 
   }

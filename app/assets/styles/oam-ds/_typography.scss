@@ -141,7 +141,7 @@ code, kbd, pre, samp {
 }
 
 code, pre {
-  border-radius: $global-radius;
+  border-radius: $base-border-radius;
   background: rgba($base-color, 0.04);
 }
 
