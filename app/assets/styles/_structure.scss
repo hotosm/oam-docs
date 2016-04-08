@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Base
+   Structure
    ========================================================================== */
 
 
@@ -63,7 +63,7 @@
   &__label {
     @extend .antialiased;
     margin: 0.45rem 0 0 0.5rem;
-    background: rgba($base-color, 0.48);
+    background: rgba($base-color, 0.64);
     color: #fff;
     border-radius: $base-border-radius;
     padding: 0 0.25rem;
@@ -169,8 +169,5 @@
     @include media(large-up) {
       @include col(8/12, $offset: 2/12);
     }
-  }
-  .page__content {
-    @extend .prose;
   }
 }

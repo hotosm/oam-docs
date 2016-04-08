@@ -73,6 +73,7 @@ a:active {
    ========================================================================== */
 
 figure {
+  padding: 0;
   margin: 0 0 1rem 0;
 }
 
@@ -96,10 +97,9 @@ img {
     padding-left: $global-spacing * 4;
     padding-right: $global-spacing * 4;
   }
-}
-
-.row--centered {
-  max-width: $row-max-width;
-  margin-left: auto;
-  margin-right: auto;
+  &--centered {
+    max-width: $row-max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

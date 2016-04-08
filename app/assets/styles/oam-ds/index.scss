@@ -8,24 +8,6 @@
  */
 
 
-/* Libraries
-   ========================================================================== */
-
-/**
- * Bourbon for extended SASS functionality:
- * http://bourbon.io/
- */
-
-@import "bourbon";
-
-/**
- * Jeet, a grid system designed for humans:
- * http://jeet.gs/
- */
-
-@import "jeet/index";
-
-
 /* Normalize
    ========================================================================== */
 
@@ -55,11 +37,17 @@
 /* Core
    ========================================================================== */
 
-@import "collecticons";
+@import "base";
 @import "typography";
 @import "tables";
+@import "code";
+@import "collecticons";
+
+
+/* Components
+   ========================================================================== */
+
 @import "pages";
-@import "base";
 
 
 /* Utilities

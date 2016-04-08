@@ -6,53 +6,25 @@
   width: 100%;
   max-width: 100%;
   margin-bottom: $global-spacing;
-  background-color: transparent;
-  border-spacing: 0;
-  border-collapse: collapse;
-  font-family: inherit;
 
-  td, th {
-    padding: 0;
-  }
-
-  th {
-    text-align: left;
-  }
-
-  tr {
-    @include transition(all 0.24s ease 0s);
-  }
-
-  > thead > tr > th,
-  > tbody > tr > th,
-  > tfoot > tr > th,
-  > thead > tr > td,
-  > tbody > tr > td,
-  > tfoot > tr > td {
+  th, td  {
     padding: 0.75rem 0.5rem;
     vertical-align: top;
+    text-align: left;
     box-shadow: inset 0 -1px 0 0 $base-alpha-color;
   }
 
-  > thead > tr > th:first-child,
-  > tbody > tr > th:first-child,
-  > tfoot > tr > th:first-child,
-  > thead > tr > td:first-child,
-  > tbody > tr > td:first-child,
-  > tfoot > tr > td:first-child {
+  th:first-child,
+  td:first-child {
     padding-left: 1rem;
   }
 
-  > thead > tr > th:last-child,
-  > tbody > tr > th:last-child,
-  > tfoot > tr > th:last-child,
-  > thead > tr > td:last-child,
-  > tbody > tr > td:last-child,
-  > tfoot > tr > td:last-child {
+  th:last-child,
+  td:last-child {
     padding-right: 1rem;
   }
 
-  > thead > tr > th {
+  thead th {
     @extend .heading-alt;
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -79,20 +51,14 @@
       color: inherit;
     }
   }
-}
 
-/* Prose specific */
-
-.prose {
-  .table {
-    > thead > tr > th {
-      @include media(medium-up) {
-        font-size: 1rem;
-        line-height: 1.5rem;
-      }
+  &--zebra {
+    tbody tr:nth-of-type(odd) {
+      background: rgba($base-color, 0.04);
     }
   }
 }
+
 
 /* Responsive table wrapper
    ========================================================================== */
