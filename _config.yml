@@ -1,0 +1,7 @@
+source: docs
+# To exclude inside docs/
+exclude:
+  - assets/scripts
+  - assets/styles
+  - assets/graphics/collecticons
+baseurl: 

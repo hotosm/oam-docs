@@ -1,33 +1,92 @@
-# OpenAerialMap Design System
+# OAM Design System
 
-Style guide and UI components library that aims to standardize the look and feel across all OAM-related applications, while defining coding best practices and conventions.
+The following guide explains how to use the `oam-design-system` in a new project. For information on how to develop the `oam-design-system` checkout the [DEVELOPMENT.md](DEVELOPMENT.md)  
 
-Work in progress.
+---
 
-## Development environment
-To set up the development environment for this website, you'll need to install the following on your system:
-
-- [Node and npm](http://nodejs.org/)
-- Gulp ( `$ npm install -g gulp` )
-
-After these basic requirements are met, run the following commands in the website's folder:
-```sh
-$ npm install
+This repo contains the basic assets for the OAM ecosystem, which is a set of resources to be used on all OAM related products.
+Install it as an `npm` module:
+```
+npm install oam-design-system
 ```
 
-### Getting started
+**Note:**
+This design system makes some assumptions which are described below for each of the elements.
+It also assumes that is going to be used with a `project-seed` based project.
 
-```sh
-$ gulp collecticons
-$ gulp serve
-```
-Compiles the Sass files and JavaScript code, and launches the server making the site available at `http://localhost:3000/`.
-The system will watch files and execute necessary build tasks whenever one of them changes.
-The site will automatically refresh when changes are detected.
-NOTE: To save time collecticons is not compiled by the serve command.
+## Overview
 
-### Other commands
-Compile the Sass files, JavaScript, collecticons... Use this instead of `gulp serve` if you don't want to watch for file changes.
-```sh
-$ gulp
+The shared assets are all in the `assets` directory. It is organized as follows:
+
+### assets/scripts
+Utility libraries and shared components.
+
+**USAGE**  
+Use as any node module:
+```js
+import { Dropdown, user } from 'oam-design-system';
 ```
+If you want to minimize bundle size you can also include the components directly.  
+Bindings exported from `oam-design-system` are also available in `oam-design-system/assets/scripts`
+
+### assets/styles
+General styles. Requires burbon. [Add more info]
+
+**INSTALLATION**  
+Add the module path to the `includePaths` of gulp-sass. Should look something like:
+```js
+.pipe($.sass({
+  outputStyle: 'expanded',
+  precision: 10,
+  includePaths: require('node-bourbon').with('.', 'node_modules/jeet/scss', require('oam-design-system').scssPath)
+}))
+```
+
+**USAGE**  
+Now you can include it in the main scss file:
+```scss
+// Bourbon is a dependency
+@import "bourbon";
+
+@import "jeet/index";
+
+@import "oam-design-system";
+```
+In case you don't need all the elements, they can be individually imported.  
+[link to the file on github - it's easier.]
+
+### assets/icons
+The `oam-design-system` includes svg icons that are compiled into a webfont and included in the styles.  
+To use them check the `_oam-ds-icons.scss` for the class names.
+
+### assets/graphics
+Graphics that are to be shared among projects.
+
+**INSTALLATION**  
+Add the `graphicsMiddleware` to browserSync. This is only to aid development.  
+Should look something like:
+```js
+browserSync({
+  port: 3000,
+  server: {
+    baseDir: ['.tmp', '_site'],
+    routes: {
+      '/node_modules': './node_modules'
+    },
+    middleware: require('oam-design-system').graphicsMiddleware(fs) // <<< This line
+  }
+});
+```
+*Basically every time there's a request to a path like `/assets/graphics/**`, browserSync will check in the `oam-design-system` folder first. If it doesn't find anything it will look in the normal project's asset folder.*
+
+You also need to add the path of the graphics to be included to the `images` task.  
+This ensures that the graphics are copied over when building the project.
+```js
+gulp.task('images', function () {
+  return gulp.src(['_site/assets/graphics/**/*', require('oam-design-system').graphicsPath + '/**/*'])
+    .pipe($.cache($.imagemin({
+```
+
+**USAGE**  
+Just include the images from the list using the path `assets/graphics/[graphic-type]/[graphic-name]`:  
+[link to the file list on github - it's easier.]
