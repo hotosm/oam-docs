@@ -46,11 +46,11 @@
     <link rel="author" type="text/plain" href="humans.txt" />
     
   </head>
-  <body>
+  <body class="theme-hero">
 
     <div class="site-canvas">
 
-      <header class="site-header site-header__bar" role="banner">
+      <header class="site-header" role="banner">
         <div class="inner">
           <div class="site-headline">
             <h1 class="site-title">
@@ -66,16 +66,22 @@
             <div class="menu-wrapper">
               <ul class="global-menu" id="global-menu">
                 <li>
-                  <a href="/" title="Visit page" class="global-menu-item global-menu-item--active"><span>Item 1</span></a>
+                  <a href="/" title="Visit page" class="global-menu-item global-menu-item--active"><span>Start</span></a>
                 </li>
                 <li>
-                  <a href="item-2.html" title="Visit page" class="global-menu-item"><span>Item 2</span></a>
+                  <a href="item-2.html" title="Visit page" class="global-menu-item"><span>Brand</span></a>
                 </li>
                 <li>
-                  <a href="item-3.html" title="Visit page" class="global-menu-item"><span>Item 3</span></a>
+                  <a href="item-3.html" title="Visit page" class="global-menu-item"><span>Layout</span></a>
                 </li>
                 <li>
-                  <a href="item-4.html" title="Visit page" class="global-menu-item"><span>Item 4</span></a>
+                  <a href="item-4.html" title="Visit page" class="global-menu-item"><span>Content</span></a>
+                </li>
+                <li>
+                  <a href="item-5.html" title="Visit page" class="global-menu-item"><span>Components</span></a>
+                </li>
+                <li>
+                  <a href="item-6.html" title="Visit page" class="global-menu-item"><span>About</span></a>
                 </li>
               </ul>
             </div>
@@ -85,7 +91,7 @@
 
       <main class="site-body" role="main">
         <div class="inner">
-          <section class="page page--demo">
+          <section class="page page--docs">
             <header class="page__header">
               <div class="inner">
                 <div class="page__headline">
@@ -99,8 +105,24 @@
             <div class="page__body">
               <div class="inner">
 
+                <!-- Page aside content -->
+                <aside class="page__aside-content">
+                  <h1 class="page__aside-title">Contents</h1>
+                  <nav class="page__aside-nav" role="navigation">
+                    <ul class="aside-menu">
+                      <li><a href="#" title="View section">Item 1</a></li>
+                      <li><a href="#" title="View section">Item 2</a></li>
+                      <li><a href="#" title="View section">Item 3</a></li>
+                      <li><a href="#" title="View section">Item 4</a></li>
+                      <li><a href="#" title="View section">Item 5</a></li>
+                      <li><a href="#" title="View section">Item 6</a></li>
+                    </ul>
+                  </nav>
+                </aside>
+                <!--/ Page aside content -->
+
                 <!-- Page content -->
-                <div class="page__content">
+                <div class="page__main-content">
 
                   <h2>Typography</h2>
 
@@ -238,7 +260,7 @@ console.log(&quot;Hello World!&quot;);
                   </div>
 
                 </div>
-                <!--/ Page content -->
+                <!--/ Page main content -->
 
               </div>
             </div>

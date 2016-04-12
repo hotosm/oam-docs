@@ -40,7 +40,7 @@
         background: transparent;
       }
 
-      @include media(small-up) {
+      @include media(medium-up) {
         margin-bottom: ($global-spacing * 3);
       }
 
@@ -68,10 +68,6 @@
 
   &__title {
     @extend .heading, .heading--xlarge;
-    .theme-compact & {
-      @extend .heading, .heading--medium;
-      margin-bottom: 0.5rem;
-    }
   }
 
   &__introduction {
@@ -90,15 +86,6 @@
       font-size: 1.5rem;
       line-height: 2.25rem;
     }
-
-    .theme-compact & {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      @include media(medium-up) {
-        font-size: 1.25rem;
-        line-height: 2.5rem;
-      }
-    }
   }
 
   &__body {
@@ -109,46 +96,6 @@
     }
     @include media(medium-up) {
       margin-bottom: 3rem;
-    }
-  }
-
-  &__content {
-    @include col(12/12);
-    margin-bottom: 2rem;
-    @include media(medium-up) {
-      @include col(8/12);
-    }
-  }
-
-  &__aside-contents {
-    @include col(12/12);
-    margin-bottom: 2rem;
-    padding-top: 2rem;
-    box-shadow: inset 0 1px 0 0 $base-alpha-color;
-    @include media(medium-up) {
-      @include col(4/12);
-      box-shadow: none;
-      padding-top: 0;
-    }
-    @include media(large-up) {
-      @include col(3/12, $offset: 1/12);
-    }
-  }
-
-  &__aside-title {
-    @extend .heading, .heading--small;
-  }
-
-  .aside-menu {
-    list-style: none;
-    margin: 0;
-    a {
-      display: inline-block;
-      padding: 0.25rem 0;
-    }
-    @include media(medium-up) {
-      font-size: 1.25rem;
-      line-height: 1.6;
     }
   }
 }
