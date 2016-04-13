@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Flag object
+   ========================================================================== */
+
+.flag {
+  display: table;
+  width: 100%;
+}
+
+.flag__media,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle;
+
+  .flag--top & {
+    vertical-align: top;
+  }
+
+  .flag--bottom & {
+    vertical-align: bottom;
+  }
+
+}
+
+.flag__media {
+  &:first-child {
+    padding-right: 2rem;
+  }
+
+  &:last-child {
+    padding-left: 2rem;
+  }
+
+  > img {
+    display: block;
+    max-width: none;
+  }
+}
+
+.flag__body {
+  width: 100%;
+}
+
+.flag__title {
+  .prose & {
+    @include heading(1.5rem, medium-up);      // 20, 24
+  }
+}
+
+
+/* ==========================================================================
+   Bleed
+   ========================================================================== */
+
+.bleed--full {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  @extend .clearfix;
+  @include media(small-up) {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  @include media(medium-up) {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ==========================================================================
+   General
+   ========================================================================== */
+
+.demo-example {
+  margin: 0 0 ($global-spacing * 2) 0;
+  padding: ($global-spacing * 2);
+  box-shadow: 0 4px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
+  border-radius: $base-border-radius;
+  background: #fff;
+  > *:last-child:not(.demo-example__inset) {
+    margin-bottom: 0;
+  }
+  &.clipped {
+    overflow: hidden;
+  }
+}
+
+.demo-example__inset {
+  background: rgba($base-color, 0.04);
+  padding: $global-spacing;
+  > pre {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+  }
+  &:first-child {
+    margin: (- $global-spacing * 2) (- $global-spacing * 2) ($global-spacing * 2) (- $global-spacing * 2);
+    box-shadow: inset 0 -1px 0 0 $base-semi-alpha-color;
+  }
+  &:last-child {
+    margin: ($global-spacing * 2) (- $global-spacing * 2) (- $global-spacing * 2) (- $global-spacing * 2);
+    box-shadow: inset 0 1px 0 0 $base-semi-alpha-color;
+  }
+  &:only-child {
+    box-shadow: none;
+    margin: (- $global-spacing * 2);
+  }
+  .prose & {
+    @include media(medium-up) {
+      padding: $global-spacing * 2;
+    }
+  }
+}
