@@ -274,7 +274,7 @@ gulp.task('styles', function () {
 
 // After being rendered by jekyll process the html files. (merge css files, etc)
 gulp.task('html', function () {
-  return gulp.src('_site/*.html')
+  return gulp.src('_site/**/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'docs', '.']}))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))

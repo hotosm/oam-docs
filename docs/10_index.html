@@ -1,45 +1,8 @@
 ---
 layout: base
+id: Start
+permalink: /
 ---
-<header class="site-header" role="banner">
-  <div class="inner">
-    <div class="site-headline">
-      <h1 class="site-title">
-        <a href="/" title="Visit homepage">
-          <img src='assets/graphics/layout/oam-logo-h-pos.svg' width='167' height='32' alt='OpenAerialMap logo' class="site-title__logo" />
-          <span class="site-title__text">OpenAerialMap</span>
-          <small class="site-title__label">Design System</small>
-        </a>
-      </h1>        
-    </div>
-    <nav class="site-prime-nav" role="navigation">
-      <h2 class="toggle-menu"><a href="#global-menu" title="Show menu"><span>Browse</span></a></h2>
-      <div class="menu-wrapper">
-        <ul class="global-menu" id="global-menu">
-          <li>
-            <a href="/" title="Visit page" class="global-menu-item global-menu-item--active"><span>Start</span></a>
-          </li>
-          <li>
-            <a href="item-2.html" title="Visit page" class="global-menu-item"><span>Brand</span></a>
-          </li>
-          <li>
-            <a href="item-3.html" title="Visit page" class="global-menu-item"><span>Layout</span></a>
-          </li>
-          <li>
-            <a href="item-4.html" title="Visit page" class="global-menu-item"><span>Content</span></a>
-          </li>
-          <li>
-            <a href="item-5.html" title="Visit page" class="global-menu-item"><span>Components</span></a>
-          </li>
-          <li>
-            <a href="item-6.html" title="Visit page" class="global-menu-item"><span>About</span></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
-
 <main class="site-body" role="main">
   <div class="inner">
     <section class="page page--docs">
@@ -57,19 +20,7 @@ layout: base
         <div class="inner">
 
           <!-- Page aside content -->
-          <aside class="page__aside-content">
-            <h1 class="page__aside-title">Contents</h1>
-            <nav class="page__aside-nav" role="navigation">
-              <ul class="aside-menu">
-                <li><a href="#" title="View section">Item 1</a></li>
-                <li><a href="#" title="View section">Item 2</a></li>
-                <li><a href="#" title="View section">Item 3</a></li>
-                <li><a href="#" title="View section">Item 4</a></li>
-                <li><a href="#" title="View section">Item 5</a></li>
-                <li><a href="#" title="View section">Item 6</a></li>
-              </ul>
-            </nav>
-          </aside>
+          {% include sub-nav.html %}
           <!--/ Page aside content -->
 
           <!-- Page content -->

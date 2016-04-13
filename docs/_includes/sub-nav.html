@@ -1,0 +1,25 @@
+{% if page.parent %}
+  {% assign for=page.parent %}
+{% else %}
+  {% assign for=page.id %}
+{% endif %}
+
+{% assign subPages = site.pages | where: 'parent', for %}
+<aside class="page__aside-content">
+  <h1 class="page__aside-title">Contents</h1>
+  {% if subPages == empty %}
+  No content
+  {% else %}
+  <nav class="page__aside-nav" role="navigation">
+    <ul class="aside-menu">
+      {% for sp in subPages %}
+        {% assign klass = "" %}
+        {% if page.url == sp.url %}
+          {% assign klass = "aside-menu-item--active" %}
+        {% endif %}
+      <li><a href="{{ sp.url }}" title="View section" class="aside-menu-item {{ klass }}">{{ sp.id }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+</aside>

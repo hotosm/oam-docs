@@ -1,0 +1,31 @@
+<header class="site-header" role="banner">
+  <div class="inner">
+    <div class="site-headline">
+      <h1 class="site-title">
+        <a href="/" title="Visit homepage">
+          <img src='assets/graphics/layout/oam-logo-h-pos.svg' width='167' height='32' alt='OpenAerialMap logo' class="site-title__logo" />
+          <span class="site-title__text">OpenAerialMap</span>
+          <small class="site-title__label">Design System</small>
+        </a>
+      </h1>        
+    </div>
+    <nav class="site-prime-nav" role="navigation">
+      <h2 class="toggle-menu"><a href="#global-menu" title="Show menu"><span>Browse</span></a></h2>
+      <div class="menu-wrapper">
+        <ul class="global-menu" id="global-menu">
+          {% for p in site.pages %}
+            {% unless p.parent %}
+              {% assign klass = "" %}
+              {% if page.id == p.id or page.parent == p.id %}
+                {% assign klass = "global-menu-item--active" %}
+              {% endif %}
+              <li>
+                <a href="{{ p.url }}" title="Visit page" class="global-menu-item {{ klass }}"><span>{{ p.id }}</span></a>
+              </li>
+            {% endunless %}
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
