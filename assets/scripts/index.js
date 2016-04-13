@@ -18,6 +18,9 @@ module.exports.graphicsMiddleware = function (fs) {
     var pieces = req.url.match(r);
     if (!pieces) return next();
     try {
+      if (pieces[1].match(/\.svgz?$/)) {
+        res.setHeader('Content-Type', 'image/svg+xml');
+      }
       res.end(fs.readFileSync(path.join(__dirname, '../graphics', pieces[1])));
     } catch (e) {
       // Nothing to do there.
