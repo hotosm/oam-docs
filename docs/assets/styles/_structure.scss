@@ -112,13 +112,13 @@
   display: block;
   line-height: 2rem;
   font-size: 1rem;
-  padding: 0 $global-spacing;
+  padding: 0 ($global-spacing / 2);
   border-radius: $base-border-radius;
   &, &:visited {
     color: $base-font-color;
   }
   &--active {
-    background: rgba($base-color, 0.04);
+    background: rgba($base-color, 0.08);
   }
 }
 
@@ -174,6 +174,8 @@
 
   .page__main-content {
     @include col(12/12);
+    @extend .prose;
+    
     @include media(medium-up) {
       @include col(9/12);
       @include shift(-3/12);
