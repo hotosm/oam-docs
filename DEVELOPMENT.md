@@ -81,6 +81,39 @@ import componentName from '../../../assets/scripts/componentName';
 
 **Important:** If you need to install new node modules, install them as **dependencies** if they are for the `oam-design-system` and as **devDependencies** if they're for the docs.
 
+#### Adding new pages
+Any top level page added should be directly inside `docs/`, its name prefixed with a number to set order, and have the following front matter (example):
+```
+layout: base
+id: Brand
+permalink: brand/
+```
+All the top level pages will show up in the main menu. The `id` is used for the link text.
+
+The sublevel pages should go into an appropriately named directory, its name prefixed with a number related to the parent and have the following front matter (example):
+```
+layout: base
+id: Logos
+parent: Brand
+permalink: brand/logos/
+```
+All the sub level pages will show up side navigation of all the pages with the same parent. The `id` is used for the link text.
+
+If you don't want the parent page to have an output, set the `permalink` to one of the subpages (example):
+```
+layout: base
+id: Brand
+permalink: brand/logos/
+```
+**Example file structure:**
+```
+/
+  10_index.html
+  20_brand.html
+  brand/
+    21_logos.html
+```
+
 ## Deployment
 The .travis.yml file enables the usage of [Travis](http://travis.org) as a test and deployment system.  
 In this particular case, Travis will be looking for any changes to the repo and when a change is made to the `master` branch, Travis will build the documentation and deploy it to the `gh-pages` branch.  
