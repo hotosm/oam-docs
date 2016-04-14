@@ -1,18 +1,21 @@
 # OAM Design System
 
+**Work in progress.** Use at your own risk!  
+
 The following guide explains how to use the `oam-design-system` in a new project. For information on how to develop the `oam-design-system` checkout the [DEVELOPMENT.md](DEVELOPMENT.md)  
 
 ---
 
-This repo contains the basic assets for the OAM ecosystem, which is a set of resources to be used on all OAM related products.
-Install it as an `npm` module:
+Style guide and UI components library that aims to standardize the look and feel across all OAM-related applications, while defining coding best practices and conventions.
+
+Install it as an `npm` module: (not available yet)
 ```
 npm install oam-design-system
 ```
 
 **Note:**
 This design system makes some assumptions which are described below for each of the elements.
-It also assumes that is going to be used with a `project-seed` based project.
+Check the build system of [OAM uploader](https://github.com/hotosm/oam-uploader/blob/master/gulpfile.js) as a base.
 
 ## Overview
 
@@ -79,7 +82,7 @@ browserSync({
 ```
 *Basically every time there's a request to a path like `/assets/graphics/**`, browserSync will check in the `oam-design-system` folder first. If it doesn't find anything it will look in the normal project's asset folder.*
 
-You also need to add the path of the graphics to be included to the `images` task.  
+You also need to ensure that the images are copied over on build.
 This ensures that the graphics are copied over when building the project.
 ```js
 gulp.task('images', function () {
