@@ -8,7 +8,8 @@ permalink: components/buttons/
 title: Buttons
 introduction: I'm batman
 ---
-<h2>Buttons</h2>
+## Buttons
+{: .a-class-name }
 
 <p>Button styles for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, etc.</p>
 
@@ -23,7 +24,7 @@ introduction: I'm batman
 
 <h3>Sizes</h3>
 
-```
+```html
 <div class="demo-example">
   <button class="button button--base-light button--small" type="button"><span>Small</span></button>
   <button class="button button--base-light button--medium" type="button"><span>Medium</span></button>
