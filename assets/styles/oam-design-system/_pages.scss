@@ -70,6 +70,15 @@
     @extend .heading, .heading--xlarge;
   }
 
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: $base-font-regular;
+    color: rgba(#fff, 0.48);
+    font-size: 0.875rem;
+    line-height: 1.25;
+    margin: 0;
+  }
+
   &__introduction {
     color: rgba($base-font-color, 0.64);
     font-size: 1.25rem;

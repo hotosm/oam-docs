@@ -6,7 +6,7 @@ parent: Components
 permalink: components/buttons/
 
 title: Buttons
-introduction: I'm batman
+introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
 ---
 <h2>Buttons</h2>
 
