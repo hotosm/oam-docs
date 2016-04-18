@@ -115,3 +115,7 @@
     margin-bottom: 0;
   }
 }
+
+.button--icon:before {
+  @extend %oam-ds-icon-clock;
+}

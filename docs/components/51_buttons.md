@@ -36,7 +36,7 @@ Button styles for actions in forms, dialogs, and more. Includes support for a ha
   <button class="button button--base-light button--medium" type="button"><span>Medium</span></button>
   <button class="button button--base-light button--large" type="button"><span>Large</span></button>
 
-    <div class="demo-example__inset">
+  <div class="demo-example__inset">
 {% highlight html %}
 <button class="button button--base-light button--small" type="button"><span>Small</span></button>
 <button class="button button--base-light button--medium" type="button"><span>Medium</span></button>
@@ -51,7 +51,7 @@ Button styles for actions in forms, dialogs, and more. Includes support for a ha
   <button class="button button--base-light button--active" type="button"><span>Active</span></button>
   <button class="button button--base-light disabled" type="button"><span>Disabled</span></button>
 
-    <div class="demo-example__inset">
+  <div class="demo-example__inset">
 {% highlight html %}
 <button class="button button--base-light button--active" type="button"><span>Active</span></button>
 <button class="button button--base-light disabled" type="button"><span>Disabled</span></button>
@@ -59,3 +59,18 @@ Button styles for actions in forms, dialogs, and more. Includes support for a ha
   </div>
 </div>
 
+## Iconified
+
+<div class="demo-example">
+  <button class="button button--base-light button--text-hidden" type="button"><i class="oam-ds-icon-clock"></i><span>Hidden text</span></button>
+  <button class="button button--base-light" type="button"><i class="oam-ds-icon-clock"></i> <span>Visible text</span></button>
+  <button class="button button--base-light button--icon" type="button"></i><span>Pseudo-element</span></button>
+
+  <div class="demo-example__inset">
+{% highlight html %}
+<button class="button button--base-light button--text-hidden" type="button"><i class="oam-ds-icon-clock"></i><span>Hidden text</span></button>
+<button class="button button--base-light" type="button"><i class="oam-ds-icon-clock"></i> <span>Visible text</span></button>
+<button class="button button--base-light button--icon" type="button"></i><span>Pseudo-element</span></button>
+{% endhighlight %}                  
+  </div>
+</div>

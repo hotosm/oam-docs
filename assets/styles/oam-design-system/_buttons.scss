@@ -10,13 +10,13 @@
   white-space: nowrap;
   vertical-align: middle;
   line-height: 1.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding: 0.25rem 0.75rem;
+  min-width: 2rem;
   background: none; 
   text-shadow: none;
   border: 0;
   border-radius: $base-border-radius;
-  min-width: 1.5rem;
   font-weight: $base-font-bold;
   box-shadow: inset 0 -2px 0 0 rgba($base-color, 0.12), 0 0 0 1px $base-semi-alpha-color, 0 1px 2px 0 rgba($base-color, 0.24);
   cursor: pointer;
@@ -41,12 +41,20 @@
 
   /* Icon handling */
   &:before,
-  &:after {
+  &:after,
+  [class^="oam-ds-icon-"] {
     font-size: 1rem;
-    vertical-align: top;
   }
   &:before { margin-right: 0.25rem; }
   &:after { margin-left: 0.25rem; }
+
+  &:before,
+  &:after,
+  > * {
+    vertical-align: top;
+    display: inline-block;
+    line-height: inherit;
+  }
 
   /* Checkbox/radio handling */
   > input[type=checkbox],
@@ -119,7 +127,7 @@
 .button--medium,
 .button-group--medium .button {
   line-height: 1.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding: 0.25rem 0.75rem;
   min-width: 2rem;
 }
@@ -143,7 +151,7 @@
   &:after {
     margin: 0;
   }
-  > * {
+  > *:not([class^="oam-ds-icon-"]) {
     @extend .visually-hidden;
   }
   :not(.button-group) & {
