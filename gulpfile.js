@@ -16,6 +16,7 @@ var rev = require('gulp-rev');
 var revReplace = require('gulp-rev-replace');
 var notifier = require('node-notifier');
 var cp = require('child_process');
+var YAML = require('yamljs');
 var OAM = require('./assets/scripts');
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -274,12 +275,13 @@ gulp.task('styles', function () {
 
 // After being rendered by jekyll process the html files. (merge css files, etc)
 gulp.task('html', function () {
+  var jkConf = YAML.load('_config.yml');
   return gulp.src('_site/**/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'docs', '.']}))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
     .pipe($.if(/\.(css|js)$/, rev()))
-    .pipe(revReplace())
+    .pipe(revReplace({prefix: jkConf.baseurl}))
     .pipe(gulp.dest('_site'));
 });
 

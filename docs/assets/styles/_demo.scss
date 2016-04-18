@@ -91,8 +91,8 @@
 
 .demo-example__inset {
   background: rgba($base-color, 0.04);
-  padding: $global-spacing;
-  > pre {
+  padding: ($global-spacing * 1.5);
+  pre {
     padding: 0;
     border-radius: 0;
     box-shadow: none;
@@ -110,9 +110,8 @@
     box-shadow: none;
     margin: (- $global-spacing * 1.5);
   }
-  .prose & {
-    @include media(medium-up) {
-      padding: $global-spacing * 1.5;
-    }
+  .highlight pre,
+  > *:last-child {
+    margin-bottom: 0;
   }
 }

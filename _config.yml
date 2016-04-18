@@ -5,3 +5,6 @@ exclude:
   - assets/styles
   - assets/graphics/collecticons
 baseurl: 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
