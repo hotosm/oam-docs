@@ -193,6 +193,9 @@
     clear: both;
     width: 100%;
     border-radius: $base-border-radius;
+    &:hover {
+      z-index: 2;
+    }
   }
   > .button:first-child:not(:last-child) {
     border-bottom-right-radius: 0;
@@ -204,6 +207,14 @@
   }
   > .button:not(:first-child):not(:last-child) {
     border-radius: 0;
+  }
+  > .button:not(:last-child) {
+    box-shadow: inset 0 0 0 1px $base-alpha-color;
+    .drop--open > &,
+    &.button--active,
+    &:active {
+      box-shadow: inset 0 3px 0 0 $base-alpha-color, inset 0 0 0 1px $base-alpha-color;
+    }
   }
   > .button + .button {
     margin-top: -1px;

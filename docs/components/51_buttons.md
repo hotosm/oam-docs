@@ -74,3 +74,60 @@ Button styles for actions in forms, dialogs, and more. Includes support for a ha
 {% endhighlight %}                  
   </div>
 </div>
+
+## Groups
+
+<div class="demo-example">
+
+  <div class="button-group button-group--horizontal" role="group" aria-label="...">
+    <button class="button button--base-light button--active" type="button"><span>Left</span></button>
+    <button class="button button--base-light" type="button"><span>Middle</span></button>
+    <button class="button button--base-light" type="button"><span>Right</span></button>
+  </div>
+
+  <div class="button-group button-group--large button-group--horizontal">
+    <label class="button button--base-light button--active" for="option-1">
+      <input type="checkbox" id="option-1" checked=""> CB1 (pre-checked)
+    </label>
+    <label class="button button--base-light" for="option-2">
+      <input type="checkbox" id="option-2"> CB2
+    </label>
+    <label class="button button--base-light" for="option-3">
+      <input type="checkbox" id="option-3"> CB3
+    </label>
+  </div>
+
+  <div class="button-group button-group--vertical" role="group" aria-label="...">
+    <button class="button button--base-light" type="button"><span>Top</span></button>
+    <button class="button button--base-light" type="button"><span>Middle</span></button>
+    <button class="button button--base-light" type="button"><span>Bottom</span></button>
+  </div>
+
+  <div class="demo-example__inset">
+{% highlight html %}
+<div class="button-group button-group--horizontal" role="group" aria-label="...">
+  <button class="button button--base-light button--active" type="button"><span>Left</span></button>
+  <button class="button button--base-light" type="button"><span>Middle</span></button>
+  <button class="button button--base-light" type="button"><span>Right</span></button>
+</div>
+
+<div class="button-group button-group--large button-group--horizontal">
+  <label class="button button--base-light button--active" for="option-1">
+    <input type="checkbox" id="option-1" checked=""> CB1 (pre-checked)
+  </label>
+  <label class="button button--base-light" for="option-2">
+    <input type="checkbox" id="option-2"> CB2
+  </label>
+  <label class="button button--base-light" for="option-3">
+    <input type="checkbox" id="option-3"> CB3
+  </label>
+</div>
+
+<div class="button-group button-group--vertical" role="group" aria-label="...">
+  <button class="button button--base-light" type="button"><span>Top</span></button>
+  <button class="button button--base-light" type="button"><span>Middle</span></button>
+  <button class="button button--base-light" type="button"><span>Bottom</span></button>
+</div>
+{% endhighlight %}                  
+  </div>
+</div>
