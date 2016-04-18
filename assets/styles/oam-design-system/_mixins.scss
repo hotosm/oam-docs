@@ -89,15 +89,38 @@
    Buttons
    ========================================================================== */
 
-@mixin button-variation($color) {
-  background-color: $color;
-  &:hover {
-    background-color: shade($color, 8%);
+@mixin button-variation-b($brightness, $background-color) {
+  @if $brightness == "light" {
+    background-color: $background-color;
+    &, &:visited {
+      color: $base-font-color;
+    }
+    &:hover {
+      background-color: shade($background-color, 4%);
+    }
+    .drop--open > &,
+    &.button--active,
+    &.button--active:hover,
+    &:active {
+      background-color: shade($background-color, 8%);
+    }
   }
-  .drop--open > &,
-  &.button--active,
-  &.button--active:hover,
-  &:active {
-    background-color: shade($color, 16%);
+  @else if $brightness == "dark" {
+    background-color: $background-color;
+    &, &:visited {
+      color: #fff;
+    }
+    &:hover {
+      background-color: shade($background-color, 8%);
+    }
+    .drop--open > &,
+    &.button--active,
+    &.button--active:hover,
+    &:active {
+      background-color: shade($background-color, 16%);
+    }
+  }
+  @else {
+    @error "Invalid brightness property for button variation.";
   }
 }
