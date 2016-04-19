@@ -25,11 +25,16 @@
 
 @import "oam-design-system";
 
+/**
+ * Pygments
+ */
+
+@import "pygments";
+
 
 /* Custom
    ========================================================================== */
 
 @import "collecticons";
 @import "structure";
-@import "pygments";
-@import "demo";
+@import "docs-examples";

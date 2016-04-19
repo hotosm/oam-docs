@@ -75,7 +75,7 @@
    General
    ========================================================================== */
 
-.demo-example {
+.docs-example {
   margin: 0 0 ($global-spacing * 1.5) 0;
   padding: ($global-spacing * 1.5);
   box-shadow: 0 4px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
@@ -89,7 +89,7 @@
   }
 }
 
-.demo-example__inset {
+.docs-example__inset {
   background: rgba($base-color, 0.04);
   padding: ($global-spacing * 1.5);
   pre {

@@ -13,13 +13,13 @@ Button styles for actions in forms, dialogs, and more. Includes support for a ha
 
 ## Colors
 
-<div class="demo-example">
+<div class="docs-example">
   <button class="button button--base-light" type="button"><span>Base light</span></button>
   <button class="button button--base-dark" type="button"><span>Base dark</span></button>
   <button class="button button--primary" type="button"><span>Primary</span></button>
   <button class="button button--secondary" type="button"><span>Secondary</span></button>
 
-  <div class="demo-example__inset">
+  <div class="docs-example__inset">
 {% highlight html %}
 <button class="button button--base-light" type="button"><span>Base light</span></button>
 <button class="button button--base-dark" type="button"><span>Base dark</span></button>
@@ -31,12 +31,12 @@ Button styles for actions in forms, dialogs, and more. Includes support for a ha
 
 ## Sizes
 
-<div class="demo-example">
+<div class="docs-example">
   <button class="button button--base-light button--small" type="button"><span>Small</span></button>
   <button class="button button--base-light button--medium" type="button"><span>Medium</span></button>
   <button class="button button--base-light button--large" type="button"><span>Large</span></button>
 
-  <div class="demo-example__inset">
+  <div class="docs-example__inset">
 {% highlight html %}
 <button class="button button--base-light button--small" type="button"><span>Small</span></button>
 <button class="button button--base-light button--medium" type="button"><span>Medium</span></button>
@@ -47,11 +47,11 @@ Button styles for actions in forms, dialogs, and more. Includes support for a ha
 
 ## States
 
-<div class="demo-example">
+<div class="docs-example">
   <button class="button button--base-light button--active" type="button"><span>Active</span></button>
   <button class="button button--base-light disabled" type="button"><span>Disabled</span></button>
 
-  <div class="demo-example__inset">
+  <div class="docs-example__inset">
 {% highlight html %}
 <button class="button button--base-light button--active" type="button"><span>Active</span></button>
 <button class="button button--base-light disabled" type="button"><span>Disabled</span></button>
@@ -61,12 +61,12 @@ Button styles for actions in forms, dialogs, and more. Includes support for a ha
 
 ## Iconified
 
-<div class="demo-example">
+<div class="docs-example">
   <button class="button button--base-light button--text-hidden" type="button"><i class="oam-ds-icon-clock"></i><span>Hidden text</span></button>
   <button class="button button--base-light" type="button"><i class="oam-ds-icon-clock"></i> <span>Visible text</span></button>
   <button class="button button--base-light button--icon" type="button"></i><span>Pseudo-element</span></button>
 
-  <div class="demo-example__inset">
+  <div class="docs-example__inset">
 {% highlight html %}
 <button class="button button--base-light button--text-hidden" type="button"><i class="oam-ds-icon-clock"></i><span>Hidden text</span></button>
 <button class="button button--base-light" type="button"><i class="oam-ds-icon-clock"></i> <span>Visible text</span></button>
@@ -77,7 +77,7 @@ Button styles for actions in forms, dialogs, and more. Includes support for a ha
 
 ## Groups
 
-<div class="demo-example">
+<div class="docs-example">
 
   <div class="button-group button-group--horizontal" role="group" aria-label="...">
     <button class="button button--base-light button--active" type="button"><span>Left</span></button>
@@ -103,7 +103,7 @@ Button styles for actions in forms, dialogs, and more. Includes support for a ha
     <button class="button button--base-light" type="button"><span>Bottom</span></button>
   </div>
 
-  <div class="demo-example__inset">
+  <div class="docs-example__inset">
 {% highlight html %}
 <div class="button-group button-group--horizontal" role="group" aria-label="...">
   <button class="button button--base-light button--active" type="button"><span>Left</span></button>
