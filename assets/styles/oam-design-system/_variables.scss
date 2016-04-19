@@ -5,15 +5,15 @@
 /* Colors
    ========================================================================== */
 
-$base-color: #1f3b45;                           // Midnight Blue
-$primary-color: #439ab4;                        // Blue
-$secondary-color: #68c39f;                      // Green
-// $tertiary-color: #ffffff;                    // Undefined
+$base-color: #1f3b45;                                   // Midnight Blue
+$primary-color: #439ab4;                                // Blue
+$secondary-color: #68c39f;                              // Green
+// $tertiary-color: #ffffff;                            // Undefined
 
-$alert-color: #ea4f54;                          // Red
-$success-color: $secondary-color;               // Green
-$warning-color: #f6d55f;                        // Yellow
-$info-color: $primary-color;                    // Blue
+$alert-color: #ea4f54;                                  // Red
+$success-color: $secondary-color;                       // Green
+$warning-color: #f6d55f;                                // Yellow
+$info-color: $primary-color;                            // Blue
 
 $link-color: $primary-color;
 $base-alpha-color: rgba($base-color, 0.12);

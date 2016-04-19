@@ -1,78 +1,5 @@
 /* ==========================================================================
-   Flag object
-   ========================================================================== */
-
-.flag {
-  display: table;
-  width: 100%;
-}
-
-.flag__media,
-.flag__body {
-  display: table-cell;
-  vertical-align: middle;
-
-  .flag--top & {
-    vertical-align: top;
-  }
-
-  .flag--bottom & {
-    vertical-align: bottom;
-  }
-
-}
-
-.flag__media {
-  &:first-child {
-    padding-right: 2rem;
-  }
-
-  &:last-child {
-    padding-left: 2rem;
-  }
-
-  > img {
-    display: block;
-    max-width: none;
-  }
-}
-
-.flag__body {
-  width: 100%;
-}
-
-.flag__title {
-  .prose & {
-    @include heading(1.25rem, medium-up);      // 20, 24
-  }
-}
-
-
-/* ==========================================================================
-   Bleed
-   ========================================================================== */
-
-.bleed--full {
-  @extend .clearfix;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  @include media(small-up) {
-    margin-left: -2rem;
-    margin-right: -2rem;
-  }
-  @include media(medium-up) {
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* ==========================================================================
-   General
+   Docs examples
    ========================================================================== */
 
 .docs-example {
@@ -84,7 +11,7 @@
   > *:last-child:not(.docs-example__inset) {
     margin-bottom: 0;
   }
-  &.clipped {
+  &--clipped {
     overflow: hidden;
   }
 }
@@ -115,6 +42,8 @@
     margin-bottom: 0;
   }
 }
+
+/* Misc */
 
 .button--icon:before {
   @extend %oam-ds-icon-clock;
