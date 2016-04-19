@@ -9,8 +9,6 @@ title: Panels
 introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
 ---
 
-## Lorem
-
 <div class="docs-example">
   <section class="panel">
     <header class="panel__header">

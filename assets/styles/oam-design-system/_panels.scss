@@ -84,66 +84,15 @@
   padding: ($global-spacing * 8) ($global-spacing * 2);
 }
 
-// .panel {
-//   @extend %press-box-skin;
-//   margin-bottom: 2rem;
-// }
-
-// .panel-header {
-//   position: relative;
-//   z-index: 2;
-//   padding: 1rem;
-//   background: #fff;
-//   border-radius: $base-border-radius $base-border-radius 0 0;
-//   box-shadow: 0 1px 0 0 $base-alpha-color;
-//   @extend .clearfix;
-// }
-
-// .panel-headline {
-//   float: left;
-// }
-
-// .panel-tools {
-//   float: right;
-// }
-
-// .panel-title {
-//   margin: 0;
-//   padding-right: 2rem;
-//   @include heading(1.25rem);
-//   @extend .truncated;
-// }
-
-// .panel-subtitle {
-//   opacity: 0.64;
-//   font-size: 1rem;
-//   line-height: 1.25rem;
-//   margin: 0;
-// }
-
-// .panel-footer {
-//   position: relative;
-//   z-index: 2;
-//   background: #fff;
-//   border-radius: 0 0 $base-border-radius $base-border-radius;
-//   min-height: 1rem;
-//   padding: 1rem;
-//   box-shadow: 0 -1px 0 0 $base-alpha-color;
-//   .manager-panel & {
-//     padding: 0;
+// .panel__button-dismiss {
+//   @extend .button, .button--medium, .button--tertiary-unbounded, .button--text-hidden;
+//   position: absolute;
+//   top: $global-spacing;
+//   right: $global-spacing;
+//   z-index: 10;
+//   &:before { @extend .linearicons-0822-cross2; }
+//   @include media(large-up) {
+//     top: $global-spacing * 2;
+//     right: $global-spacing * 2;
 //   }
-// }
-
-// .panel-body {
-//   position: relative;
-//   z-index: 1;
-//   padding: 1rem;
-//   > *:last-child {
-//     margin-bottom: 0;
-//   }
-// }
-
-// .panel-blank-message {
-//   text-align: center;
-//   padding: 8rem 2rem;
 // }
