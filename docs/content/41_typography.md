@@ -13,7 +13,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 
 Available `<h1>` through `<h6>`, and through `.heading--xxsmall`  to `.heading--large` + `.heading` modifiers, for when you want to match the font styling of a heading without changing the markup.
 
-A special appearance of heading is also posible via `.heading-alt`. Used in table headings, definition lists terms, etc.
+A special appearance of heading is also posible via `.heading-alt`. Used in table headings, definition list terms, etc.
 
 <div class="docs-example">
   <h1>This is an h1 heading</h1>
