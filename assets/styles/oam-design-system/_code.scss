@@ -6,14 +6,26 @@ code, kbd, pre, samp {
   font-family: $code-font-family;
 }
 
-code, pre {
+code, pre, kbd {
   border-radius: $base-border-radius;
   background: rgba($base-color, 0.04);
 }
 
-code {
+code, kbd {
   padding: 0.125rem 0.25rem;
   font-size: 80%;
+}
+
+kbd {
+  @extrend .antialiased;
+  border-radius: $base-border-radius;
+  background: rgba($base-color, 0.64);
+  color: #fff;
+  kbd {
+    background: none;
+    font-size: 100%;
+    padding: 0;
+  }
 }
 
 pre {
