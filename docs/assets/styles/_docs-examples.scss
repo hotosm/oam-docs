@@ -58,18 +58,19 @@
 
 
 .docs-example {
-
-  .drop {
+  > .drop {
     float: left;
     margin: 0 1.5rem 1.5rem 0;
+    .drop__toggle {
+      float: left;
+    }
+    .drop__content {
+      position: static;
+      clear: left;
+    }
   }
 
-  .drop__toggle {
-    float: left;
-  }
-
-  .drop__content {
+  .panel {
     position: static;
-    clear: left;
   }
 }

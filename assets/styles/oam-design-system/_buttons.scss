@@ -79,7 +79,7 @@
 /* Base Dark */
 
 .button--base-dark {
-  @include button-variation-b("dark", $base-font-color);
+  @include button-variation-b("dark", tint($base-color, 32%));
 }
 
 /* Primary */

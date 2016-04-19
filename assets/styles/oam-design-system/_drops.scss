@@ -13,6 +13,8 @@
       @extend %oam-ds-icon-sm-chevron-down;
       font-size: 1rem;
       line-height: inherit;
+      vertical-align: top;
+      margin-left: 0.25rem;
     }
   }
   &:focus {
