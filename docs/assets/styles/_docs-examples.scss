@@ -81,7 +81,7 @@
   box-shadow: 0 4px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
   border-radius: $base-border-radius;
   background: #fff;
-  > *:last-child:not(.demo-example__inset) {
+  > *:last-child:not(.docs-example__inset) {
     margin-bottom: 0;
   }
   &.clipped {
