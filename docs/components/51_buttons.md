@@ -60,9 +60,9 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 ## Iconified
 
 <div class="docs-example">
-  <button class="button button--base-light button--text-hidden" type="button"><i class="oam-ds-icon-clock"></i><span>Hidden text</span></button>
-  <button class="button button--base-light" type="button"><i class="oam-ds-icon-clock"></i> <span>Visible text</span></button>
-  <button class="button button--base-light button--icon" type="button"></i><span>Pseudo-element</span></button>
+  <button class="button button--base-light button--text-hidden" type="button"><i class="meh oam-ds-icon-clock"></i><span>Hidden text</span></button>
+  <button class="button button--base-light" type="button"><i class="oam-ds-icon-download"></i> <span>Visible text</span></button>
+  <button class="button button--base-light button--example-icon" type="button"><span>Pseudo-element</span></button>
 
   <div class="docs-example__inset">
 {% highlight html %}

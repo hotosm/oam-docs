@@ -40,20 +40,20 @@
   }
 
   /* Icon handling */
-  &:before,
-  &:after,
-  [class^="oam-ds-icon-"] {
+  &:before, &:after,
+  [class^="oam-ds-icon-"], [class*=" oam-ds-icon-"],
+  [class^="collecticons-"], [class*=" collecticons-"] {
     font-size: 1rem;
   }
-  &:before { margin-right: 0.25rem; }
-  &:after { margin-left: 0.25rem; }
+  &:before { margin-right: 0.375rem; }
+  &:after { margin-left: 0.375rem; }
 
   &:before,
   &:after,
   > * {
     vertical-align: top;
     display: inline-block;
-    line-height: inherit;
+    line-height: inherit !important;
   }
 
   /* Checkbox/radio handling */
@@ -139,7 +139,7 @@
   &:after {
     margin: 0;
   }
-  > *:not([class^="oam-ds-icon-"]) {
+  > *:not([class^="oam-ds-icon-"]):not([class*=" oam-ds-icon-"]):not([class^="collecticons-"]):not([class*=" collecticons-"]) {
     @extend .visually-hidden;
   }
   :not(.button-group) & {

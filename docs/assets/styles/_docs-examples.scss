@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .docs-example {
+  @extend .clearfix;
   margin: 0 0 ($global-spacing * 1.5) 0;
   padding: ($global-spacing * 1.5);
   box-shadow: 0 4px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
@@ -17,6 +18,8 @@
 }
 
 .docs-example__inset {
+  @extend .clearfix;
+  clear: both;
   background: rgba($base-color, 0.04);
   padding: ($global-spacing * 1.5);
   pre {
@@ -45,6 +48,28 @@
 
 /* Misc */
 
-.button--icon:before {
-  @extend %oam-ds-icon-clock;
+.button--example-icon:before {
+  @extend %oam-ds-icon-pencil;
+}
+
+.drop__menu-item--example-icon:before {
+  @extend %oam-ds-icon-download;
+}
+
+
+.docs-example {
+
+  .drop {
+    float: left;
+    margin: 0 1.5rem 1.5rem 0;
+  }
+
+  .drop__toggle {
+    float: left;
+  }
+
+  .drop__content {
+    position: static;
+    clear: left;
+  }
 }
