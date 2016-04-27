@@ -61,6 +61,10 @@
 
 
 .docs-example {
+  > .button,
+  > .button-group {
+    margin: 0 0.5rem 0.5rem 0;
+  }
   > .drop {
     float: left;
     margin: 0 1.5rem 1.5rem 0;

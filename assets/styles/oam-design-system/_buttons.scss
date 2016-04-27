@@ -18,7 +18,6 @@
   border: 0;
   border-radius: $base-border-radius;
   font-weight: $base-font-bold;
-  box-shadow: inset 0 -3px 0 0 $base-alpha-color, inset 0 0 0 1px $base-alpha-color;
   cursor: pointer;
 
   /* States */
@@ -32,7 +31,6 @@
     z-index: 2;
     opacity: 1;
     transform: translateZ(0);
-    box-shadow: inset 0 3px 0 0 $base-alpha-color, inset 0 0 0 1px $base-alpha-color;
   }
 
   &:focus {
@@ -73,25 +71,43 @@
 /* Base Light */
 
 .button--base-light {
-  @include button-variation-b("light", #fff);
+  @include button-variation("filled", "light", #fff);
 }
 
 /* Base Dark */
 
 .button--base-dark {
-  @include button-variation-b("dark", tint($base-color, 32%));
+  @include button-variation("filled", "dark", tint($base-color, 32%));
+}
+
+/* Base Unbounded */
+
+.button--base-unbounded {
+  @include button-variation("unbounded", null, $base-font-color);
 }
 
 /* Primary */
 
 .button--primary {
-  @include button-variation-b("dark", $primary-color);
+  @include button-variation("filled", "dark", $primary-color);
+}
+
+/* Primary Unbounded */
+
+.button--primary-unbounded {
+  @include button-variation("unbounded", null, $primary-color);
 }
 
 /* Secondary */
 
 .button--secondary {
-  @include button-variation-b("dark", $secondary-color);
+  @include button-variation("filled", "dark", $secondary-color);
+}
+
+/* Secondary */
+
+.button--secondary-unbounded {
+  @include button-variation("unbounded", null, $secondary-color);
 }
 
 

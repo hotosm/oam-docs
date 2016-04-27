@@ -18,6 +18,9 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
   <button class="button button--base-dark" type="button"><span>Base dark</span></button>
   <button class="button button--primary" type="button"><span>Primary</span></button>
   <button class="button button--secondary" type="button"><span>Secondary</span></button>
+  <button class="button button--base-unbounded" type="button"><span>Base unbounded</span></button>
+  <button class="button button--primary-unbounded" type="button"><span>Primary unbounded</span></button>
+  <button class="button button--secondary-unbounded" type="button"><span>Secondary unbounded</span></button>
 
   <div class="docs-example__inset">
 {% highlight html %}
@@ -25,6 +28,9 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 <button class="button button--base-dark" type="button"><span>Base dark</span></button>
 <button class="button button--primary" type="button"><span>Primary</span></button>
 <button class="button button--secondary" type="button"><span>Secondary</span></button>
+<button class="button button--base-unbounded" type="button"><span>Base unbounded</span></button>
+<button class="button button--primary-unbounded" type="button"><span>Primary unbounded</span></button>
+<button class="button button--secondary-unbounded" type="button"><span>Secondary unbounded</span></button>
 {% endhighlight %}                  
   </div>
 </div>

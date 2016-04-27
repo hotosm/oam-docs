@@ -89,38 +89,51 @@
    Buttons
    ========================================================================== */
 
-@mixin button-variation-b($brightness, $background-color) {
-  @if $brightness == "light" {
-    background-color: $background-color;
-    &, &:visited {
-      color: $base-font-color;
+@mixin button-variation($style, $brightness, $color) {
+  @if $style == "filled" {
+    @if $brightness == "light" {
+      $text-color: $base-font-color;
+      $bg-color: $color;
+      $bg-color-hover: shade($color, 4%);
+      $bg-color-active: shade($color, 8%);
     }
-    &:hover {
-      background-color: shade($background-color, 4%);
+    @else if $brightness == "dark" {
+      $text-color: #fff;
+      $bg-color: $color;
+      $bg-color-hover: shade($color, 8%);
+      $bg-color-active: shade($color, 16%);
     }
+    @else {
+      @error "Invalid brightness property for button variation.";
+    }
+
+    box-shadow: inset 0 -3px 0 0 $base-alpha-color, inset 0 0 0 1px $base-alpha-color;
     .drop--open > &,
-    &.button--active,
-    &.button--active:hover,
-    &:active {
-      background-color: shade($background-color, 8%);
+    &.button--active {
+      box-shadow: inset 0 3px 0 0 $base-alpha-color, inset 0 0 0 1px $base-alpha-color;
     }
   }
-  @else if $brightness == "dark" {
-    background-color: $background-color;
-    &, &:visited {
-      color: #fff;
-    }
-    &:hover {
-      background-color: shade($background-color, 8%);
-    }
-    .drop--open > &,
-    &.button--active,
-    &.button--active:hover,
-    &:active {
-      background-color: shade($background-color, 16%);
-    }
+  @else if $style == "unbounded" {
+    $text-color: $color;
+    $bg-color: rgba($color, 0);
+    $bg-color-hover: rgba($color, 0.08);
+    $bg-color-active: rgba($color, 0.16);
   }
   @else {
-    @error "Invalid brightness property for button variation.";
+    @error "Invalid style property for button variation.";
+  }
+
+  background-color: $bg-color;
+  &, &:visited {
+    color: $text-color;
+  }
+  &:hover {
+    background-color: $bg-color-hover;
+  }
+  .drop--open > &,
+  &.button--active,
+  &.button--active:hover,
+  &:active {
+    background-color: $bg-color-active;
   }
 }
