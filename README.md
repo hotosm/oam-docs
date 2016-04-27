@@ -1,4 +1,4 @@
-# OAM Design System
+# OAM Docs
 
 **Work in progress.** Use at your own risk!  
 

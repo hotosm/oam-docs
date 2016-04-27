@@ -1,10 +1,10 @@
 ---
 layout: docs_page
-id: Start
+id: Welcome
 
 permalink: /
 
-title: Getting started
+title: Welcome
 introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
 ---
 
