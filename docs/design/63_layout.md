@@ -1,10 +1,11 @@
 ---
 layout: docs_page
-id: About
+id: Layout
+parent: Design
 
-permalink: about/
+permalink: design/layout/
 
-title: About
+title: Layout
 introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
 ---
 

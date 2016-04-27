@@ -1,7 +1,7 @@
 {
   "name": "oam-design-system",
   "version": "0.1.0",
-  "description": "OAM style guide and UI components library.",
+  "description": "OpenAerialMap Documentation.",
   "repository": {
     "type": "git",
     "url": "https://github.com/developmentseed/oam-design-system.git"

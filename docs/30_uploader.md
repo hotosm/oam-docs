@@ -1,10 +1,10 @@
 ---
 layout: docs_page
-id: Layout
+id: Uploader
 
-permalink: layout/
+permalink: uploader/
 
-title: Layout
+title: Uploader
 introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
 ---
 

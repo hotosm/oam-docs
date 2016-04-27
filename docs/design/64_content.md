@@ -1,15 +1,17 @@
 ---
 layout: docs_page
-id: Typography
-parent: Content
+id: Content
+parent: Design
 
-permalink: content/typography/
+permalink: design/content/
 
-title: Typography
+title: Content
 introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
 ---
 
-## Headings
+## Typography
+
+### Headings
 
 Available `<h1>` through `<h6>`, and through `.heading--xxsmall`  to `.heading--large` + `.heading` modifiers, for when you want to match the font styling of a heading without changing the markup.
 
@@ -37,7 +39,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   </div>
 </div>
 
-## Lead
+### Lead
 
 <div class="docs-example">
   <p class="lead">This is a lead paragraph. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.</p>
@@ -49,7 +51,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   </div>
 </div>
 
-## Blockquotes
+### Blockquotes
 
 <div class="docs-example">
   <blockquote>
@@ -75,7 +77,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   </div>
 </div>
 
-## Inline text elements
+### Inline text elements
 
 <div class="docs-example">
   <p>You can use the mark tag to <mark>highlight</mark> text.</p>
@@ -103,9 +105,9 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   </div>
 </div>
 
-## Lists
+### Lists
 
-### Unordered
+#### Unordered
 
 <div class="docs-example">
   <ul>
@@ -137,7 +139,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   </div>
 </div>
 
-### Ordered
+#### Ordered
 
 <div class="docs-example">
   <ol>
@@ -169,7 +171,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   </div>
 </div>
 
-### Descriptive
+#### Descriptive
 
 <div class="docs-example">
   <dl>
@@ -203,7 +205,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   </div>
 </div>
 
-### Horizontal Descriptive
+#### Horizontal Descriptive
 
 <div class="docs-example">
   <dl class="dl-horizontal">
@@ -233,6 +235,188 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   <dt>Yet another term</dt>
   <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
 </dl>
+{% endhighlight %}                  
+  </div>
+</div>
+
+## Tables
+
+### Regular
+
+<div class="docs-example">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+{% endhighlight %}                  
+  </div>
+</div>
+
+### Zebra
+
+<div class="docs-example">
+  <table class="table table--zebra">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+{% endhighlight %}                  
+  </div>
+</div>
+
+## Code
+
+### Inline
+
+<div class="docs-example">
+  For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+
+  <div class="docs-example__inset">
+{% highlight html %}
+For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+{% endhighlight %}                  
+  </div>
+</div>
+
+### Preformatted
+
+<div class="docs-example">
+<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+{% endhighlight %}                  
+  </div>
+</div>
+
+### User input
+
+<div class="docs-example">
+  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+  To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 {% endhighlight %}                  
   </div>
 </div>

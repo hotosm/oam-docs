@@ -1,8 +1,9 @@
 ---
 layout: docs_page
 id: Brand
+parent: Design
 
-permalink: brand/
+permalink: design/brand/
 
 title: Brand
 introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.

@@ -1,10 +1,10 @@
 ---
 layout: docs_page
-id: Content
+id: Catalog
 
-permalink: content/
+permalink: catalog/
 
-title: Content
+title: Catalog
 introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
 ---
 
