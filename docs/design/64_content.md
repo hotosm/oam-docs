@@ -239,6 +239,18 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   </div>
 </div>
 
+### Horizontal rulers
+
+<div class="docs-example">
+  <hr />
+
+  <div class="docs-example__inset">
+{% highlight html %}
+<hr />
+{% endhighlight %}                  
+  </div>
+</div>
+
 ## Tables
 
 ### Regular

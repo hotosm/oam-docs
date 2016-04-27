@@ -9,6 +9,9 @@
   box-shadow: 0 4px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
   border-radius: $base-border-radius;
   background: #fff;
+  > *:first-child:not(.docs-example__inset) {
+    margin-top: 0;
+  }
   > *:last-child:not(.docs-example__inset) {
     margin-bottom: 0;
   }
