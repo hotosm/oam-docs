@@ -28,20 +28,10 @@
   background: #fff;
   border-radius: $base-border-radius $base-border-radius 0 0;
   box-shadow: 0 1px 0 0 $base-alpha-color;
-  @extend .clearfix;
-}
-
-.panel__headline {
-  float: left;
-}
-
-.panel__tools {
-  float: right;
 }
 
 .panel__title {
-  @include heading(1.25rem);      // 20px
-  @extend .truncated;
+  @include heading(1rem);
   margin: 0;
 }
 
@@ -54,6 +44,30 @@
     &:visited, & {
       color: $base-font-color;
     }
+  }
+}
+
+.panel__headline,
+.panel__meta-actions {
+  display: table-cell;
+  &, > * {
+    vertical-align: top;
+  }
+}
+
+.panel__headline {
+  width: 100%;
+}
+
+.panel__meta-actions {
+  text-align: right;
+  padding-left: 0.5rem;
+}
+
+.panel__button-dismiss {
+  @extend .button, .button--base-light, .button--small, .button--text-hidden;
+  &:before {
+    @extend %oam-ds-icon-sm-xmark;
   }
 }
 
@@ -84,16 +98,3 @@
   padding: ($global-spacing * 8) ($global-spacing * 2);
   color: rgba($base-font-color, 0.64);
 }
-
-// .panel__button-dismiss {
-//   @extend .button, .button--medium, .button--tertiary-unbounded, .button--text-hidden;
-//   position: absolute;
-//   top: $global-spacing;
-//   right: $global-spacing;
-//   z-index: 10;
-//   &:before { @extend .linearicons-0822-cross2; }
-//   @include media(large-up) {
-//     top: $global-spacing * 2;
-//     right: $global-spacing * 2;
-//   }
-// }

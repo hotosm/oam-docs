@@ -13,8 +13,11 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
   <section class="panel">
     <header class="panel__header">
       <div class="panel__headline">
-        <h1 class="panel__title">Panel title</h1>
+      <h1 class="panel__title"><span class="truncated">Panel title lorem ipsum dolor sit amet</span></h1>
         <div class="panel__subtitle">Panel subtitle</div>
+      </div>
+      <div class="panel__meta-actions">
+        <button class="panel__button-dismiss" title="Dismiss panel"><span>Dismiss</span></button>
       </div>
     </header>
     <div class="panel__body">
