@@ -75,8 +75,7 @@ blockquote {
     margin-bottom: 0;
   }
   footer {
-    opacity: 0.64;
-    font-weight: $base-font-regular;
+    color: rgba($base-font-color, 0.64);
     margin-top: -0.5rem;
     &:before {
       content: '— ';
