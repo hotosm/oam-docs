@@ -31,7 +31,7 @@
       @extend .row--centered;
     }
 
-    &:before {
+    &::before {
       position: absolute;
       z-index: 1;
       top: 0;
@@ -42,7 +42,7 @@
       background: linear-gradient(rgba(#fff, 0.64), rgba(#fff, 0.80), rgba(#fff, 0.92));
     }
 
-    &:after {
+    &::after {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -85,7 +85,7 @@
   &__subtitle {
     text-transform: uppercase;
     font-weight: $base-font-regular;
-    color: rgba($base-font-color, 0.64);
+    color: rgba($base-font-color, 0.48);
     font-size: 0.875rem;
     line-height: 1.25;
     margin: 0;
@@ -131,17 +131,20 @@
   background-color: $base-color;
   color: #fff;
 
-  &:after {
+  &::after {
     background: rgba(#fff, 0.12);
   }
 
   &.page__header--hero {
-    &:before {
+    &::before {
       background: linear-gradient(rgba($base-color, 0.64), rgba($base-color, 0.80), rgba($base-color, 0.92));
     }
   }
 
-  .page__subtitle,
+  .page__subtitle {
+    color: rgba(#fff, 0.48);
+  }
+  
   .page__introduction {
     color: rgba(#fff, 0.64);
   }
