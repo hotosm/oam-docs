@@ -21,9 +21,9 @@
   cursor: pointer;
 
   /* States */
-  &, &:hover {
-    opacity: 1;
-  }
+  // &, &:hover {
+  //   opacity: 1;
+  // }
 
   .drop--open > &,
   &.button--active,
@@ -68,15 +68,9 @@
 /* Button color modifiers
    ========================================================================== */
 
-/* Base Light */
+/* Base */
 
-.button--base-light {
-  @include button-variation("filled", "light", #fff);
-}
-
-/* Base Dark */
-
-.button--base-dark {
+.button--base {
   @include button-variation("filled", "dark", tint($base-color, 32%));
 }
 
@@ -84,6 +78,18 @@
 
 .button--base-unbounded {
   @include button-variation("unbounded", null, $base-font-color);
+}
+
+/* Achromic */
+
+.button--achromic {
+  @include button-variation("filled", "light", #fff);
+}
+
+/* Achromic Unbounded */
+
+.button--achromic-unbounded {
+  @include button-variation("unbounded", null, #fff);
 }
 
 /* Primary */

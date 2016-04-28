@@ -90,6 +90,7 @@
    ========================================================================== */
 
 @mixin button-variation($style, $brightness, $color) {
+  $shadow-color: rgba($base-color, 0.16);
   @if $style == "filled" {
     @if $brightness == "light" {
       $text-color: $base-font-color;
@@ -107,11 +108,11 @@
       @error "Invalid brightness property for button variation.";
     }
 
-    box-shadow: inset 0 -3px 0 0 $base-alpha-color, inset 0 0 0 1px $base-alpha-color;
+    box-shadow: inset 0 -3px 0 0 $shadow-color, inset 0 0 0 1px $shadow-color;
     .drop--open > &,
     &.button--active,
     &:active {
-      box-shadow: inset 0 3px 0 0 $base-alpha-color, inset 0 0 0 1px $base-alpha-color;
+      box-shadow: inset 0 3px 0 0 $shadow-color, inset 0 0 0 1px $shadow-color;
     }
   }
   @else if $style == "unbounded" {
