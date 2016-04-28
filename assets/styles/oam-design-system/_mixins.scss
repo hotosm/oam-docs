@@ -96,14 +96,16 @@
       $bg-color: $color;
       $bg-color-hover: shade($color, 4%);
       $bg-color-active: shade($color, 8%);
-      $shadow-color: rgba($base-color, 0.12);
+      $border-shadow-color: rgba($base-color, 0.12);
+      $inner-shadow-color: rgba($base-color, 0.12);
     }
     @else if $brightness == "dark" {
       $text-color: #fff;
       $bg-color: $color;
       $bg-color-hover: shade($color, 8%);
       $bg-color-active: shade($color, 16%);
-      $shadow-color: rgba($base-color, 0.2);
+      $border-shadow-color: rgba($base-color, 0.24);
+      $inner-shadow-color: rgba($base-color, 0.24);
 
       @extend .antialiased;
     }
@@ -111,11 +113,11 @@
       @error "Invalid brightness property for button variation.";
     }
 
-    box-shadow: inset 0 -3px 0 0 $shadow-color, inset 0 0 0 1px $shadow-color;
+    box-shadow: inset 0 -3px 0 0 $inner-shadow-color, inset 0 0 0 1px $border-shadow-color;
     .drop--open > &,
     &.button--active,
     &:active {
-      box-shadow: inset 0 3px 0 0 $shadow-color, inset 0 0 0 1px $shadow-color;
+      box-shadow: inset 0 3px 0 0 $inner-shadow-color, inset 0 0 0 1px $border-shadow-color;
     }
   }
   @else if $style == "unbounded" {
