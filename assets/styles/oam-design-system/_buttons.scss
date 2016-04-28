@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .button {
-  @extend .antialiased;
   @include user-select(none);
   display: inline-block;
   text-align: center;
@@ -21,10 +20,6 @@
   cursor: pointer;
 
   /* States */
-  // &, &:hover {
-  //   opacity: 1;
-  // }
-
   .drop--open > &,
   &.button--active,
   &:active {
@@ -34,7 +29,7 @@
   }
 
   &:focus {
-    outline: none; // Usability problems. Needs fixing.
+    outline: none; // This causes usability problems. Needs fixing.
   }
 
   /* Icon handling */

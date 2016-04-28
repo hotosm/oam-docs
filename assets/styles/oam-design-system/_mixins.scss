@@ -90,19 +90,22 @@
    ========================================================================== */
 
 @mixin button-variation($style, $brightness, $color) {
-  $shadow-color: rgba($base-color, 0.16);
   @if $style == "filled" {
     @if $brightness == "light" {
       $text-color: $base-font-color;
       $bg-color: $color;
       $bg-color-hover: shade($color, 4%);
       $bg-color-active: shade($color, 8%);
+      $shadow-color: rgba($base-color, 0.12);
     }
     @else if $brightness == "dark" {
       $text-color: #fff;
       $bg-color: $color;
       $bg-color-hover: shade($color, 8%);
       $bg-color-active: shade($color, 16%);
+      $shadow-color: rgba($base-color, 0.2);
+
+      @extend .antialiased;
     }
     @else {
       @error "Invalid brightness property for button variation.";
