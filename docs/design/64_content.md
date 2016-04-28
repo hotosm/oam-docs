@@ -359,7 +359,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
   <div class="docs-example__inset">
 {% highlight html %}
-<table class="table">
+<table class="table table--zebra">
   <thead>
     <tr>
       <th>#</th>
