@@ -47,8 +47,16 @@ $base-border-radius: 0.25rem;
 $full-border-radius: 60rem;
 
 
-/* Spacing and media queries
+/* Sizing, spacing and media queries
    ========================================================================== */
+
+/* Sizing */
+
+$site-header-y: 0 !default;
+
+/* Spacing */
+
+$global-spacing: 1rem;
 
 /* Rows */
 
@@ -66,6 +74,4 @@ $xlarge-range: (1200px);
 
 $screen: "only screen";
 
-/* Spacing */
 
-$global-spacing: 1rem;

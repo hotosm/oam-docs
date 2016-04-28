@@ -7,11 +7,19 @@
     position: relative;
     text-align: center;
     color: inherit;
-    padding: ($global-spacing * 2) 0;
+    padding: {
+      top: ($global-spacing * 2) + $site-header-y;
+      right: 0;
+      bottom: ($global-spacing * 2);
+      left: 0;
+    }
+    background-color: #fff;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     transform: translateZ(0);
+    margin-top: - $site-header-y;
+    margin-bottom: ($global-spacing * 2);
 
     > * {
       position: relative;
@@ -23,38 +31,42 @@
       @extend .row--centered;
     }
 
-    .theme-hero & {
-      @extend .antialiased;
-      background-color: $base-color;
-      color: #fff;
-      margin-bottom: ($global-spacing * 2);
-      
-      &:before {
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: "";
-        background: transparent;
-      }
+    &:before {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      background: linear-gradient(rgba(#fff, 0.64), rgba(#fff, 0.80), rgba(#fff, 0.92));
+    }
 
-      @include media(medium-up) {
-        margin-bottom: ($global-spacing * 3);
-      }
-
-      @include media(large-up) {
-        margin-bottom: ($global-spacing * 4);
-      }
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      height: 1px;
+      width: 100%;
+      content: "";
+      background: $base-alpha-color;
     }
 
     @include media(medium-up) {
-      padding: ($global-spacing * 3) 0;
+      padding: {
+        top: ($global-spacing * 3) + $site-header-y;
+        bottom: ($global-spacing * 3);
+      }
+      margin-bottom: ($global-spacing * 3);
     }
 
     @include media(large-up) {
-      padding: ($global-spacing * 4) 0;
+      padding: {
+        top: ($global-spacing * 4) + $site-header-y;
+        bottom: ($global-spacing * 4);
+      }
+      margin-bottom: ($global-spacing * 4);
     }
 
   }
@@ -73,10 +85,15 @@
   &__subtitle {
     text-transform: uppercase;
     font-weight: $base-font-regular;
-    color: rgba(#fff, 0.48);
+    color: rgba($base-font-color, 0.64);
     font-size: 0.875rem;
     line-height: 1.25;
     margin: 0;
+
+    @include media(medium-up) {
+      position: absolute;
+      transform: translate(0, -100%);
+    }
   }
 
   &__introduction {
@@ -85,10 +102,6 @@
     line-height: 2rem;
     > *:last-child {
       margin-bottom: 0;
-    }
-
-    .theme-hero & {
-      color: rgba(#fff, 0.64);
     }
 
     @include media(medium-up) {
@@ -106,5 +119,30 @@
     @include media(medium-up) {
       margin-bottom: 3rem;
     }
+  }
+}
+
+
+/* Page header modifiers
+   ========================================================================== */
+
+.page__header--dark {
+  @extend .antialiased;
+  background-color: $base-color;
+  color: #fff;
+
+  &:after {
+    background: rgba(#fff, 0.12);
+  }
+
+  &.page__header--hero {
+    &:before {
+      background: linear-gradient(rgba($base-color, 0.64), rgba($base-color, 0.80), rgba($base-color, 0.92));
+    }
+  }
+
+  .page__subtitle,
+  .page__introduction {
+    color: rgba(#fff, 0.64);
   }
 }
