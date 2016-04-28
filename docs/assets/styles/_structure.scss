@@ -215,7 +215,7 @@
   font-weight: $base-font-bold;
 
   > li {
-    margin: 0 (- $global-spacing / 2) ($global-spacing / 2);
+    margin: 0 0 ($global-spacing / 2) 0;
     &:last-child {
       margin-bottom: 0;
     }
