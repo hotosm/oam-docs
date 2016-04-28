@@ -372,7 +372,25 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 
   <div class="docs-example__inset">
 {% highlight html %}
+<div class="alert alert--success" role="alert">
+  <button class="alert__button-dismiss" title="Dismiss alert"><span>Dismiss</span></button>
+  <p><strong>Success:</strong> This is a success alert message.</p>
+</div>
 
+<div class="alert alert--info" role="alert">
+  <button class="alert__button-dismiss" title="Dismiss alert"><span>Dismiss</span></button>
+  <p><strong>Info:</strong> This is an info alert message.</p>
+</div>
+
+<div class="alert alert--warning" role="alert">
+  <button class="alert__button-dismiss" title="Dismiss alert"><span>Dismiss</span></button>
+  <p><strong>Warning:</strong> This is a warning alert message.</p>
+</div>
+
+<div class="alert alert--danger" role="alert">
+  <button class="alert__button-dismiss" title="Dismiss alert"><span>Dismiss</span></button>
+  <p><strong>Danger:</strong> This is a danger alert message.</p>
+</div>
 {% endhighlight %}         
   </div>
 </div>
@@ -387,7 +405,10 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 
   <div class="docs-example__inset">
 {% highlight html %}
-
+<div class="alert alert--popover alert--danger" role="alert">
+  <button class="alert__button-dismiss" title="Dismiss alert"><span>Dismiss</span></button>
+  <p><strong>Danger:</strong> This is a danger alert message. Popover style!</p>
+</div>
 {% endhighlight %}         
   </div>
 </div>
