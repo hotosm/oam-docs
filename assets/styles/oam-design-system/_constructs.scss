@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Layout constructs
+   Constructs
    ========================================================================== */
 
 /* Objects
@@ -26,6 +26,10 @@
 
   .flag-construct--align-bottom & {
     vertical-align: bottom;
+  }
+
+  .flag-construct--align-middle & {
+    vertical-align: middle;
   }
 
 }
