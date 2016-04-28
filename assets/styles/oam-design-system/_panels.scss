@@ -3,11 +3,11 @@
    ========================================================================== */
 
 .panel {
+  @extend %base-inset-skin;
   position: absolute;
   z-index: 200;
   top: 0;
   left: 0;
-  @extend %base-inset-skin;
   font-size: 1rem;
   line-height: 1.5;
   &__header,
@@ -62,12 +62,13 @@
 .panel__meta-actions {
   text-align: right;
   padding-left: 0.5rem;
-}
 
-.panel__button-dismiss {
-  @extend .button, .button--base-unbounded, .button--small, .button--text-hidden;
-  &:before {
-    @extend %oam-ds-icon-sm-xmark;
+  [class*="button"],
+  [class*="drop__toggle"] {
+    opacity: 0.48;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -97,4 +98,15 @@
   text-align: center;
   padding: ($global-spacing * 8) ($global-spacing * 2);
   color: rgba($base-font-color, 0.64);
+}
+
+
+/* Panel buttons
+   ========================================================================== */
+
+.panel__button-dismiss {
+  @extend .button, .button--base-unbounded, .button--small, .button--text-hidden;
+  &:before {
+    @extend %oam-ds-icon-sm-xmark;
+  }
 }
