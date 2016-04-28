@@ -1,24 +1,36 @@
+{% if page.title %}
+  {% capture meta_title %}{{ page.title }} — OpenAerialMap Docs{% endcapture %}
+{% else %}
+  {% capture meta_title %}OpenAerialMap Docs{% endcapture %}
+{% endif %}
+
+{% if page.introduction %}
+  {% assign meta_introduction = page.introduction %}
+{% else %}
+  {% assign meta_introduction = "OpenAerialMap Docs" %}
+{% endif %}
+
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="description" content="OpenAerialMap Documentation." />
+<meta name="description" content="{{ meta_introduction }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<title>OpenAerialMap Docs</title>
+<title>{{ meta_title }}</title>
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@hotosm" />
-<meta name="twitter:title" content="OpenAerialMap Docs">
-<meta name="twitter:description" content="OpenAerialMap Documentation." />
-<meta name="twitter:image:src" content="{{ site.baseurl }}/assets/graphics/meta/default-meta-image.png" /
+<meta name="twitter:title" content="{{ meta_title }}">
+<meta name="twitter:description" content="{{ meta_introduction }}" />
+<meta name="twitter:image:src" content="{{ site.baseurl }}/assets/graphics/meta/default-meta-image.png" />
 <!--/ Twitter --> 
 
 <!-- OG -->
 <meta property="og:site_name" content="OpenAerialMap Docs" />
-<meta property="og:title" content="OpenAerialMap Docs" />
+<meta property="og:title" content="{{ meta_title }}" />
 <meta property="og:url" content="https://github.com/developmentseed/oam-design-system" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="OpenAerialMap Documentation." />
+<meta property="og:description" content="{{ meta_introduction }}" />
 <meta property="og:image" content="{{ site.baseurl }}/assets/graphics/meta/default-meta-image.png" />
 <!--/ OG -->
 
