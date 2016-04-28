@@ -14,8 +14,8 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 ### Colors
 
 <div class="docs-example">
-  <button class="button button--base-light" type="button"><span>Base light</span></button>
-  <button class="button button--base-dark" type="button"><span>Base dark</span></button>
+  <button class="button button--achromic" type="button"><span>Achromic</span></button>
+  <button class="button button--base" type="button"><span>Base</span></button>
   <button class="button button--primary" type="button"><span>Primary</span></button>
   <button class="button button--secondary" type="button"><span>Secondary</span></button>
   <button class="button button--base-unbounded" type="button"><span>Base unbounded</span></button>
@@ -24,8 +24,8 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 
   <div class="docs-example__inset">
 {% highlight html %}
-<button class="button button--base-light" type="button"><span>Base light</span></button>
-<button class="button button--base-dark" type="button"><span>Base dark</span></button>
+<button class="button button--achromic" type="button"><span>Achromic</span></button>
+<button class="button button--base" type="button"><span>Base</span></button>
 <button class="button button--primary" type="button"><span>Primary</span></button>
 <button class="button button--secondary" type="button"><span>Secondary</span></button>
 <button class="button button--base-unbounded" type="button"><span>Base unbounded</span></button>
@@ -38,15 +38,15 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 ### Sizes
 
 <div class="docs-example">
-  <button class="button button--base-light button--small" type="button"><span>Small</span></button>
-  <button class="button button--base-light button--medium" type="button"><span>Medium</span></button>
-  <button class="button button--base-light button--large" type="button"><span>Large</span></button>
+  <button class="button button--achromic button--small" type="button"><span>Small</span></button>
+  <button class="button button--achromic button--medium" type="button"><span>Medium</span></button>
+  <button class="button button--achromic button--large" type="button"><span>Large</span></button>
 
   <div class="docs-example__inset">
 {% highlight html %}
-<button class="button button--base-light button--small" type="button"><span>Small</span></button>
-<button class="button button--base-light button--medium" type="button"><span>Medium</span></button>
-<button class="button button--base-light button--large" type="button"><span>Large</span></button>
+<button class="button button--achromic button--small" type="button"><span>Small</span></button>
+<button class="button button--achromic button--medium" type="button"><span>Medium</span></button>
+<button class="button button--achromic button--large" type="button"><span>Large</span></button>
 {% endhighlight %}                  
   </div>
 </div>
@@ -54,13 +54,13 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 ### States
 
 <div class="docs-example">
-  <button class="button button--base-light button--active" type="button"><span>Active</span></button>
-  <button class="button button--base-light disabled" type="button"><span>Disabled</span></button>
+  <button class="button button--achromic button--active" type="button"><span>Active</span></button>
+  <button class="button button--achromic disabled" type="button"><span>Disabled</span></button>
 
   <div class="docs-example__inset">
 {% highlight html %}
-<button class="button button--base-light button--active" type="button"><span>Active</span></button>
-<button class="button button--base-light disabled" type="button"><span>Disabled</span></button>
+<button class="button button--achromic button--active" type="button"><span>Active</span></button>
+<button class="button button--achromic disabled" type="button"><span>Disabled</span></button>
 {% endhighlight %}                  
   </div>
 </div>
@@ -68,15 +68,15 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 ### Iconified
 
 <div class="docs-example">
-  <button class="button button--base-light button--text-hidden" type="button"><i class="meh oam-ds-icon-clock"></i><span>Hidden text</span></button>
-  <button class="button button--base-light" type="button"><i class="oam-ds-icon-download"></i> <span>Visible text</span></button>
-  <button class="button button--base-light button--example-icon" type="button"><span>Pseudo-element</span></button>
+  <button class="button button--achromic button--text-hidden" type="button"><i class="meh oam-ds-icon-clock"></i><span>Hidden text</span></button>
+  <button class="button button--achromic" type="button"><i class="oam-ds-icon-download"></i> <span>Visible text</span></button>
+  <button class="button button--achromic button--example-icon" type="button"><span>Pseudo-element</span></button>
 
   <div class="docs-example__inset">
 {% highlight html %}
-<button class="button button--base-light button--text-hidden" type="button"><i class="oam-ds-icon-clock"></i><span>Hidden text</span></button>
-<button class="button button--base-light" type="button"><i class="oam-ds-icon-clock"></i> <span>Visible text</span></button>
-<button class="button button--base-light button--icon" type="button"></i><span>Pseudo-element</span></button>
+<button class="button button--achromic button--text-hidden" type="button"><i class="oam-ds-icon-clock"></i><span>Hidden text</span></button>
+<button class="button button--achromic" type="button"><i class="oam-ds-icon-clock"></i> <span>Visible text</span></button>
+<button class="button button--achromic button--icon" type="button"></i><span>Pseudo-element</span></button>
 {% endhighlight %}                  
   </div>
 </div>
@@ -86,53 +86,53 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 <div class="docs-example">
 
   <div class="button-group button-group--horizontal" role="group" aria-label="...">
-    <button class="button button--base-light button--active" type="button"><span>Left</span></button>
-    <button class="button button--base-light" type="button"><span>Middle</span></button>
-    <button class="button button--base-light" type="button"><span>Right</span></button>
+    <button class="button button--achromic button--active" type="button"><span>Left</span></button>
+    <button class="button button--achromic" type="button"><span>Middle</span></button>
+    <button class="button button--achromic" type="button"><span>Right</span></button>
   </div>
 
   <div class="button-group button-group--large button-group--horizontal">
-    <label class="button button--base-light button--active" for="option-1">
+    <label class="button button--achromic button--active" for="option-1">
       <input type="checkbox" id="option-1" checked=""> CB1 (pre-checked)
     </label>
-    <label class="button button--base-light" for="option-2">
+    <label class="button button--achromic" for="option-2">
       <input type="checkbox" id="option-2"> CB2
     </label>
-    <label class="button button--base-light" for="option-3">
+    <label class="button button--achromic" for="option-3">
       <input type="checkbox" id="option-3"> CB3
     </label>
   </div>
 
   <div class="button-group button-group--vertical" role="group" aria-label="...">
-    <button class="button button--base-light" type="button"><span>Top</span></button>
-    <button class="button button--base-light" type="button"><span>Middle</span></button>
-    <button class="button button--base-light" type="button"><span>Bottom</span></button>
+    <button class="button button--achromic" type="button"><span>Top</span></button>
+    <button class="button button--achromic" type="button"><span>Middle</span></button>
+    <button class="button button--achromic" type="button"><span>Bottom</span></button>
   </div>
 
   <div class="docs-example__inset">
 {% highlight html %}
 <div class="button-group button-group--horizontal" role="group" aria-label="...">
-  <button class="button button--base-light button--active" type="button"><span>Left</span></button>
-  <button class="button button--base-light" type="button"><span>Middle</span></button>
-  <button class="button button--base-light" type="button"><span>Right</span></button>
+  <button class="button button--achromic button--active" type="button"><span>Left</span></button>
+  <button class="button button--achromic" type="button"><span>Middle</span></button>
+  <button class="button button--achromic" type="button"><span>Right</span></button>
 </div>
 
 <div class="button-group button-group--large button-group--horizontal">
-  <label class="button button--base-light button--active" for="option-1">
+  <label class="button button--achromic button--active" for="option-1">
     <input type="checkbox" id="option-1" checked=""> CB1 (pre-checked)
   </label>
-  <label class="button button--base-light" for="option-2">
+  <label class="button button--achromic" for="option-2">
     <input type="checkbox" id="option-2"> CB2
   </label>
-  <label class="button button--base-light" for="option-3">
+  <label class="button button--achromic" for="option-3">
     <input type="checkbox" id="option-3"> CB3
   </label>
 </div>
 
 <div class="button-group button-group--vertical" role="group" aria-label="...">
-  <button class="button button--base-light" type="button"><span>Top</span></button>
-  <button class="button button--base-light" type="button"><span>Middle</span></button>
-  <button class="button button--base-light" type="button"><span>Bottom</span></button>
+  <button class="button button--achromic" type="button"><span>Top</span></button>
+  <button class="button button--achromic" type="button"><span>Middle</span></button>
+  <button class="button button--achromic" type="button"><span>Bottom</span></button>
 </div>
 {% endhighlight %}                  
   </div>
@@ -144,7 +144,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 
 <div class="docs-example">
   <div class="drop drop--down drop--align-left drop--open">
-    <button class="button button--base-light drop__toggle" type="button"><span>Toggle</span></button>
+    <button class="button button--achromic drop__toggle" type="button"><span>Toggle</span></button>
     <div class="drop__content">
       <ul class="drop__menu" role="menu">
         <li><a href="#" title="This is Item 1a" class="drop__menu-item">Item 1a</a></li>
@@ -161,7 +161,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
   </div>
 
   <div class="drop drop--down drop--align-left drop--open">
-    <button class="button button--base-light drop__toggle" type="button"><span>Toggle</span></button>
+    <button class="button button--achromic drop__toggle" type="button"><span>Toggle</span></button>
     <div class="drop__content">
       <h6 class="drop__title">This is a title</h6>
       <ul class="drop__menu" role="menu">
@@ -179,7 +179,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
   </div>
 
   <div class="drop drop--down drop--align-left drop--open">
-    <button class="button button--base-light drop__toggle" type="button"><span>Toggle</span></button>
+    <button class="button button--achromic drop__toggle" type="button"><span>Toggle</span></button>
     <div class="drop__content">
       <div class="drop__inset">
         <p>This is a drop inset.</p>
@@ -194,7 +194,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
   <div class="docs-example__inset">
 {% highlight html %}
 <div class="drop drop--down drop--align-left drop--open">
-  <button class="button button--base-light drop__toggle" type="button"><span>Toggle</span></button>
+  <button class="button button--achromic drop__toggle" type="button"><span>Toggle</span></button>
   <div class="drop__content">
     <ul class="drop__menu" role="menu">
       <li><a href="#" title="This is Item 1a" class="drop__menu-item">Item 1a</a></li>
@@ -211,7 +211,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 </div>
 
 <div class="drop drop--down drop--align-left drop--open">
-  <button class="button button--base-light drop__toggle" type="button"><span>Toggle</span></button>
+  <button class="button button--achromic drop__toggle" type="button"><span>Toggle</span></button>
   <div class="drop__content">
     <h6 class="drop__title">This is a title</h6>
     <ul class="drop__menu" role="menu">
@@ -229,7 +229,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 </div>
 
 <div class="drop drop--down drop--align-left drop--open">
-  <button class="button button--base-light drop__toggle" type="button"><span>Toggle</span></button>
+  <button class="button button--achromic drop__toggle" type="button"><span>Toggle</span></button>
   <div class="drop__content">
     <div class="drop__inset">
       <p>This is a drop inset.</p>
@@ -248,7 +248,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 
 <div class="docs-example">
   <div class="drop drop--down drop--align-left drop--open">
-    <button class="button button--base-light drop__toggle drop__toggle--caret" type="button"><span>Toggle</span></button>
+    <button class="button button--achromic drop__toggle drop__toggle--caret" type="button"><span>Toggle</span></button>
     <div class="drop__content">
       <h6 class="drop__title">This is a title</h6>
       <ul class="drop__menu drop__menu--iconified" role="menu">
@@ -262,7 +262,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
   </div>
 
   <div class="drop drop--down drop--align-left drop--open">
-    <button class="button button--base-light drop__toggle drop__toggle--caret" type="button"><span>Toggle</span></button>
+    <button class="button button--achromic drop__toggle drop__toggle--caret" type="button"><span>Toggle</span></button>
     <div class="drop__content">
       <h6 class="drop__title">This is a title</h6>
       <ul class="drop__menu drop__menu--select" role="menu">
@@ -276,7 +276,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
   <div class="docs-example__inset">
 {% highlight html %}
 <div class="drop drop--down drop--align-left drop--open">
-  <button class="button button--base-light drop__toggle drop__toggle--caret" type="button"><span>Toggle</span></button>
+  <button class="button button--achromic drop__toggle drop__toggle--caret" type="button"><span>Toggle</span></button>
   <div class="drop__content">
     <h6 class="drop__title">This is a title</h6>
     <ul class="drop__menu drop__menu--iconified" role="menu">
@@ -290,7 +290,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 </div>
 
 <div class="drop drop--down drop--align-left drop--open">
-  <button class="button button--base-light drop__toggle drop__toggle--caret" type="button"><span>Toggle</span></button>
+  <button class="button button--achromic drop__toggle drop__toggle--caret" type="button"><span>Toggle</span></button>
   <div class="drop__content">
     <h6 class="drop__title">This is a title</h6>
     <ul class="drop__menu drop__menu--select" role="menu">
@@ -345,6 +345,53 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
   </div>
 </div>
 
+## Alerts
+
+### Inline
+
+<div class="docs-example">
+  <div class="alert alert--success" role="alert">
+    <button class="alert__button-dismiss" title="Dismiss alert"><span>Dismiss</span></button>
+    <p><strong>Success:</strong> This is a success alert message.</p>
+  </div>
+
+  <div class="alert alert--info" role="alert">
+    <button class="alert__button-dismiss" title="Dismiss alert"><span>Dismiss</span></button>
+    <p><strong>Info:</strong> This is an info alert message.</p>
+  </div>
+
+  <div class="alert alert--warning" role="alert">
+    <button class="alert__button-dismiss" title="Dismiss alert"><span>Dismiss</span></button>
+    <p><strong>Warning:</strong> This is a warning alert message.</p>
+  </div>
+
+  <div class="alert alert--danger" role="alert">
+    <button class="alert__button-dismiss" title="Dismiss alert"><span>Dismiss</span></button>
+    <p><strong>Danger:</strong> This is a danger alert message.</p>
+  </div>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+
+{% endhighlight %}         
+  </div>
+</div>
+
+### Popover
+
+<div class="docs-example">
+  <div class="alert alert--popover alert--danger" role="alert">
+    <button class="alert__button-dismiss" title="Dismiss alert"><span>Dismiss</span></button>
+    <p><strong>Danger:</strong> This is a danger alert message. Popover style!</p>
+  </div>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+
+{% endhighlight %}         
+  </div>
+</div>
+
 ## Constructs
 
 ### Flag
@@ -358,7 +405,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
       <h3>This is a title</h3>
       <p>Morbi eget mattis ipsum. Donec massa nibh, bibendum at sem eu purus. Nunc in tortor eu tellus ultricies euismod.</p>
       <p>Duis massa mi, pharetra eu nisl non, scelerisque laoreet diam. Fusce in malesuada justo. Aenean vulputate mi a pharetra lorem ipsum tristique.</p>
-      <button class="button button--base-light" type="button"><span>Action</span></button>
+      <button class="button button--achromic" type="button"><span>Action</span></button>
     </div>
   </article>
 
@@ -372,7 +419,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
     <h3>This is a title</h3>
     <p>Morbi eget mattis ipsum. Donec massa nibh, bibendum at sem eu purus. Nunc in tortor eu tellus ultricies euismod.</p>
     <p>Duis massa mi, pharetra eu nisl non, scelerisque laoreet diam. Fusce in malesuada justo. Aenean vulputate mi a pharetra lorem ipsum tristique.</p>
-    <button class="button button--base-light" type="button"><span>Action</span></button>
+    <button class="button button--achromic" type="button"><span>Action</span></button>
   </div>
 </article>
 {% endhighlight %}         
@@ -387,7 +434,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
       <h3>This is a title</h3>
       <p>Morbi eget mattis ipsum. Donec massa nibh, bibendum at sem eu purus. Nunc in tortor eu tellus ultricies euismod.</p>
       <p>Duis massa mi, pharetra eu nisl non, scelerisque laoreet diam. Fusce in malesuada justo. Aenean vulputate mi a pharetra lorem ipsum tristique.</p>
-      <button class="button button--base-light" type="button"><span>Action</span></button>
+      <button class="button button--achromic" type="button"><span>Action</span></button>
     </div>
     <div class="flag-construct__media">
       <img alt="flag-construct image" width="160" height="160" src="https://placebear.com/g/320/320" />
@@ -401,7 +448,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
     <h3>This is a title</h3>
     <p>Morbi eget mattis ipsum. Donec massa nibh, bibendum at sem eu purus. Nunc in tortor eu tellus ultricies euismod.</p>
     <p>Duis massa mi, pharetra eu nisl non, scelerisque laoreet diam. Fusce in malesuada justo. Aenean vulputate mi a pharetra lorem ipsum tristique.</p>
-    <button class="button button--base-light" type="button"><span>Action</span></button>
+    <button class="button button--achromic" type="button"><span>Action</span></button>
   </div>
   <div class="flag-construct__media">
     <img alt="flag-construct image" width="160" height="160" src="https://placebear.com/g/320/320" />

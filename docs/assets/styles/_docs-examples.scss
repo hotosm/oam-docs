@@ -59,7 +59,6 @@
   @extend %oam-ds-icon-download;
 }
 
-
 .docs-example {
   > .button,
   > .button-group {
@@ -79,5 +78,12 @@
 
   .panel {
     position: static;
+  }
+
+  .alert--popover {
+    position: relative;
+    bottom: initial;
+    right: initial;
+    margin-bottom: 1rem;
   }
 }
