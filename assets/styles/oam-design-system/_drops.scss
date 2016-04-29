@@ -25,21 +25,15 @@
 .drop__content {
   @extend %base-overlay-skin;
   position: absolute;
-  left: 0;
   z-index: 1000;
-  float: left;
   width: 12rem;
   margin: 0;
   padding: $global-spacing;
   overflow: hidden;
-
   text-align: left;
   color: $base-font-color;
   font-size: 1rem;
   line-height: 1.5;
-  font-family: $base-font-family;
-  font-weight: $base-font-regular;
-  text-transform: initial;
 
   /* Animation */
 
@@ -53,6 +47,7 @@
     top: 100%;
     margin-top: -$global-spacing;
   }
+
   .drop--up > & {
     bottom: 100%;
     margin-bottom: -$global-spacing;
@@ -60,10 +55,15 @@
 
   /* Aligning modifiers */
 
+  .drop--align-left > & {
+    left: 0;
+  }
+
   .drop--align-center > & {
     left: 50%;
     transform: translate(-50%, 0);
   }
+
   .drop--align-right > & {
     right: 0;
     left: auto;
@@ -75,9 +75,11 @@
     opacity: 1;
     visibility: visible;
   }
+
   .drop--down.drop--open > & {
     margin-top: $global-spacing / 2;
   }
+
   .drop--up.drop--open > & {
     margin-bottom: $global-spacing / 2;
   }
@@ -104,9 +106,8 @@
   margin: (-$global-spacing) (-$global-spacing) $global-spacing (-$global-spacing);
   box-shadow: 0 1px 0 0 $base-alpha-color;
   padding: ($global-spacing / 2) 0;
-  line-height: inherit;
-  font-size: inherit;
   max-width: 16rem;
+  font-weight: $base-font-regular;
 
   &:last-child {
     margin-bottom: (-$global-spacing);

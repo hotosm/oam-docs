@@ -144,15 +144,14 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
   <form id="upload-form" class="form form--horizontal">
     <fieldset class="form__fieldset general">
       <legend class="form__legend">Legend</legend>
-        <div class="form__group">
-          <label class="form__label" for="input-a1">Label</label>
-          <div class="form__control-set">
-            <input type="text" class="form__control" placeholder="Placeholder" name="input-a1" id="input-a1" value="" />
-          </div>
+      <div class="form__group">
+        <label class="form__label" for="input-a1">Label</label>
+        <div class="form__control-set">
+          <input type="text" class="form__control" placeholder="Placeholder" name="input-a1" id="input-a1" value="" />
         </div>
-      </fieldset>
-    </form>
-  </div>
+      </div>
+    </fieldset>
+  </form>
 </div>
 
 ## Drops
