@@ -1,10 +1,10 @@
 {
-  "name": "oam-design-system",
+  "name": "oam-docs",
   "version": "0.1.0",
   "description": "OpenAerialMap Documentation.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/developmentseed/oam-design-system.git"
+    "url": "https://github.com/hotosm/oam-docs.git"
   },
   "author": {
     "name": "Development Seed",
@@ -12,9 +12,9 @@
   },
   "license": "",
   "bugs": {
-    "url": "https://github.com/developmentseed/oam-design-system/issues"
+    "url": "https://github.com/hotosm/oam-docs/issues"
   },
-  "homepage": "https://github.com/developmentseed/oam-design-system",
+  "homepage": "http://docs.openaerialmap.org/",
   "main": "assets/scripts",
   "scripts": {
     "serve": "gulp oam:icons && gulp collecticons && gulp serve",
