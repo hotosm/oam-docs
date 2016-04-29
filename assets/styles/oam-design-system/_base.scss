@@ -62,7 +62,7 @@ a:not([class^="button"]):not([class*=" button"]):hover {
   opacity: 0.64;
 }
 
-a:active {
+a:not([class^="button"]):not([class*=" button"]):active {
   outline: none;
   transform: translate(0, 1px);
 }

@@ -24,25 +24,23 @@
   &.button--active,
   &:active {
     z-index: 2;
-    opacity: 1;
-    transform: translateZ(0);
   }
 
-  &:focus {
+  &, &:focus {
     outline: none; // This causes usability problems. Needs fixing.
   }
 
   /* Icon handling */
-  &:before, &:after,
+  &::before, &::after,
   [class^="oam-ds-icon-"], [class*=" oam-ds-icon-"],
   [class^="collecticons-"], [class*=" collecticons-"] {
     font-size: 1rem;
   }
-  &:before { margin-right: 0.375rem; }
-  &:after { margin-left: 0.375rem; }
+  &::before { margin-right: 0.375rem; }
+  &::after { margin-left: 0.375rem; }
 
-  &:before,
-  &:after,
+  &::before,
+  &::after,
   > * {
     vertical-align: top;
     display: inline-block;
@@ -152,8 +150,8 @@
    ========================================================================== */
 
 .button--text-hidden {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     margin: 0;
   }
   > *:not([class^="oam-ds-icon-"]):not([class*=" oam-ds-icon-"]):not([class^="collecticons-"]):not([class*=" collecticons-"]) {
