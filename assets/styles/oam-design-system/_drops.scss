@@ -8,7 +8,6 @@
 }
 
 .drop__toggle {
-  display: inline-block;
   &--caret {
     &:after {
       @extend %oam-ds-icon-sm-chevron-down;
@@ -28,14 +27,18 @@
   position: absolute;
   left: 0;
   z-index: 1000;
-  min-width: 12rem;
+  float: left;
+  width: 12rem;
   margin: 0;
   padding: $global-spacing;
   overflow: hidden;
+
   text-align: left;
   color: $base-font-color;
   font-size: 1rem;
   line-height: 1.5;
+  font-family: $base-font-family;
+  font-weight: $base-font-regular;
   text-transform: initial;
 
   /* Animation */
@@ -56,9 +59,7 @@
   }
 
   /* Aligning modifiers */
-  .drop--align-left > & {
-    left: 0;
-  }
+
   .drop--align-center > & {
     left: 50%;
     transform: translate(-50%, 0);
@@ -86,102 +87,100 @@
 /* Drop title
    ========================================================================== */
 
-.drop { 
-  .drop__title {
-    @extend .heading-alt;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    margin: 0 0 $global-spacing 0 !important;
-  }
+.drop__title {
+  @extend .heading-alt;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0 0 $global-spacing 0 !important;
 }
 
 
 /* Drop menu
    ========================================================================== */
 
-.drop {
-  .drop__menu {
-    @extend .clearfix;
-    list-style: none;
-    margin: (-$global-spacing) (-$global-spacing) $global-spacing (-$global-spacing);
-    padding: ($global-spacing / 2) 0;
-    box-shadow: 0 1px 0 0 $base-alpha-color;
-    max-width: 16rem;
-    font-weight: $base-font-regular;
+.drop__menu {
+  @extend .clearfix;
+  list-style: none;
+  margin: (-$global-spacing) (-$global-spacing) $global-spacing (-$global-spacing);
+  box-shadow: 0 1px 0 0 $base-alpha-color;
+  padding: ($global-spacing / 2) 0;
+  line-height: inherit;
+  font-size: inherit;
+  max-width: 16rem;
 
-    &:last-child {
-      margin-bottom: (-$global-spacing);
-      box-shadow: none;
-    }
-
-    .drop__menu-item {
-      position: relative;
-      display: block;
-      padding: 0.25rem 1rem;
-      color: inherit;
-      transition: all 0.24s ease 0s;
-      &:hover,
-      &:focus {
-        color: $link-color;
-        background-color: tint($link-color, 92%);
-        opacity: 1;
-      }
-    }
+  &:last-child {
+    margin-bottom: (-$global-spacing);
+    box-shadow: none;
   }
 
-  /* Select modifier */
-
-  .drop__menu--select {
-    .drop__menu-item {
-      padding-right: $global-spacing * 2.5;
-    }
-    .drop__menu-item--active {
-      color: inherit;
-      outline: 0;
-      font-weight: $base-font-bold;
-      &:after {
-        @extend %oam-ds-icon-sm-tick;
-        position: absolute;
-        z-index: 1;
-        top: $global-spacing / 4;
-        right: $global-spacing / 2;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        opacity: 0.32;
-        width: 1.5rem;
-        text-align: center;
-      }
-    }
-  }
-
-  /* Iconified modifier */
-
-  .drop__menu--iconified {
-    .drop__menu-item {
-      padding-left: $global-spacing * 2.75;
-      &:before,
-      > [class^="oam-ds-icon-"],
-      > [class^="collecticons-"] {
-        position: absolute;
-        z-index: 1;
-        top: $global-spacing / 4;
-        left: $global-spacing;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        width: 1.5rem;
-        text-align: center;
-      }
-    }
-  }
-
-  /* Iconified extends */
   .drop__menu-item {
-    &.edit:before { @extend .linearicons-0014-pencil; }
-    &.duplicate:before { @extend .linearicons-0185-copy; }
-    &.delete:before { @extend .linearicons-0129-trash; }
-    &.share:before { @extend .linearicons-0764-exit-up; }
+    position: relative;
+    display: block;
+    padding: 0.25rem 1rem;
+    color: inherit;
+    transition: all 0.24s ease 0s;
+    &:hover,
+    &:focus {
+      color: $link-color;
+      background-color: tint($link-color, 92%);
+      opacity: 1;
+    }
   }
 }
+
+/* Select modifier */
+
+.drop__menu--select {
+  .drop__menu-item {
+    padding-right: $global-spacing * 2.5;
+  }
+  .drop__menu-item--active {
+    color: inherit;
+    outline: 0;
+    font-weight: $base-font-bold;
+    &:after {
+      @extend %oam-ds-icon-sm-tick;
+      position: absolute;
+      z-index: 1;
+      top: $global-spacing / 4;
+      right: $global-spacing / 2;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      opacity: 0.32;
+      width: 1.5rem;
+      text-align: center;
+    }
+  }
+}
+
+/* Iconified modifier */
+
+.drop__menu--iconified {
+  .drop__menu-item {
+    padding-left: $global-spacing * 2.75;
+    &:before,
+    > [class^="oam-ds-icon-"],
+    > [class^="collecticons-"] {
+      position: absolute;
+      z-index: 1;
+      top: $global-spacing / 4;
+      left: $global-spacing;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      width: 1.5rem;
+      text-align: center;
+    }
+  }
+}
+
+/* Iconified extends */
+.drop__menu-item {
+  &.edit:before { @extend .linearicons-0014-pencil; }
+  &.duplicate:before { @extend .linearicons-0185-copy; }
+  &.delete:before { @extend .linearicons-0129-trash; }
+  &.share:before { @extend .linearicons-0764-exit-up; }
+}
+
 
 /* Drop inset
    ========================================================================== */
