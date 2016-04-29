@@ -8,6 +8,7 @@
 }
 
 .drop__toggle {
+  display: inline-block;
   &--caret {
     &:after {
       @extend %oam-ds-icon-sm-chevron-down;
@@ -27,18 +28,14 @@
   position: absolute;
   left: 0;
   z-index: 1000;
-  float: left;
   min-width: 12rem;
   margin: 0;
   padding: $global-spacing;
   overflow: hidden;
-
   text-align: left;
   color: $base-font-color;
   font-size: 1rem;
   line-height: 1.5;
-  font-family: $base-font-family;
-  font-weight: $base-font-regular;
   text-transform: initial;
 
   /* Animation */
@@ -59,7 +56,9 @@
   }
 
   /* Aligning modifiers */
-
+  .drop--align-left > & {
+    left: 0;
+  }
   .drop--align-center > & {
     left: 50%;
     transform: translate(-50%, 0);
@@ -105,11 +104,10 @@
     @extend .clearfix;
     list-style: none;
     margin: (-$global-spacing) (-$global-spacing) $global-spacing (-$global-spacing);
-    box-shadow: 0 1px 0 0 $base-alpha-color;
     padding: ($global-spacing / 2) 0;
-    line-height: inherit;
-    font-size: inherit;
+    box-shadow: 0 1px 0 0 $base-alpha-color;
     max-width: 16rem;
+    font-weight: $base-font-regular;
 
     &:last-child {
       margin-bottom: (-$global-spacing);

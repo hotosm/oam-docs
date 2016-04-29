@@ -71,7 +71,8 @@
       float: left;
     }
     .drop__content {
-      position: static;
+      position: relative;
+      float: left;
       clear: left;
     }
   }
