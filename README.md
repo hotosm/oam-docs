@@ -41,7 +41,7 @@ Add the module path to the `includePaths` of gulp-sass. Should look something li
 .pipe($.sass({
   outputStyle: 'expanded',
   precision: 10,
-  includePaths: require('node-bourbon').with('.', 'node_modules/jeet/scss', require('oam-design-system').scssPath)
+  includePaths: require('node-bourbon').with('.', 'node_modules/jeet/scss', require('oam-design-system/gulp-addons').scssPath)
 }))
 ```
 
@@ -76,7 +76,7 @@ browserSync({
     routes: {
       '/node_modules': './node_modules'
     },
-    middleware: require('oam-design-system').graphicsMiddleware(fs) // <<< This line
+    middleware: require('oam-design-system/gulp-addons').graphicsMiddleware(fs) // <<< This line
   }
 });
 ```
@@ -86,7 +86,7 @@ You also need to ensure that the images are copied over on build.
 This ensures that the graphics are copied over when building the project.
 ```js
 gulp.task('images', function () {
-  return gulp.src(['_site/assets/graphics/**/*', require('oam-design-system').graphicsPath + '/**/*'])
+  return gulp.src(['_site/assets/graphics/**/*', require('oam-design-system/gulp-addons').graphicsPath + '/**/*'])
     .pipe($.cache($.imagemin({
 ```
 
