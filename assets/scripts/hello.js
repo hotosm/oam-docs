@@ -1,3 +1,7 @@
 module.exports = function () {
-  console.log('Hello OAM');
+  console.log('     / \\ ');
+  console.log('   / / \\ \\ ');
+  console.log(' /  /   \\  \\ ');
+  console.log(' `_ / ^ \\ _´ ');
+  console.log('  Hello OAM');
 };

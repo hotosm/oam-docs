@@ -17,7 +17,7 @@ var revReplace = require('gulp-rev-replace');
 var notifier = require('node-notifier');
 var cp = require('child_process');
 var YAML = require('yamljs');
-var OAM = require('./assets/scripts');
+var OAM_ADDONS = require('./gulp-addons');
 
 // /////////////////////////////////////////////////////////////////////////////
 // --------------------------- Variables -------------------------------------//
@@ -65,7 +65,7 @@ gulp.task('serve', ['vendorScripts', 'javascript', 'styles', 'jekyll'], function
       routes: {
         '/node_modules': './node_modules'
       },
-      middleware: OAM.graphicsMiddleware(fs)
+      middleware: OAM_ADDONS.graphicsMiddleware(fs)
     }
   });
 
@@ -287,7 +287,7 @@ gulp.task('html', function () {
 
 // Compress images.
 gulp.task('images', function () {
-  return gulp.src(['_site/assets/graphics/**/*', OAM.graphicsPath + '/**/*'])
+  return gulp.src(['_site/assets/graphics/**/*', OAM_ADDONS.graphicsPath + '/**/*'])
     .pipe($.cache($.imagemin({
       progressive: true,
       interlaced: true,
