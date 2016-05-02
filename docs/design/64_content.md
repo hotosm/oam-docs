@@ -253,36 +253,36 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 ## Tables
 
-### Regular
+### Example
 
 <div class="docs-example">
   <table class="table">
     <thead>
       <tr>
         <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
+        <th>Lorem</th>
+        <th><a class="table__sort table__sort--none" title="Sort column"><span>Ipsum Dolor</span></a></th>
+        <th>Sit Amet</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <td>Aliquam erat</td>
+        <td>Volutpat</td>
+        <td>Praesent</td>
       </tr>
       <tr>
         <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
+        <td>Aenean</td>
+        <td>Finibus</td>
+        <td>Accumsan</td>
       </tr>
       <tr>
         <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
+        <td>Phasellus</td>
+        <td>Consequat</td>
+        <td>Vivamus</td>
       </tr>
     </tbody>
   </table>
@@ -293,29 +293,29 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   <thead>
     <tr>
       <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
+      <th>Lorem</th>
+      <th><a class="table__sort table__sort--none" title="Sort column"><span>Ipsum Dolor</span></a></th>
+      <th>Sit Amet</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>Aliquam erat</td>
+      <td>Volutpat</td>
+      <td>Praesent</td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td>Aenean</td>
+      <td>Finibus</td>
+      <td>Accumsan</td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <td>Phasellus</td>
+      <td>Consequat</td>
+      <td>Vivamus</td>
     </tr>
   </tbody>
 </table>
@@ -330,29 +330,29 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
     <thead>
       <tr>
         <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
+        <th>Lorem</th>
+        <th>Ipsum Dolor</th>
+        <th>Sit Amet</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <td>Aliquam erat</td>
+        <td>Volutpat</td>
+        <td>Praesent</td>
       </tr>
       <tr>
         <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
+        <td>Aenean</td>
+        <td>Finibus</td>
+        <td>Accumsan</td>
       </tr>
       <tr>
         <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
+        <td>Phasellus</td>
+        <td>Consequat</td>
+        <td>Vivamus</td>
       </tr>
     </tbody>
   </table>
@@ -363,29 +363,29 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   <thead>
     <tr>
       <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
+      <th>Lorem</th>
+      <th>Ipsum Dolor</th>
+      <th>Sit Amet</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>Aliquam erat</td>
+      <td>Volutpat</td>
+      <td>Praesent</td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td>Aenean</td>
+      <td>Finibus</td>
+      <td>Accumsan</td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <td>Phasellus</td>
+      <td>Consequat</td>
+      <td>Vivamus</td>
     </tr>
   </tbody>
 </table>
