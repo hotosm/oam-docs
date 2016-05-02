@@ -17,7 +17,7 @@ code, kbd {
 }
 
 kbd {
-  @extrend .antialiased;
+  @extend .antialiased;
   border-radius: $base-border-radius;
   background: rgba($base-color, 0.64);
   color: #fff;
