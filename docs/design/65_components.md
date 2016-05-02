@@ -6,7 +6,7 @@ parent: Design
 permalink: design/components/
 
 title: Components
-introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+introduction: Reusable components, including buttons, drops, alerts and more.
 ---
 
 ## Buttons
@@ -31,7 +31,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 <button class="button button--base-unbounded" type="button"><span>Base unbounded</span></button>
 <button class="button button--primary-unbounded" type="button"><span>Primary unbounded</span></button>
 <button class="button button--secondary-unbounded" type="button"><span>Secondary unbounded</span></button>
-{% endhighlight %}                  
+{% endhighlight %}      
   </div>
 </div>
 
@@ -320,6 +320,44 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
   </div>
 </div>
 
+### React Examples
+
+The `oam-design-system` also provides some [React](https://facebook.github.io/react/) ready-made components that can be used for the interactive pieces.
+
+<div class="docs-example">
+  <div data-hook="react:drops"><!-- React rendered content --></div>
+  <div class="docs-example__inset">
+{% highlight none %}
+import { Dropdown } from 'oam-design-system';
+
+// Minimum properties are:
+// triggerText and triggerClassName
+<Dropdown
+  triggerClassName='button button--achromic'
+  triggerText='Toggle' >
+
+  Content can be anything.
+</Dropdown>
+
+// Example with all properties
+// Elements availale: a / button (default)
+// Directions available: up / down (default)
+// Aligments available: left / center (default) / right
+<Dropdown
+  className='drop__content--special'
+  triggerElement='a'
+  triggerClassName='button button--achromic drop__toggle--caret'
+  triggerTitle='Show/hide options'
+  triggerText='Toggle'
+  direction='up'
+  aligment='left' >
+
+  Content can be anything.
+</Dropdown>
+{% endhighlight %}
+  </div>
+</div>
+
 ## Panels
 
 <div class="docs-example">
@@ -363,7 +401,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 
 ## Alerts
 
-### Inline
+### Block
 
 <div class="docs-example">
   <div class="alert alert--success" role="alert">

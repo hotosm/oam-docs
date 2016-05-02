@@ -3,15 +3,15 @@
     <div class="site-headline">
       <h1 class="site-title">
         <a href="/" title="Visit homepage">
-          <img src='assets/graphics/layout/oam-logo-h-pos.svg' width='167' height='32' alt='OpenAerialMap logo' class="site-title__logo" />
+          <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-h-pos.svg" width="167" height="32" alt="OpenAerialMap logo" class="site-title__logo" />
           <span class="site-title__text">OpenAerialMap</span>
           <small class="site-title__label">Docs</small>
         </a>
       </h1>        
     </div>
     <nav class="site-prime-nav" role="navigation">
-      <h2 class="toggle-menu"><a href="#global-menu" title="Show menu"><span>Browse</span></a></h2>
-      <div class="menu-wrapper">
+      <h2 class="toggle-menu"><a href="#global-menu" title="Show/hide menu" data-hook="global-menu:trigger"><span>Browse</span></a></h2>
+      <div class="menu-wrapper" data-hook="global-menu:wrapper">
         <ul class="global-menu" id="global-menu">
           {% for p in site.pages %}
             {% unless p.parent %}

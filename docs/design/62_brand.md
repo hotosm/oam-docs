@@ -6,7 +6,15 @@ parent: Design
 permalink: design/brand/
 
 title: Brand
-introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+introduction: Brand assets and guidelines.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu lacus quis velit ultrices venenatis nec pellentesque odio. Sed non elit id odio condimentum scelerisque sed at mauris. Aliquam semper vitae elit scelerisque maximus. Duis et faucibus sapien, vel interdum lacus.
+## Logo
+
+<figure class="docs-example docs-example--logo">
+  <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-h-pos.svg" width="167" height="32" alt="OpenAerialMap logo" />
+</figure>
+
+<figure class="docs-example docs-example--dark docs-example--logo">
+  <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-h-neg.svg" width="167" height="32" alt="OpenAerialMap logo" />
+</figure>

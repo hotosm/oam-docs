@@ -18,6 +18,11 @@
   &--clipped {
     overflow: hidden;
   }
+  &--dark {
+    @extend .antialiased;
+    background: $base-color;
+    color: #fff;
+  }
 }
 
 .docs-example__inset {
@@ -47,6 +52,21 @@
   > *:last-child {
     margin-bottom: 0;
   }
+
+  .docs-example--dark & {
+    background: rgba(#fff, 0.04);
+  }
+}
+
+/* Brand assets */
+
+.docs-example--logo {
+  text-align: center;
+  > img {
+    width: auto;
+    height: 4rem;
+    max-width: 100%;
+  }
 }
 
 /* Misc */
@@ -61,7 +81,8 @@
 
 .docs-example {
   > .button,
-  > .button-group {
+  > .button-group,
+  [data-hook="react:drops"] .button {
     margin: 0 0.5rem 0.5rem 0;
   }
   > .drop {

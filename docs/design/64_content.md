@@ -6,7 +6,7 @@ parent: Design
 permalink: design/content/
 
 title: Content
-introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+introduction: Styles for displaying content with some of the most commonly used HTML elements, including typography, tables, code and more.
 ---
 
 ## Typography
@@ -80,27 +80,16 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 ### Inline text elements
 
 <div class="docs-example">
-  <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-  <p><del>This line of text is meant to be treated as deleted text.</del></p>
-  <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-  <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-  <p><u>This line of text will render as underlined</u></p>
-  <p><small>This line of text is meant to be treated as fine print.</small></p>
-  <p><strong>This line rendered as bold text.</strong></p>
-  <p><em>This line rendered as italicized text.</em></p>
-  <p>You can use the abbr tag to represent an <abbr title="attribute">abbreviation</abbr>.</p>
-
+  <p><mark>Highlight</mark>. <del>Deleted</del>. <s>Innacurate or irrelevant</s>.</p>
+  <p><ins>Added</ins>. <u>Underlined</u>. <small>Small text</small>.</p>
+  <p><strong>Bold</strong>. <em>Italicized</em>.</p>
+  <p>The abbr tag is used to represent an <abbr title="attribute">abbreviation</abbr>.</p>
   <div class="docs-example__inset">
 {% highlight html %}
-<p>You can use the mark tag to <mark>highlight</mark> text.</p>
-<p><del>This line of text is meant to be treated as deleted text.</del></p>
-<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-<p><u>This line of text will render as underlined</u></p>
-<p><small>This line of text is meant to be treated as fine print.</small></p>
-<p><strong>This line rendered as bold text.</strong></p>
-<p><em>This line rendered as italicized text.</em></p>
-<p>You can use the abbr tag to represent an <abbr title="attribute">abbreviation</abbr>.</p>
+<p><mark>Highlight</mark>. <del>Deleted</del>. <s>Innacurate or irrelevant</s>.</p>
+<p><ins>Added</ins>. <u>Underlined</u>. <small>Small text</small>.</p>
+<p><strong>Bold</strong>. <em>Italicized</em>.</p>
+<p>The abbr tag is used to represent an <abbr title="attribute">abbreviation</abbr>.</p>
 {% endhighlight %}                  
   </div>
 </div>
@@ -176,7 +165,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 <div class="docs-example">
   <dl>
     <dt>Description list term</dt>
-    <dd>A description list is perfect for defining terms.</dd>
+    <dd>Description list description.</dd>
     <dt>Euismod lorem ipsum dolor sit amet</dt>
     <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
     <dd>Donec id elit non mi porta gravida at eget metus.</dd>
@@ -191,7 +180,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 {% highlight html %}
 <dl>
   <dt>Description list term</dt>
-  <dd>A description list is perfect for defining terms.</dd>
+  <dd>Description list description.</dd>
   <dt>Euismod lorem ipsum dolor sit amet</dt>
   <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
   <dd>Donec id elit non mi porta gravida at eget metus.</dd>
@@ -210,7 +199,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 <div class="docs-example">
   <dl class="dl-horizontal">
     <dt>Description list term</dt>
-    <dd>A description list is perfect for defining terms.</dd>
+    <dd>Description list description.</dd>
     <dt>Euismod lorem ipsum dolor sit amet</dt>
     <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
     <dd>Donec id elit non mi porta gravida at eget metus.</dd>
@@ -225,7 +214,7 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 {% highlight html %}
 <dl class="dl-horizontal">
   <dt>Description list term</dt>
-  <dd>A description list is perfect for defining terms.</dd>
+  <dd>Description list description.</dd>
   <dt>Euismod lorem ipsum dolor sit amet</dt>
   <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
   <dd>Donec id elit non mi porta gravida at eget metus.</dd>
@@ -253,36 +242,36 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 ## Tables
 
-### Regular
+### Example
 
 <div class="docs-example">
   <table class="table">
     <thead>
       <tr>
         <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
+        <th>Lorem</th>
+        <th><a class="table__sort table__sort--none" title="Sort column"><span>Ipsum Dolor</span></a></th>
+        <th>Sit Amet</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <td>Aliquam erat</td>
+        <td>Volutpat</td>
+        <td>Praesent</td>
       </tr>
       <tr>
         <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
+        <td>Aenean</td>
+        <td>Finibus</td>
+        <td>Accumsan</td>
       </tr>
       <tr>
         <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
+        <td>Phasellus</td>
+        <td>Consequat</td>
+        <td>Vivamus</td>
       </tr>
     </tbody>
   </table>
@@ -293,29 +282,29 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   <thead>
     <tr>
       <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
+      <th>Lorem</th>
+      <th><a class="table__sort table__sort--none" title="Sort column"><span>Ipsum Dolor</span></a></th>
+      <th>Sit Amet</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>Aliquam erat</td>
+      <td>Volutpat</td>
+      <td>Praesent</td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td>Aenean</td>
+      <td>Finibus</td>
+      <td>Accumsan</td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <td>Phasellus</td>
+      <td>Consequat</td>
+      <td>Vivamus</td>
     </tr>
   </tbody>
 </table>
@@ -330,29 +319,29 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
     <thead>
       <tr>
         <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
+        <th>Lorem</th>
+        <th>Ipsum Dolor</th>
+        <th>Sit Amet</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <td>Aliquam erat</td>
+        <td>Volutpat</td>
+        <td>Praesent</td>
       </tr>
       <tr>
         <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
+        <td>Aenean</td>
+        <td>Finibus</td>
+        <td>Accumsan</td>
       </tr>
       <tr>
         <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
+        <td>Phasellus</td>
+        <td>Consequat</td>
+        <td>Vivamus</td>
       </tr>
     </tbody>
   </table>
@@ -363,29 +352,29 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
   <thead>
     <tr>
       <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
+      <th>Lorem</th>
+      <th>Ipsum Dolor</th>
+      <th>Sit Amet</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>Aliquam erat</td>
+      <td>Volutpat</td>
+      <td>Praesent</td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td>Aenean</td>
+      <td>Finibus</td>
+      <td>Accumsan</td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <td>Phasellus</td>
+      <td>Consequat</td>
+      <td>Vivamus</td>
     </tr>
   </tbody>
 </table>
@@ -398,11 +387,11 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 ### Inline
 
 <div class="docs-example">
-  For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+  This contains code rendered inline: <code>&lt;article&gt;</code>.
 
   <div class="docs-example__inset">
 {% highlight html %}
-For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+This contains code rendered inline: <code>&lt;article&gt;</code>.
 {% endhighlight %}                  
   </div>
 </div>
@@ -410,11 +399,11 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 ### Preformatted
 
 <div class="docs-example">
-<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+<pre>&lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;</pre>
 
   <div class="docs-example__inset">
 {% highlight html %}
-<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+<pre>&lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;</pre>
 {% endhighlight %}                  
   </div>
 </div>
@@ -422,13 +411,11 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 ### User input
 
 <div class="docs-example">
-  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-  To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+  This contains instructions: lorem ipsum <kbd>cd</kbd> dolor sit <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 
   <div class="docs-example__inset">
 {% highlight html %}
-To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+This contains instructions: lorem ipsum <kbd>cd</kbd> dolor sit <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 {% endhighlight %}                  
   </div>
 </div>
