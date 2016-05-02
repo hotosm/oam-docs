@@ -2,6 +2,7 @@
 layout: docs_page
 id: Layout
 parent: Design
+published: false
 
 permalink: design/layout/
 
