@@ -6,7 +6,7 @@ parent: Design
 permalink: design/content/
 
 title: Content
-introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+introduction: Styles for displaying content with some of the most commonly used HTML elements, including typography, tables, code and more.
 ---
 
 ## Typography

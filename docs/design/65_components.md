@@ -6,7 +6,7 @@ parent: Design
 permalink: design/components/
 
 title: Components
-introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+introduction: Reusable components, including buttons, drops, alerts and more.
 ---
 
 ## Buttons

@@ -6,7 +6,7 @@ parent: Design
 permalink: design/constructs/
 
 title: Constructs
-introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+introduction: Reusable layout common patterns.
 ---
 
 ## Flag
