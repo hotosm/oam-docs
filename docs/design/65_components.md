@@ -363,7 +363,7 @@ introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa 
 
 ## Alerts
 
-### Inline
+### Block
 
 <div class="docs-example">
   <div class="alert alert--success" role="alert">
