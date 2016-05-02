@@ -73,6 +73,11 @@
 
   &__headline {
     @include col(12/12);
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+    
     @include media(medium-up) {
       @include col(8/12, $offset: 2/12);
     }
