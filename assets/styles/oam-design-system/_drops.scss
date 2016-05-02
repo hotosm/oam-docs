@@ -85,6 +85,89 @@
   }
 }
 
+/*
+  React specific styles to handle animations.
+  The tether library is being used and needs animations for all directions.
+ */
+
+.drop__content--react {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transition: none;
+}
+
+.tether-element-attached-top,
+.tether-element-attached-bottom {
+  .drop__content {
+    transition: opacity .16s ease, transform .16s ease;
+  }
+}
+
+@mixin drop-top-start() {
+  opacity: 0;
+  transform: translate(0, -($global-spacing / 2));
+}
+
+@mixin drop-top-end() {
+  opacity: 1;
+  transform: translate(0, ($global-spacing / 2));
+}
+
+@mixin drop-bottom-start() {
+  opacity: 0;
+  transform: translate(0, ($global-spacing / 2));
+}
+
+@mixin drop-bottom-end() {
+  opacity: 1;
+  transform: translate(0, -($global-spacing / 2));
+}
+
+.tether-element-attached-top {
+  .drop__content {
+    @include drop-top-end();
+  }
+
+  .drop-trans-enter {
+    @include drop-top-start();
+
+    &.drop-trans-enter-active {
+      @include drop-top-end();
+    }
+  }
+
+  .drop-trans-leave {
+    @include drop-top-end();
+
+    &.drop-trans-leave-active {
+      @include drop-top-start();
+    }
+  }
+}
+
+.tether-element-attached-bottom {
+  .drop__content {
+    @include drop-bottom-end();
+  }
+
+  .drop-trans-enter {
+    @include drop-bottom-start();
+
+    &.drop-trans-enter-active {
+      @include drop-bottom-end();
+    }
+  }
+
+  .drop-trans-leave {
+    @include drop-bottom-end();
+
+    &.drop-trans-leave-active {
+      @include drop-bottom-start();
+    }
+  }
+}
+
 
 /* Drop title
    ========================================================================== */

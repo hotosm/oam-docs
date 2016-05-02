@@ -81,7 +81,8 @@
 
 .docs-example {
   > .button,
-  > .button-group {
+  > .button-group,
+  [data-hook="react:drops"] .button {
     margin: 0 0.5rem 0.5rem 0;
   }
   > .drop {
