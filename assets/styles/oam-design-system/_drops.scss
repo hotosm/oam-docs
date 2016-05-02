@@ -257,15 +257,6 @@
   }
 }
 
-/* Iconified extends */
-.drop__menu-item {
-  &.edit:before { @extend .linearicons-0014-pencil; }
-  &.duplicate:before { @extend .linearicons-0185-copy; }
-  &.delete:before { @extend .linearicons-0129-trash; }
-  &.share:before { @extend .linearicons-0764-exit-up; }
-}
-
-
 /* Drop inset
    ========================================================================== */
 

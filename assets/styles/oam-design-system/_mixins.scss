@@ -90,6 +90,13 @@
    ========================================================================== */
 
 @mixin button-variation($style, $brightness, $color) {
+  $text-color: null;
+  $bg-color: null;
+  $bg-color-hover: null;
+  $bg-color-active: null;
+  $border-shadow-color: null;
+  $inner-shadow-color: null;
+
   @if $style == "filled" {
     @if $brightness == "light" {
       $text-color: $base-font-color;

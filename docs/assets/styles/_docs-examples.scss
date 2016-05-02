@@ -19,7 +19,7 @@
     overflow: hidden;
   }
   &--dark {
-    @extend .antialised;
+    @extend .antialiased;
     background: $base-color;
     color: #fff;
   }
