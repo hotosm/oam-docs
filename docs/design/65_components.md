@@ -322,7 +322,7 @@ introduction: Reusable components, including buttons, drops, alerts and more.
 
 ### React Examples
 
-The `oam-design-system` also provides some react ready-made components that can be used for the interactive pieces.
+The `oam-design-system` also provides some [React](https://facebook.github.io/react/) ready-made components that can be used for the interactive pieces.
 
 <div class="docs-example">
   <div data-hook="react:drops"><!-- React rendered content --></div>
