@@ -15,8 +15,8 @@ introduction: Reusable components, including buttons, drops, alerts and more.
 
 <div class="docs-example">
   <button class="button button--achromic" type="button"><span>Achromic</span></button>
-  <button class="button button--base" type="button"><span>Base</span></button>
-  <button class="button button--primary" type="button"><span>Primary</span></button>
+  <button class="button button--base" type="submit"><span>Base</span></button>
+  <a class="button button--primary" role="button"><span>Primary</span></a>
   <button class="button button--secondary" type="button"><span>Secondary</span></button>
   <button class="button button--base-unbounded" type="button"><span>Base unbounded</span></button>
   <button class="button button--primary-unbounded" type="button"><span>Primary unbounded</span></button>
@@ -25,8 +25,8 @@ introduction: Reusable components, including buttons, drops, alerts and more.
   <div class="docs-example__inset">
 {% highlight html %}
 <button class="button button--achromic" type="button"><span>Achromic</span></button>
-<button class="button button--base" type="button"><span>Base</span></button>
-<button class="button button--primary" type="button"><span>Primary</span></button>
+<button class="button button--base" type="submit"><span>Base</span></button>
+<a class="button button--primary" role="button"><span>Primary</span></a>
 <button class="button button--secondary" type="button"><span>Secondary</span></button>
 <button class="button button--base-unbounded" type="button"><span>Base unbounded</span></button>
 <button class="button button--primary-unbounded" type="button"><span>Primary unbounded</span></button>
