@@ -39,14 +39,15 @@
 .site-title {
   margin: 0;
   white-space: nowrap;
-  font-size: 0;
-  line-height: initial;
-  *, & {
+  font-size: 1rem;
+  line-height: 2;
+  * {
     vertical-align: top;
     display: inline-block;
+    word-spacing: -0.26rem;
   }
   a {
-    &, &:visited, &:hover {
+    &, &:visited {
       color: inherit;
     }
   }
