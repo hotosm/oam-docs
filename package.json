@@ -17,8 +17,7 @@
   "homepage": "http://docs.openaerialmap.org/",
   "main": "assets/scripts",
   "scripts": {
-    "serve": "gulp oam:icons && gulp collecticons && gulp serve",
-    "oam-icons": "gulp oam:icons",
+    "serve": "gulp collecticons && gulp serve",
     "build": "NODE_ENV=production gulp",
     "lint": "eslint docs/assets/scripts/ js/ --ext .js",
     "test": "echo \"No tests\" && exit 0"
@@ -72,8 +71,6 @@
     "jeet": "^6.1.2",
     "node-bourbon": "^4.2.3",
     "node-notifier": "^4.5.0",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1",
     "require-globify": "^1.3.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
@@ -81,7 +78,8 @@
     "yamljs": "^0.2.7"
   },
   "dependencies": {
-    "react-tether": "^0.5.1",
-    "react-addons-css-transition-group": "^15.0.2"
+    "oam-design-system": "git+https://github.com/hotosm/oam-design-system.git",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
   }
 }

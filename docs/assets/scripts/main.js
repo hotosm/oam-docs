@@ -1,5 +1,5 @@
 'use strict';
-import OAM from '../../../assets/scripts/index';
+import OAM from 'oam-design-system';
 import renderDrops from './docs-example/drops';
 
 OAM.hello();
