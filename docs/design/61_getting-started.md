@@ -18,14 +18,14 @@ Style guide and UI components library that aims to standardize the look and feel
 
 ## Installation
 
-Install it as an `npm` module: (not available as a module yet)
+Install it as an `npm` module: (not available as an npm module yet)
 {% highlight sh %}
-npm install https://github.com/hotosm/oam-docs
+npm install https://github.com/hotosm/oam-design-system
 {% endhighlight %}
 
 **Note:**
 This design system makes some assumptions which are described below for each of the elements.
-Check the build system of [OAM uploader](https://github.com/hotosm/oam-uploader/blob/master/gulpfile.js) as a base.
+Check the build system of [OAM docs](https://github.com/hotosm/oam-docs/blob/master/gulpfile.js), a project that uses the `oam-design-system`.
 
 ## Overview
 
@@ -37,14 +37,13 @@ Utility libraries and shared components.
 **USAGE**  
 Use as any node module:
 {% highlight js %}
-import { Dropdown, hello } from 'oam-docs';
+import { Dropdown, hello } from 'oam-design-system';
 {% endhighlight %}
 If you want to minimize bundle size you can also include the components directly.  
-Bindings exported from `oam-docs` are also available in `oam-docs/assets/scripts`
+Bindings exported from `oam-design-system` are also available as `oam-design-system/assets/scripts/<name>`
 
 ### Styles
-General styles.
-Requires [Bourbon](https://github.com/lacroixdesign/node-bourbon).
+Requires [Bourbon](https://github.com/lacroixdesign/node-bourbon) and [Jeet](https://github.com/mojotech/jeet).
 
 **INSTALLATION**  
 Add the module path to the `includePaths` of gulp-sass. Should look something like:
@@ -52,7 +51,7 @@ Add the module path to the `includePaths` of gulp-sass. Should look something li
 .pipe($.sass({
   outputStyle: 'expanded',
   precision: 10,
-  includePaths: require('node-bourbon').with('.', 'node_modules/jeet/scss', require('oam-docs/gulp-addons').scssPath)
+  includePaths: require('node-bourbon').with('node_modules/jeet/scss', require('oam-design-system/gulp-addons').scssPath)
 }))
 {% endhighlight %}
 
@@ -66,8 +65,6 @@ Now you can include it in the main scss file:
 
 @import "oam-design-system";
 {% endhighlight %}
-In case you don't need all the elements, they can be individually imported.  
-[link to the file on github - it's easier.]
 
 ### Icons
 The `oam-design-system` includes svg icons that are compiled into a webfont and included in the styles.  
@@ -87,20 +84,20 @@ browserSync({
     routes: {
       '/node_modules': './node_modules'
     },
-    middleware: require('oam-docs/gulp-addons').graphicsMiddleware(fs) // <<< This line
+    middleware: require('oam-design-system/gulp-addons').graphicsMiddleware(fs) // <<< This line
   }
 });
 {% endhighlight %}
-*Basically every time there's a request to a path like `/assets/graphics/**`, browserSync will check in the `oam-docs` folder first. If it doesn't find anything it will look in the normal project's asset folder.*
+*Basically every time there's a request to a path like `/assets/graphics/**`, browserSync will check in the `oam-design-system` folder first. If it doesn't find anything it will look in the normal project's asset folder.*
 
 You also need to ensure that the images are copied over on build.
 This ensures that the graphics are copied over when building the project.
 {% highlight js %}
 gulp.task('images', function () {
-  return gulp.src(['_site/assets/graphics/**/*', require('oam-docs/gulp-addons').graphicsPath + '/**/*'])
+  return gulp.src(['_site/assets/graphics/**/*', require('oam-design-system/gulp-addons').graphicsPath + '/**/*'])
     .pipe($.cache($.imagemin({
 {% endhighlight %}
 
 **USAGE**  
-Just include the images from the list using the path `assets/graphics/[graphic-type]/[graphic-name]`:  
-[link to the file list on github - it's easier.]
+Just include the images using the path `assets/graphics/[graphic-type]/[graphic-name]`.  
+All available images can be found [here](assets/graphics/).

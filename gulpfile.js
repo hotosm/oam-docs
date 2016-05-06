@@ -17,7 +17,7 @@ var revReplace = require('gulp-rev-replace');
 var notifier = require('node-notifier');
 var cp = require('child_process');
 var YAML = require('yamljs');
-var OAM_ADDONS = require('./gulp-addons');
+var OAM_ADDONS = require('oam-design-system/gulp-addons');
 
 // /////////////////////////////////////////////////////////////////////////////
 // --------------------------- Variables -------------------------------------//
@@ -77,10 +77,9 @@ gulp.task('serve', ['vendorScripts', 'javascript', 'styles', 'jekyll'], function
     '!docs/assets/graphics/collecticons/**/*'
   ], ['jekyll', reload]);
 
-  gulp.watch('assets/icons/**', ['oam:icons']);
   gulp.watch('docs/assets/graphics/collecticons/**', ['collecticons']);
 
-  gulp.watch(['docs/assets/styles/**/*.scss', 'assets/styles/**/*.scss'], ['styles']);
+  gulp.watch('docs/assets/styles/**/*.scss', ['styles']);
   gulp.watch('package.json', ['vendorScripts']);
 });
 
@@ -187,32 +186,6 @@ gulp.task('collecticons', function (done) {
 });
 
 // /////////////////////////////////////////////////////////////////////////////
-// ------------------------- OAM icons tasks ---------------------------------//
-// -------------------- (Font generation related) ----------------------------//
-// ---------------------------------------------------------------------------//
-gulp.task('oam:icons', function (done) {
-  var args = [
-    'node_modules/collecticons-processor/bin/collecticons.js',
-    'compile',
-    'assets/icons/',
-    '--font-embed',
-    '--font-dest', 'assets/fonts',
-    '--font-name', 'OAM DS Icons',
-    '--font-types', 'woff',
-    '--style-format', 'sass',
-    '--style-dest', 'assets/styles/oam-design-system',
-    '--style-name', 'oam-ds-icons',
-    '--class-name', 'oam-ds-icon',
-    '--author-name', 'Development Seed',
-    '--author-url', 'https://developmentseed.org/',
-    '--no-preview'
-  ];
-
-  return cp.spawn('node', args, {stdio: 'inherit'})
-    .on('close', done);
-});
-
-// /////////////////////////////////////////////////////////////////////////////
 // -------------------------- Jekyll tasks -----------------------------------//
 // ---------------------------------------------------------------------------//
 gulp.task('jekyll', function (done) {
@@ -266,7 +239,7 @@ gulp.task('styles', function () {
     .pipe($.sass({
       outputStyle: 'expanded',
       precision: 10,
-      includePaths: require('node-bourbon').with('.', 'node_modules/jeet/scss', 'assets/styles')
+      includePaths: require('node-bourbon').with('.', 'node_modules/jeet/scss', OAM_ADDONS.scssPath)
     }))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/assets/styles'))

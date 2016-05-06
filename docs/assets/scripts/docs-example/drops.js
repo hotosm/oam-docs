@@ -1,14 +1,14 @@
 'use strict';
 import React from 'react';
 import { render } from 'react-dom';
-import OAM from '../../../../assets/scripts/index';
+import { Dropdown } from 'oam-design-system';
 
 var renderDrops = function () {
   var container = document.querySelector('[data-hook="react:drops"]');
   if (container === null) return;
 
   var el = React.createElement('div', null,
-    <OAM.Dropdown
+    <Dropdown
       triggerClassName='button button--achromic'
       triggerText='Toggle' >
 
@@ -21,9 +21,9 @@ var renderDrops = function () {
         <li><a href='#' title='This is Item 1a' className='drop__menu-item delete'><i className='oam-ds-icon-trash-bin'></i>Delete</a></li>
       </ul>
 
-    </OAM.Dropdown>,
+    </Dropdown>,
 
-    <OAM.Dropdown
+    <Dropdown
       className='drop__content--special'
       triggerElement='a'
       triggerClassName='button button--achromic drop__toggle--caret'
@@ -44,7 +44,7 @@ var renderDrops = function () {
         <p>This is a drop inset.</p>
       </div>
 
-    </OAM.Dropdown>
+    </Dropdown>
   );
 
   render(el, container);
