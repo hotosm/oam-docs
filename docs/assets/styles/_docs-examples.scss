@@ -23,6 +23,10 @@
     background: $base-color;
     color: #fff;
   }
+
+  img {
+    @extend .image-fluid;
+  }
 }
 
 .docs-example__inset {
@@ -60,7 +64,17 @@
 
 /* Brand assets */
 
-.docs-example--logo {
+.docs-example--logo-v,
+.docs-example--logo-s {
+  text-align: center;
+  > img {
+    width: 16rem;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.docs-example--logo-h {
   text-align: center;
   > img {
     width: auto;
