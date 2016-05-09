@@ -17,6 +17,7 @@ var revReplace = require('gulp-rev-replace');
 var notifier = require('node-notifier');
 var cp = require('child_process');
 var YAML = require('yamljs');
+var SassString = require('node-sass').types.String;
 var OAM_ADDONS = require('oam-design-system/gulp-addons');
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -239,6 +240,13 @@ gulp.task('styles', function () {
     .pipe($.sass({
       outputStyle: 'expanded',
       precision: 10,
+      functions: {
+        'urlencode($url)': function (url) {
+          var v = new SassString();
+          v.setValue(encodeURIComponent(url.getValue()));
+          return v;
+        }
+      },
       includePaths: require('node-bourbon').with('.', 'node_modules/jeet/scss', OAM_ADDONS.scssPath)
     }))
     .pipe($.sourcemaps.write())
