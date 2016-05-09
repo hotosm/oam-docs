@@ -19,7 +19,7 @@
   "scripts": {
     "install": "bundle install --path bundle/cache",
     "serve": "gulp collecticons && gulp serve",
-    "build": "NODE_ENV=production gulp",
+    "build": "DS_ENV=production NODE_ENV=production gulp",
     "lint": "eslint docs/assets/scripts/ --ext .js",
     "test": "echo \"No tests\" && exit 0"
   },

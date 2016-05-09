@@ -17,7 +17,7 @@
         {% if page.url == sp.url %}
           {% assign klass = "aside-menu-item--active" %}
         {% endif %}
-      <li><a href="{{ sp.url }}" title="View section" class="aside-menu-item {{ klass }}">{{ sp.id }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ sp.url }}" title="View section" class="aside-menu-item {{ klass }}">{{ sp.id }}</a></li>
       {% endfor %}
     </ul>
   </nav>

@@ -20,7 +20,7 @@
                 {% assign klass = "global-menu-item--active" %}
               {% endif %}
               <li>
-                <a href="{{ p.url }}" title="Visit page" class="global-menu-item {{ klass }}"><span>{{ p.id }}</span></a>
+                <a href="{{ site.baseurl }}{{ p.url }}" title="Visit page" class="global-menu-item {{ klass }}"><span>{{ p.id }}</span></a>
               </li>
             {% endunless %}
           {% endfor %}
