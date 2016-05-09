@@ -19,7 +19,7 @@
   "scripts": {
     "serve": "gulp collecticons && gulp serve",
     "build": "NODE_ENV=production gulp",
-    "lint": "eslint docs/assets/scripts/ js/ --ext .js",
+    "lint": "eslint docs/assets/scripts/ --ext .js",
     "test": "echo \"No tests\" && exit 0"
   },
   "browserify": {
@@ -78,7 +78,7 @@
     "yamljs": "^0.2.7"
   },
   "dependencies": {
-    "oam-design-system": "git+https://github.com/hotosm/oam-design-system.git",
+    "oam-design-system": "git+https://github.com/hotosm/oam-design-system.git#v0.1.1-alpha",
     "react": "^15.0.1",
     "react-dom": "^15.0.1"
   }
