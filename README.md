@@ -13,7 +13,6 @@ The development environment is the same for both parts and has the following dep
 After these basic requirements are met, run the following commands in the website's folder:
 ```
 $ npm install
-$ bundle install
 ```
 
 ### Getting started
