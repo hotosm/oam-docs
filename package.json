@@ -81,7 +81,7 @@
     "yamljs": "^0.2.7"
   },
   "dependencies": {
-    "oam-design-system": "git+https://github.com/hotosm/oam-design-system.git#v0.1.1-alpha",
+    "oam-design-system": "git+https://github.com/hotosm/oam-design-system.git",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-scrollbar": "^0.4.1"

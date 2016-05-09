@@ -399,6 +399,52 @@ import { Dropdown } from 'oam-design-system';
   </div>
 </div>
 
+### Custom scrollbars
+
+Whenever the content is too big for its container we use a custom scrollbar. This allows for better integration with the OAM style.  
+The scroll behavior is provided by [reactScrollbar](https://github.com/souhe/reactScrollbar), but since it's not part of the `oam-design-system` it needs to be manually installed:
+
+```
+npm install react-scrollbar --save
+```
+
+The following example is specific to panels but with minor tweaks it can be used anywhere.
+<div class="docs-example">
+  <div data-hook="react:panels"><!-- React rendered content --></div>
+  <div class="docs-example__inset">
+{% highlight none %}
+import ScrollArea from 'react-scrollbar';
+
+<section className='panel'>
+  <header className='panel__header'>
+    <div className='panel__headline'>
+    <h1 className='panel__title'>Panel title lorem ipsum dolor sit amet</h1>
+      <div className='panel__subtitle'>Panel subtitle</div>
+    </div>
+    <div className='panel__meta-actions'>
+      <button className='panel__button-dismiss' title='Dismiss panel'><span>Dismiss</span></button>
+    </div>
+  </header>
+    <ScrollArea
+      speed={0.8}
+      className='panel__body'
+      contentClassName='panel__body-inner'
+      smoothScrolling={true}
+      horizontal={false} >
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium numquam officiis aliquid harum similique fugit molestiae sequi, corrupti. Quo accusantium, soluta corporis molestiae, eos suscipit expedita aspernatur rerum ad ea!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium numquam officiis aliquid harum similique fugit molestiae sequi, corrupti. Quo accusantium, soluta corporis molestiae, eos suscipit expedita aspernatur rerum ad ea!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium numquam officiis aliquid harum similique fugit molestiae sequi, corrupti. Quo accusantium, soluta corporis molestiae, eos suscipit expedita aspernatur rerum ad ea!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium numquam officiis aliquid harum similique fugit molestiae sequi, corrupti. Quo accusantium, soluta corporis molestiae, eos suscipit expedita aspernatur rerum ad ea!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium numquam officiis aliquid harum similique fugit molestiae sequi, corrupti. Quo accusantium, soluta corporis molestiae, eos suscipit expedita aspernatur rerum ad ea!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium numquam officiis aliquid harum similique fugit molestiae sequi, corrupti. Quo accusantium, soluta corporis molestiae, eos suscipit expedita aspernatur rerum ad ea!</p>
+    </ScrollArea>
+  <footer className='panel__footer'></footer>
+</section>
+{% endhighlight %}
+  </div>
+</div>
+
 ## Alerts
 
 ### Block
