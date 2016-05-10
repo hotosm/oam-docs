@@ -160,19 +160,13 @@ introduction: Reusable components, including buttons, drops, alerts and more.
       <div class="form__group">
         <label class="form__label">Checkboxes</label>
         <label class="form__option">
-          <input type="checkbox" name="form-checkbox" id="form-checkbox-1" value="Checkbox 1" />
-          <span class="form__option__text">Checkbox 1</span>
-          <span class="form__option__ui"></span>
+          <input type="checkbox" name="form-checkbox" id="form-checkbox-1" value="Checkbox 1" /> Checkbox 1
         </label>
         <label class="form__option">
-          <input type="checkbox" name="form-checkbox" value="form-checkbox-2" />
-          <span class="form__option__text">Checkbox 2</span>
-          <span class="form__option__ui"></span>
+          <input type="checkbox" name="form-checkbox" value="form-checkbox-2" /> Checkbox 2
         </label>
         <label class="form__option">
-          <input type="checkbox" name="form-checkbox" value="form-checkbox-3" />
-          <span class="form__option__text">Checkbox 3</span>
-          <span class="form__option__ui"></span>
+          <input type="checkbox" name="form-checkbox" value="form-checkbox-3" /> Checkbox 3
         </label>
       </div>
     </fieldset>
@@ -198,14 +192,10 @@ introduction: Reusable components, including buttons, drops, alerts and more.
       <div class="form__group">
         <label class="form__label">Radios (inline)</label>
         <label class="form__option form__option--inline">
-          <input type="radio" name="form-radio" id="form-radio-1" value="Radio 1" checked />
-          <span class="form__option__text">Radio 1</span>
-          <span class="form__option__ui"></span>
+          <input type="radio" name="form-radio" id="form-radio-1" value="Radio 1" checked /> Radio 1
         </label>
         <label class="form__option form__option--inline">
-          <input type="radio" name="form-radio" id="form-radio-2" value="Radio 2" />
-          <span class="form__option__text">Radio 2</span>
-          <span class="form__option__ui"></span>
+          <input type="radio" name="form-radio" id="form-radio-2" value="Radio 2" /> Radio 2
         </label>
       </div>
     </fieldset>
@@ -230,19 +220,13 @@ introduction: Reusable components, including buttons, drops, alerts and more.
     <div class="form__group">
       <label class="form__label">Checkboxes</label>
       <label class="form__option">
-        <input type="checkbox" name="form-checkbox" id="form-checkbox-1" value="Checkbox 1" />
-        <span class="form__option__text">Checkbox 1</span>
-        <span class="form__option__ui"></span>
+        <input type="checkbox" name="form-checkbox" id="form-checkbox-1" value="Checkbox 1" /> Checkbox 1
       </label>
       <label class="form__option">
-        <input type="checkbox" name="form-checkbox" value="form-checkbox-2" />
-        <span class="form__option__text">Checkbox 2</span>
-        <span class="form__option__ui"></span>
+        <input type="checkbox" name="form-checkbox" value="form-checkbox-2" /> Checkbox 2
       </label>
       <label class="form__option">
-        <input type="checkbox" name="form-checkbox" value="form-checkbox-3" />
-        <span class="form__option__text">Checkbox 3</span>
-        <span class="form__option__ui"></span>
+        <input type="checkbox" name="form-checkbox" value="form-checkbox-3" /> Checkbox 3
       </label>
     </div>
   </fieldset>
@@ -268,14 +252,10 @@ introduction: Reusable components, including buttons, drops, alerts and more.
     <div class="form__group">
       <label class="form__label">Radios (inline)</label>
       <label class="form__option form__option--inline">
-        <input type="radio" name="form-radio" id="form-radio-1" value="Radio 1" checked />
-        <span class="form__option__text">Radio 1</span>
-        <span class="form__option__ui"></span>
+        <input type="radio" name="form-radio" id="form-radio-1" value="Radio 1" checked /> Radio 1
       </label>
       <label class="form__option form__option--inline">
-        <input type="radio" name="form-radio" id="form-radio-2" value="Radio 2" />
-        <span class="form__option__text">Radio 2</span>
-        <span class="form__option__ui"></span>
+        <input type="radio" name="form-radio" id="form-radio-2" value="Radio 2" /> Radio 2
       </label>
     </div>
   </fieldset>
