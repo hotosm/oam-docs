@@ -1,6 +1,7 @@
 'use strict';
 import OAM from 'oam-design-system';
 import renderDrops from './docs-example/drops';
+import renderPanels from './docs-example/panels';
 
 OAM.hello();
 
@@ -18,3 +19,6 @@ document.querySelector('[data-hook="global-menu:trigger"]').addEventListener('cl
 
 // Dropdowns
 renderDrops();
+
+// Panel with scrollbar.
+renderPanels();
