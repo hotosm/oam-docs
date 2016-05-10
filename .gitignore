@@ -67,6 +67,8 @@ node_modules
 bower_components
 .sass-cache
 test/bower_components
+bundle/cache
+.bundle
 
 
 ################################################

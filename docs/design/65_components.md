@@ -426,7 +426,7 @@ import ScrollArea from 'react-scrollbar';
     </div>
   </header>
     <ScrollArea
-      speed={0.8}
+      speed={1.6}
       className='panel__body'
       contentClassName='panel__body-inner'
       smoothScrolling={true}

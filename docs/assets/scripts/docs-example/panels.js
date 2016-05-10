@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 import { render } from 'react-dom';
-import ScrollArea from 'react-scrollbar';
+import ScrollArea from 'react-scrollbar/dist/no-css';
 
 var renderPanels = function () {
   var container = document.querySelector('[data-hook="react:panels"]');
@@ -21,7 +21,7 @@ var renderPanels = function () {
 
         <ScrollArea
           style={{height: '10rem'}}
-          speed={0.8}
+          speed={1.6}
           className='panel__body'
           contentClassName='panel__body-inner'
           smoothScrolling={true}
