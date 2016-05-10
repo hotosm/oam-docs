@@ -413,7 +413,9 @@ The following example is specific to panels but with minor tweaks it can be used
   <div data-hook="react:panels"><!-- React rendered content --></div>
   <div class="docs-example__inset">
 {% highlight none %}
-import ScrollArea from 'react-scrollbar';
+// We include custom styling to match the OAM style, therefore
+// react-scrollbar needs to be imported without stock styles.
+import ScrollArea from 'react-scrollbar/dist/no-css';
 
 <section className='panel'>
   <header className='panel__header'>
