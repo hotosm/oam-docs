@@ -1,0 +1,26 @@
+---
+layout: hub
+id: Welcome
+
+permalink: /
+
+title: Welcome
+introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+---
+
+<ul class="hub-list">
+{% for p in site.pages %}
+  {% unless p.parent %}
+    {% unless p.id == 'Welcome' %}
+    <li>
+      <article>
+        <a href="{{ baseurl }}/{{ p.url }}">
+          <h1>{{ p.id }}</h1>
+          <p>{{ p.introduction }}</p>
+        </a>
+      </article>
+    </li>
+    {% endunless %}
+  {% endunless %}
+{% endfor %}
+</ul>
