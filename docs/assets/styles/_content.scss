@@ -137,7 +137,7 @@
     margin-bottom: $global-spacing * 2;
 
     @include media(medium-up) {
-      @include col(6/12, $cycle: 2);
+      @include col(4/12, $cycle: 3);
     }
   }
 
