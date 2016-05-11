@@ -1,5 +1,5 @@
 ---
-layout: docs_page
+layout: asided
 id: Layout
 parent: Design
 published: false

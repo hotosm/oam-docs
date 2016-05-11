@@ -1,5 +1,5 @@
 ---
-layout: docs_page
+layout: asided
 id: Components
 parent: Design
 
