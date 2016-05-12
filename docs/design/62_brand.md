@@ -1,9 +1,9 @@
 ---
 layout: asided
 id: Brand
-parent: Design
+parent: Design System
 
-permalink: design/brand/
+permalink: design-system/brand/
 
 title: Brand
 introduction: Brand assets and guidelines.

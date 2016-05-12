@@ -1,9 +1,9 @@
 ---
 layout: asided
 id: Constructs
-parent: Design
+parent: Design System
 
-permalink: design/constructs/
+permalink: design-system/constructs/
 
 title: Constructs
 introduction: Reusable layout common patterns.

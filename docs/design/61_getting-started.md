@@ -1,9 +1,9 @@
 ---
 layout: asided
 id: Getting Started
-parent: Design
+parent: Design System
 
-permalink: design/getting-started/
+permalink: design-system/getting-started/
 
 title: Getting Started
 introduction: An introduction to OAM Design System, including how to download and use it, some basic templates and examples.

@@ -1,10 +1,10 @@
 ---
 layout: asided
-id: Design
+id: Design System
 
-permalink: design/getting-started/
+permalink: design-system/getting-started/
 
-title: Design
+title: Design System
 introduction: An introduction to OAM Design System, including how to download and use it, some basic templates and examples.
 ---
 

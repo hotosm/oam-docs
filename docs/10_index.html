@@ -8,16 +8,15 @@ title: Welcome
 introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
 ---
 
-<ul class="hub-list">
+<ul class="launcher">
 {% for p in site.pages %}
   {% unless p.parent %}
     {% unless p.id == 'Welcome' %}
-    <li>
-      <article>
-        <a href="{{ baseurl }}/{{ p.url }}">
-          <h1>{{ p.id }}</h1>
-          <p>{{ p.introduction }}</p>
-        </a>
+    <li class="launcher__item-wrapper">
+      <article class="launcher__item">
+        <h1 class="launcher__item-title"><a href="{{ site.baseurl }}{{ p.url }}" title="Visit page">{{ p.id }}</a></h1>
+        <p>{{ p.introduction }}</p>
+        <a href="{{ site.baseurl }}{{ p.url }}" title="Visit page" class="launcher__item-button"><span>View</span></a>
       </article>
     </li>
     {% endunless %}

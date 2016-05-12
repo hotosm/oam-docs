@@ -60,7 +60,7 @@
   .toggle-menu {
     position: absolute;
     top: 0.5rem;
-    right: $global-spacing;
+    right: $global-spacing / 4;
     margin: 0;
 
     a {
@@ -79,7 +79,7 @@
     }
 
     @include media(small-up) {
-      right: $global-spacing * 2;
+      right: $global-spacing * 1.5;
     }
 
     @include media(medium-up) {
@@ -199,7 +199,6 @@
   &__header {
     position: relative;
     color: inherit;
-    text-align: center;
     padding: {
       top: ($global-spacing * 2) + $page-header-y;
       right: 0;
@@ -247,6 +246,7 @@
     }
 
     @include media(medium-up) {
+      text-align: center;
       padding: {
         top: ($global-spacing * 3) + $page-header-y;
         bottom: ($global-spacing * 3);

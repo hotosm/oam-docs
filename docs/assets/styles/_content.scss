@@ -124,38 +124,59 @@
 }
 
 
-/* Hub list
+/* Launcher
    ========================================================================== */
 
-.hub-list {
+.launcher {
   list-style: none;
   margin: 0;
   padding: 0;
+}
 
-  li {
-    @include col(12/12);
-    margin-bottom: $global-spacing * 2;
+.launcher__item-wrapper {
+  @include col(12/12);
+  margin-bottom: $global-spacing * 2;
 
-    @include media(medium-up) {
-      @include col(4/12, $cycle: 3);
-    }
+  &:last-child {
+    margin-bottom: 0;
   }
 
-  a {
-    @extend .antialiased;
-    @extend .clearfix;
-    display: block;
-    text-align: center;
-    color: #fff;
-    background: $base-color;
-    color: #fff;
-    padding: ($global-spacing * 1.5);
-    box-shadow: 0 4px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
-    border-radius: $base-border-radius;
+  @include media(small-up) {
+    @include col(6/12, $cycle: 2);
+  }
 
-    > *:last-child {
-      margin-bottom: 0;
-    }
+  @include media(medium-up) {
+    @include col(4/12, $uncycle: 2, $cycle: 3);
+  }
+}
+
+.launcher__item {
+  @extend .clearfix;
+  display: block;
+  background: #fff;
+  padding: ($global-spacing * 1.5);
+  box-shadow: 0 4px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
+  border-radius: $base-border-radius;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.launcher__item-title {
+  @include heading(1.25rem, medium-up); 
+  a, a:visited {
+    display: block;
+    color: inherit;
+  }
+}
+
+
+.launcher__item-button {
+  @extend .button, .button--achromic;
+  min-width: 8rem;
+  &:after {
+    @extend %oam-ds-icon-sm-chevron-right;
   }
 }
 
