@@ -1,5 +1,5 @@
 ---
-layout: docs_page
+layout: simple
 id: Tiler
 
 permalink: tiler/

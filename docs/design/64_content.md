@@ -1,9 +1,9 @@
 ---
-layout: docs_page
+layout: asided
 id: Content
-parent: Design
+parent: Design System
 
-permalink: design/content/
+permalink: design-system/content/
 
 title: Content
 introduction: Styles for displaying content with some of the most commonly used HTML elements, including typography, tables, code and more.

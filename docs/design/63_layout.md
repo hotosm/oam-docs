@@ -1,10 +1,10 @@
 ---
-layout: docs_page
+layout: asided
 id: Layout
-parent: Design
+parent: Design System
 published: false
 
-permalink: design/layout/
+permalink: design-system/layout/
 
 title: Layout
 introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.

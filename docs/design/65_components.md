@@ -1,9 +1,9 @@
 ---
-layout: docs_page
+layout: asided
 id: Components
-parent: Design
+parent: Design System
 
-permalink: design/components/
+permalink: design-system/components/
 
 title: Components
 introduction: Reusable components, including buttons, drops, alerts and more.
