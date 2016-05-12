@@ -2,7 +2,7 @@
 layout: docs_page
 id: Catalog
 
-permalink: catalog/
+permalink: catalog/getting-started/
 
 title: Catalog
 introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
