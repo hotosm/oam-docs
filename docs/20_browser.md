@@ -5,5 +5,5 @@ id: Browser
 permalink: browser/getting-started/
 
 title: Browser
-introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+introduction: The OpenAerialMap Browser aims to provide a simple way to find and access aerial imagery.  
 ---
