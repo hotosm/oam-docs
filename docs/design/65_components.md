@@ -1,9 +1,9 @@
 ---
-layout: docs_page
+layout: asided
 id: Components
-parent: Design
+parent: Design System
 
-permalink: design/components/
+permalink: design-system/components/
 
 title: Components
 introduction: Reusable components, including buttons, drops, alerts and more.
@@ -138,20 +138,295 @@ introduction: Reusable components, including buttons, drops, alerts and more.
   </div>
 </div>
 
-## Forms <small>(Work in progress)</small>
+## Forms
+
+### Examples
 
 <div class="docs-example">
-  <form id="upload-form" class="form form--horizontal">
-    <fieldset class="form__fieldset general">
-      <legend class="form__legend">Legend</legend>
+  <form class="form">
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">Fieldset legend 1</legend>
       <div class="form__group">
-        <label class="form__label" for="input-a1">Label</label>
-        <div class="form__control-set">
-          <input type="text" class="form__control" placeholder="Placeholder" name="input-a1" id="input-a1" value="" />
+        <label class="form__label" for="form-name">Input text</label>
+        <input type="text" class="form__control form__control--medium" id="form-name" name="form-name" placeholder="This is a placeholder" />
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="form-email">Input email</label>
+        <input type="email" class="form__control form__control--medium" id="form-email" name="form-email" placeholder="This is a placeholder" />
+        <div class="form__help">
+          <p>This is some help text.</p>
         </div>
+      </div>
+      <div class="form__group">
+        <label class="form__label">Checkboxes</label>
+        <label class="form__option">
+          <input type="checkbox" name="form-checkbox" id="form-checkbox-1" value="Checkbox 1" /> Checkbox 1
+        </label>
+        <label class="form__option">
+          <input type="checkbox" name="form-checkbox" value="form-checkbox-2" /> Checkbox 2
+        </label>
+        <label class="form__option">
+          <input type="checkbox" name="form-checkbox" value="form-checkbox-3" /> Checkbox 3
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">Fieldset legend 2</legend>
+      <div class="form__group">
+        <label class="form__label" for="form-select-1">Select</label>
+        <select class="form__control form__control--medium" id="form-select-1">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+        </select>
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="form-file-1">File input</label>
+        <input type="file" class="form__control" id="form-file-1" />
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="form-textarea-1">Textarea</label>
+        <textarea class="form__control" id="form-textarea-1" rows="4" placeholder="This is a placeholder"></textarea>
+      </div>
+      <div class="form__group">
+        <label class="form__label">Radios (inline)</label>
+        <label class="form__option form__option--inline">
+          <input type="radio" name="form-radio" id="form-radio-1" value="Radio 1" checked /> Radio 1
+        </label>
+        <label class="form__option form__option--inline">
+          <input type="radio" name="form-radio" id="form-radio-2" value="Radio 2" /> Radio 2
+        </label>
       </div>
     </fieldset>
   </form>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+<form class="form">
+  <fieldset class="form__fieldset">
+    <legend class="form__legend">Fieldset legend 1</legend>
+    <div class="form__group">
+      <label class="form__label" for="form-name">Input text</label>
+      <input type="text" class="form__control form__control--medium" id="form-name" name="form-name" placeholder="This is a placeholder" />
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="form-email">Input email</label>
+      <input type="email" class="form__control form__control--medium" id="form-email" name="form-email" placeholder="This is a placeholder" />
+      <div class="form__help">
+        <p>This is some help text.</p>
+      </div>
+    </div>
+    <div class="form__group">
+      <label class="form__label">Checkboxes</label>
+      <label class="form__option">
+        <input type="checkbox" name="form-checkbox" id="form-checkbox-1" value="Checkbox 1" /> Checkbox 1
+      </label>
+      <label class="form__option">
+        <input type="checkbox" name="form-checkbox" value="form-checkbox-2" /> Checkbox 2
+      </label>
+      <label class="form__option">
+        <input type="checkbox" name="form-checkbox" value="form-checkbox-3" /> Checkbox 3
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="form__fieldset">
+    <legend class="form__legend">Fieldset legend 2</legend>
+    <div class="form__group">
+      <label class="form__label" for="form-select-1">Select</label>
+      <select class="form__control form__control--medium" id="form-select-1">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+      </select>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="form-file-1">File input</label>
+      <input type="file" class="form__control" id="form-file-1" />
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="form-textarea-1">Textarea</label>
+      <textarea class="form__control" id="form-textarea-1" rows="4" placeholder="This is a placeholder"></textarea>
+    </div>
+    <div class="form__group">
+      <label class="form__label">Radios (inline)</label>
+      <label class="form__option form__option--inline">
+        <input type="radio" name="form-radio" id="form-radio-1" value="Radio 1" checked /> Radio 1
+      </label>
+      <label class="form__option form__option--inline">
+        <input type="radio" name="form-radio" id="form-radio-2" value="Radio 2" /> Radio 2
+      </label>
+    </div>
+  </fieldset>
+</form>
+{% endhighlight %}  
+  </div>
+</div>
+
+### Control sizes
+
+<div class="docs-example">
+  <form class="form">
+    <div class="form__group">
+      <label class="form__label" for="form-input-1">Small</label>
+      <input type="text" class="form__control form__control--small" id="form-input-1" placeholder="This is a placeholder" />
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="form-input-2">Medium</label>
+      <input type="text" class="form__control form__control--medium" id="form-input-2" placeholder="This is a placeholder" />
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="form-input-3">Large</label>
+      <input type="text" class="form__control form__control--large" id="form-input-3" placeholder="This is a placeholder" />
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="form-input-4">XLarge</label>
+      <input type="text" class="form__control form__control--xlarge" id="form-input-4" placeholder="This is a placeholder" />
+    </div>
+  </form>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+<form class="form">
+  <div class="form__group">
+    <label class="form__label" for="form-input-1">Small</label>
+    <input type="text" class="form__control form__control--small" id="form-input-1" placeholder="This is a placeholder" />
+  </div>
+  <div class="form__group">
+    <label class="form__label" for="form-input-2">Medium</label>
+    <input type="text" class="form__control form__control--medium" id="form-input-2" placeholder="This is a placeholder" />
+  </div>
+  <div class="form__group">
+    <label class="form__label" for="form-input-3">Large</label>
+    <input type="text" class="form__control form__control--large" id="form-input-3" placeholder="This is a placeholder" />
+  </div>
+  <div class="form__group">
+    <label class="form__label" for="form-input-4">XLarge</label>
+    <input type="text" class="form__control form__control--xlarge" id="form-input-4" placeholder="This is a placeholder" />
+  </div>
+</form>
+{% endhighlight %}               
+  </div>
+</div>
+
+### Custom options (radios and checkboxes)
+
+<div class="docs-example">
+  <form class="form">
+    <div class="form__group">
+      <label class="form__label">Checkboxes</label>
+      <label class="form__option form__option--custom-checkbox">
+        <input type="checkbox" name="form-custom-checkbox" id="form-custom-checkbox-1" value="Checkbox 1" />
+        <span class="form__option__text">Checkbox 1</span>
+        <span class="form__option__ui"></span>
+      </label>
+      <label class="form__option form__option--custom-checkbox">
+        <input type="checkbox" name="form-custom-checkbox" value="form-custom-checkbox-2" />
+        <span class="form__option__text">Checkbox 2</span>
+        <span class="form__option__ui"></span>
+      </label>
+      <label class="form__option form__option--custom-checkbox">
+        <input type="checkbox" name="form-custom-checkbox" value="form-custom-checkbox-3" />
+        <span class="form__option__text">Checkbox 3</span>
+        <span class="form__option__ui"></span>
+      </label>
+    </div>
+    <div class="form__group">
+      <label class="form__label">Radios</label>
+      <label class="form__option form__option--custom-radio">
+        <input type="radio" name="form-custom-radio" id="form-custom-radio-1" value="Radio 1" checked />
+        <span class="form__option__text">Radio 1</span>
+        <span class="form__option__ui"></span>
+      </label>
+      <label class="form__option form__option--custom-radio">
+        <input type="radio" name="form-custom-radio" id="form-custom-radio-2" value="Radio 2" />
+        <span class="form__option__text">Radio 2</span>
+        <span class="form__option__ui"></span>
+      </label>
+    </div>
+  </form>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+<form class="form">
+  <div class="form__group">
+    <label class="form__label">Checkboxes</label>
+    <label class="form__option form__option--custom-checkbox">
+      <input type="checkbox" name="form-custom-checkbox" id="form-custom-checkbox-1" value="Checkbox 1" />
+      <span class="form__option__text">Checkbox 1</span>
+      <span class="form__option__ui"></span>
+    </label>
+    <label class="form__option form__option--custom-checkbox">
+      <input type="checkbox" name="form-custom-checkbox" value="form-custom-checkbox-2" />
+      <span class="form__option__text">Checkbox 2</span>
+      <span class="form__option__ui"></span>
+    </label>
+    <label class="form__option form__option--custom-checkbox">
+      <input type="checkbox" name="form-custom-checkbox" value="form-custom-checkbox-3" />
+      <span class="form__option__text">Checkbox 3</span>
+      <span class="form__option__ui"></span>
+    </label>
+  </div>
+  <div class="form__group">
+    <label class="form__label">Radios</label>
+    <label class="form__option form__option--custom-radio">
+      <input type="radio" name="form-custom-radio" id="form-custom-radio-1" value="Radio 1" checked />
+      <span class="form__option__text">Radio 1</span>
+      <span class="form__option__ui"></span>
+    </label>
+    <label class="form__option form__option--custom-radio">
+      <input type="radio" name="form-custom-radio" id="form-custom-radio-2" value="Radio 2" />
+      <span class="form__option__text">Radio 2</span>
+      <span class="form__option__ui"></span>
+    </label>
+  </div>
+</form>
+{% endhighlight %}               
+  </div>
+</div>
+
+### Input groups
+
+<div class="docs-example">
+  <form class="form">
+    <div class="form__group">
+      <label class="form__label" for="form-input-5">Appended button</label>
+      <div class="form__input-group">
+        <input type="text" class="form__control form__control--medium" id="form-input-5" placeholder="This is a placeholder">
+        <span class="form__input-group-button"><button type="submit" class="button button--achromic button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
+      </div>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="form-input-6">Prepended button</label>
+      <div class="form__input-group">
+        <span class="form__input-group-button"><button type="submit" class="button button--achromic button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
+        <input type="text" class="form__control form__control--medium" id="form-input-6" placeholder="Search location">
+      </div>
+    </div>
+  </form>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+<form class="form">
+  <div class="form__group">
+    <label class="form__label" for="form-input-5">Input group</label>
+    <div class="form__input-group">
+      <input type="text" class="form__control form__control--medium" id="form-input-5" placeholder="This is a placeholder">
+      <span class="form__input-group-button"><button type="submit" class="button button--achromic button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
+    </div>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="form-input-6">Input group</label>
+    <div class="form__input-group">
+      <span class="form__input-group-button"><button type="submit" class="button button--achromic button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
+      <input type="text" class="form__control form__control--medium" id="form-input-6" placeholder="Search location">
+    </div>
+  </div>
+</form>
+{% endhighlight %}               
+  </div>
 </div>
 
 ## Drops

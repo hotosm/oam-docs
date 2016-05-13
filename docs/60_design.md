@@ -1,12 +1,11 @@
 ---
-layout: docs_page
-id: Design
+layout: asided
+id: Design System
 
-permalink: design/getting-started/
+permalink: design-system/getting-started/
 
-title: Design
-introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+title: Design System
+introduction: An introduction to OAM Design System, including how to download and use it, some basic templates and examples.
 ---
-
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu lacus quis velit ultrices venenatis nec pellentesque odio. Sed non elit id odio condimentum scelerisque sed at mauris. Aliquam semper vitae elit scelerisque maximus. Duis et faucibus sapien, vel interdum lacus.

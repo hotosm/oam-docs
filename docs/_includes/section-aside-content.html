@@ -5,12 +5,12 @@
 {% endif %}
 
 {% assign subPages = site.pages | where: 'parent', for %}
-<aside class="page__aside-content">
-  <h1 class="page__aside-title">In this section</h1>
+<aside class="section__aside-content">
+  <h1 class="section__aside-title">In this area</h1>
   {% if subPages == empty %}
   No content
   {% else %}
-  <nav class="page__aside-nav" role="navigation">
+  <nav class="section__aside-nav" role="navigation">
     <ul class="aside-menu">
       {% for sp in subPages %}
         {% assign klass = "" %}

@@ -4,6 +4,8 @@ import renderDrops from './docs-example/drops';
 import renderPanels from './docs-example/panels';
 
 OAM.hello();
+// Output the version of oam-design-system. Useful for dev.
+console.log(' ' + require('oam-design-system/package.json').version);
 
 // Global menu toggle.
 document.querySelector('[data-hook="global-menu:trigger"]').addEventListener('click', function (e) {
