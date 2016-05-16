@@ -2,10 +2,8 @@
 layout: simple
 id: Browser
 
-permalink: browser/
+permalink: browser/getting-started/
 
 title: Browser
-introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+introduction: The OpenAerialMap Browser provides a simple way to find and access aerial imagery.  
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu lacus quis velit ultrices venenatis nec pellentesque odio. Sed non elit id odio condimentum scelerisque sed at mauris. Aliquam semper vitae elit scelerisque maximus. Duis et faucibus sapien, vel interdum lacus.

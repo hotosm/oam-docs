@@ -82,6 +82,12 @@
   }
 }
 
+.section__main-content.prose {
+  img {
+    max-width: 100%;
+  }
+}
+
 /* Misc */
 
 .button--example-icon:before {

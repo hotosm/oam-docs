@@ -1,11 +1,18 @@
 ---
-layout: simple
+layout: asided
 id: Uploader
 
 permalink: uploader/
 
 title: Uploader
-introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
+introduction: The Uploader is the tool and API to publish and share collected aerial imagery into the OAM system.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu lacus quis velit ultrices venenatis nec pellentesque odio. Sed non elit id odio condimentum scelerisque sed at mauris. Aliquam semper vitae elit scelerisque maximus. Duis et faucibus sapien, vel interdum lacus.
+The OAM imagery database is made of the contributions of users, but to ensure the quality and accuracy of the contents the uploaders need to be approved.  
+Users have to [request a token](https://upload.openaerialmap.org/) which then can be used in the upload form to validate their identity.  
+
+The OAM uploader consists of three different tools:
+
+- the upload form
+- the token manager app
+- and the server to glue everything together
