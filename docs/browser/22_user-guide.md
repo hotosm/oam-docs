@@ -24,22 +24,30 @@ OAM can be used within any modern browser (Chrome, Firefox, IE 10+). Older versi
 
 When first visiting the application, initial search can be accomplished by typing the location of an area into the search box or selecting the Browse Latest Imagery button. Browse Latest Imagery will take you to the most recently collected imagery available in the catalog. 
 
-![]({{ site.baseurl }}/assets/graphics/content/browser/landing.png)
+<figure class="align-center">
+  <img src="{{ site.baseurl }}/assets/graphics/content/browser/landing.png" alt="Screenshot" />
+</figure>
 
 ### Filtering searches
 
-Use the filter button in the upper left of the application to filter available imagery by time, resolution, and data type. 
+Use the filter button in the upper left of the application to filter available imagery by time, resolution, and data type.
 
-![]({{ site.baseurl }}/assets/graphics/content/browser/filter-full.png)
+<figure class="align-center">
+  <img src="{{ site.baseurl }}/assets/graphics/content/browser/filter-full.png" alt="Screenshot" />
+</figure>
 
 ### Using imagery in iD or JOSM
 
-When an image has been found and has an available map layer, you can use the dropdown menu to open the map layer up in an OpenStreetMap editor like iD or JOSM. 
+When an image has been found and has an available map layer, you can use the dropdown menu to open the map layer up in an OpenStreetMap editor like iD or JOSM.
 
-![]({{ site.baseurl }}/assets/graphics/content/browser/sidebar-open.png)
+<figure class="align-center">
+  <img src="{{ site.baseurl }}/assets/graphics/content/browser/sidebar-open.png" alt="Screenshot" />
+</figure>
 
 ### Downloading imagery
 
 Use the Download button to download the raw imagery. File size is list in the additional metadata information below the image preview in the sidebar. 
 
-![]({{ site.baseurl }}/assets/graphics/content/browser/sidebar.png)
+<figure class="align-center">
+  <img src="{{ site.baseurl }}/assets/graphics/content/browser/sidebar.png" alt="Screenshot" />
+</figure>

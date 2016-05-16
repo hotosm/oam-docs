@@ -182,9 +182,11 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: rgba($base-font-color, 0.64);
+
   > .inner {
     @extend .row, .row--centered;
   }
+  
   *:last-child {
     margin-bottom: 0;
   }
