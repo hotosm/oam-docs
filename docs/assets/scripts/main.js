@@ -2,6 +2,7 @@
 import OAM from 'oam-design-system';
 import renderDrops from './docs-example/drops';
 import renderPanels from './docs-example/panels';
+import renderModals from './docs-example/modals';
 
 OAM.hello();
 // Output the version of oam-design-system. Useful for dev.
@@ -24,3 +25,6 @@ renderDrops();
 
 // Panel with scrollbar.
 renderPanels();
+
+// Live modals
+renderModals();
