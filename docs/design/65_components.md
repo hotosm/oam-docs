@@ -789,3 +789,62 @@ import ScrollArea from 'react-scrollbar/dist/no-css';
 {% endhighlight %}         
   </div>
 </div>
+
+## Modal
+
+### Static example
+
+<div class="docs-example">
+  <section class="modal">
+    <div class="modal__inner">
+      <header class="modal__header">
+        <div class="modal__headline">
+          <p class="modal__subtitle">Modal subtitle</p>
+          <h1 class="modal__title">Modal title</h1>
+        </div>
+      </header>
+      <div class="modal__body">
+        <p>This is a paragraph.</p>
+      </div>
+      <footer class="modal__footer">
+        <button class="button button--achromic" type="button"><span>Cancel</span></button>
+        <button class="button button--base" type="button"><span>Save</span></button>
+      </footer>
+    </div>
+    <button class="modal__button-dismiss" title="Close"><span>Dismiss</span></button>
+  </section>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+<section class="modal">
+  <div class="modal__inner">
+    <header class="modal__header">
+      <div class="modal__headline">
+        <p class="modal__subtitle">Modal subtitle</p>
+        <h1 class="modal__title">Modal title</h1>
+      </div>
+    </header>
+    <div class="modal__body">
+      <p>This is a paragraph.</p>
+    </div>
+    <footer class="modal__footer">
+      <button class="button button--achromic" type="button"><span>Cancel</span></button>
+      <button class="button button--base" type="button"><span>Save</span></button>
+    </footer>
+  </div>
+  <button class="modal__button-dismiss" title="Close"><span>Dismiss</span></button>
+</section>
+{% endhighlight %}         
+  </div>
+</div>
+
+### React example
+
+<div class="docs-example">
+  <p>Button goes here.</p>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+{% endhighlight %}         
+  </div>
+</div>

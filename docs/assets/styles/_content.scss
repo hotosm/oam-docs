@@ -122,6 +122,11 @@
     right: initial;
     margin-bottom: 1rem;
   }
+
+  .modal {
+    position: relative;
+    margin: - $global-spacing * 1.5 !important;
+  }
 }
 
 
