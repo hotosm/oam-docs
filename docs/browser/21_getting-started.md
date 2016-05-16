@@ -14,7 +14,9 @@ Imagery from satellites, unmanned aerial vehicles (UAVs) and other aircraft are 
 The OAM Browser aims to provide a simple way to find and access aerial imagery.  
 It features an interactive grid that simplifies the process of finding imagery for a particular location, and a set of filters that allow you to refine the search even further.
 
-![OAM browser]({{ site.baseurl }}/assets/graphics/content/browser/grid.png)
+<figure class="align-center">
+  <img src="{{ site.baseurl }}/assets/graphics/content/browser/grid.png" alt="Screenshot" />
+</figure>
 
 The images can be freely downloaded and used, and some also have a map layer available which can be used with different programs.
 

@@ -11,7 +11,9 @@ introduction: Add imagery to the OAM database with the uploader form
 
 The upload form is the way for users to contribute to the OAM imagery database.
 
-![]({{ site.baseurl }}/assets/graphics/content/uploader/form.png)
+<figure class="align-center">
+  <img src="{{ site.baseurl }}/assets/graphics/content/uploader/form.png" alt="Screenshot" />
+</figure>
 
 ### Token
 Users need a valid token to submit imagery. This helps the OAM team ensure the quality of the submitted materials.  

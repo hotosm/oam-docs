@@ -595,7 +595,7 @@ introduction: Reusable components, including buttons, drops, alerts and more.
   </div>
 </div>
 
-### React Examples
+### React examples
 
 The `oam-design-system` also provides some [React](https://facebook.github.io/react/) ready-made components that can be used for the interactive pieces.
 
@@ -789,3 +789,94 @@ import ScrollArea from 'react-scrollbar/dist/no-css';
 {% endhighlight %}         
   </div>
 </div>
+
+## Modal
+
+### Static example
+
+<div class="docs-example">
+  <section class="modal">
+    <div class="modal__inner">
+      <header class="modal__header">
+        <div class="modal__headline">
+          <p class="modal__subtitle">Modal subtitle</p>
+          <h1 class="modal__title">Modal title</h1>
+        </div>
+      </header>
+      <div class="modal__body">
+        <p>This is a paragraph.</p>
+      </div>
+      <footer class="modal__footer">
+        <button class="button button--achromic" type="button"><span>Cancel</span></button>
+        <button class="button button--base" type="button"><span>Save</span></button>
+      </footer>
+    </div>
+    <button class="modal__button-dismiss" title="Close"><span>Dismiss</span></button>
+  </section>
+
+  <div class="docs-example__inset">
+{% highlight html %}
+<section class="modal">
+  <div class="modal__inner">
+    <header class="modal__header">
+      <div class="modal__headline">
+        <p class="modal__subtitle">Modal subtitle</p>
+        <h1 class="modal__title">Modal title</h1>
+      </div>
+    </header>
+    <div class="modal__body">
+      <p>This is a paragraph.</p>
+    </div>
+    <footer class="modal__footer">
+      <button class="button button--achromic" type="button"><span>Cancel</span></button>
+      <button class="button button--base" type="button"><span>Save</span></button>
+    </footer>
+  </div>
+  <button class="modal__button-dismiss" title="Close"><span>Dismiss</span></button>
+</section>
+{% endhighlight %}         
+  </div>
+</div>
+
+### React example
+
+A modal must always have a `ModalHeader` and a `ModalBody`. The `ModalFooter` is entirely optional.  
+
+The visibility of the modal is controlled by the `reveled` property. The modal does not implement any mechanism to toggle its state. It is up to you to handle the click (`onCloseClick`) and properly change the `revealed` property.
+
+<div class="docs-example">
+  <button class="button button--achromic" type="button" title="Open example modal" data-hook="react:modal-trigger"><span>Open Modal</span></button>
+  <div class="docs-example__inset">
+{% highlight none %}
+import OAM from 'oam-design-system';
+var { Modal, ModalHeader, ModalBody, ModalFooter } = OAM.Modal;
+
+  <Modal
+    id='modal-showcase'
+    className='modal--large'
+    onCloseClick={this.closeModal}
+    revealed={this.state.open} >
+
+    <ModalHeader>
+      <div className='modal__headline'>
+        <p className='modal__subtitle'>Excerpt</p>
+        <h1 className='modal__title'>The Last Question</h1>
+      </div>
+    </ModalHeader>
+    <ModalBody>
+      <div className='prose'>
+        <p>All other questions had been answered, and until this last question was answered also, AC might not release his consciousness.</p>
+        <p>All collected data had come to a final end. Nothing was left to be collected. But all collected data had yet to be completely correlated and put together in all possible relationships.</p>
+        <p>A timeless interval was spent in doing that.</p>
+      </div>
+    </ModalBody>
+    <ModalFooter>
+      <cite><a href='http://multivax.com/last_question.html' title='Open The Last Question'>The Last Question</a>, Isaac Asimov 1956</cite>
+    </ModalFooter>
+  </Modal>
+{% endhighlight %}         
+  </div>
+</div>
+
+<!-- React modals need to be separated because of relative positioning -->
+<div data-hook="react:modal"><!-- React rendered content --></div>
