@@ -48,7 +48,7 @@ var ModalShowcase = React.createClass({
     return (
       <Modal
         id='modal-showcase'
-        className='modal--dark modal--large'
+        className='modal--large'
         onCloseClick={this.closeModal}
         revealed={this.state.open} >
 

@@ -853,7 +853,7 @@ var { Modal, ModalHeader, ModalBody, ModalFooter } = OAM.Modal;
 
   <Modal
     id='modal-showcase'
-    className='modal--dark modal--large'
+    className='modal--large'
     onCloseClick={this.closeModal}
     revealed={this.state.open} >
 
