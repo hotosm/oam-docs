@@ -12,10 +12,11 @@ introduction: Responsible for handling the imagery upload and token management
 The API server handles everything related to imagery upload, from user tokens to the actual uploads and processing.
 
 ### Upload
+
 [what happens]
 
 ### Processing
-[wroker - what happens]
+[worker - what happens]
 
 ### Anything else?
 
