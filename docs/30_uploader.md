@@ -15,4 +15,4 @@ The OAM uploader consists of three different tools:
 
 - the upload form
 - the token manager app
-- and the server to glue everything together.
+- and the server to glue everything together
