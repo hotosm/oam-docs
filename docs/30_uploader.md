@@ -5,7 +5,7 @@ id: Uploader
 permalink: uploader/
 
 title: Uploader
-introduction: The uploader allows willing users to contribute to the OAM database
+introduction: The Uploader is the tool and API to publish and share collected aerial imagery into the OAM system.
 ---
 
 The OAM imagery database is made of the contributions of users, but to ensure the quality and accuracy of the contents the uploaders need to be approved.  
