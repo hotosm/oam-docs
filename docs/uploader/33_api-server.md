@@ -13,12 +13,11 @@ The API server handles everything related to imagery upload, from user tokens to
 
 ### Upload
 
-[what happens]
+*To be developed. Good things come to those who wait...*
 
 ### Processing
-[worker - what happens]
 
-### Anything else?
+*To be developed. Good things come to those who wait...*
 
 ### Further documentation
 Check out the full [API documentation](http://hotosm.github.io/oam-uploader-api/) for information on the imagery upload related endpoints.
