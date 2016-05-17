@@ -11,8 +11,7 @@ introduction: An introduction to OAM Design System, including how to download an
 
 Style guide and UI components library that aims to standardize the look and feel across all OAM-related applications, while defining coding best practices and conventions.
 
-**This is still under development. Breaking changes may be introduced at any moment.**  
-**Use at your own risk!**
+**This is still under development. Breaking changes may be introduced at any moment. Use at your own risk!**
 
 ---
 
@@ -34,7 +33,7 @@ The shared assets are all in the `assets` directory. It is organized as follows:
 ### Scripts
 Utility libraries and shared components.
 
-**USAGE**  
+#### Usage
 Use as any node module:
 {% highlight js %}
 import { Dropdown, hello } from 'oam-design-system';
@@ -45,7 +44,7 @@ Bindings exported from `oam-design-system` are also available as `oam-design-sys
 ### Styles
 Requires [Bourbon](https://github.com/lacroixdesign/node-bourbon) and [Jeet](https://github.com/mojotech/jeet).
 
-**INSTALLATION**  
+#### Installation 
 Add the module path to the `includePaths` of gulp-sass. Should look something like:
 {% highlight js %}
 .pipe($.sass({
@@ -55,7 +54,7 @@ Add the module path to the `includePaths` of gulp-sass. Should look something li
 }))
 {% endhighlight %}
 
-**USAGE**  
+#### Usage 
 Now you can include it in the main scss file:
 {% highlight scss %}
 // Bourbon is a dependency
@@ -73,7 +72,7 @@ To use them check the `_oam-ds-icons.scss` for the class names.
 ### Graphics
 Graphics that are to be shared among projects.
 
-**INSTALLATION**  
+#### Installation 
 Add the `graphicsMiddleware` to browserSync. This is only to aid development.  
 Should look something like:
 {% highlight js %}
@@ -98,6 +97,6 @@ gulp.task('images', function () {
     .pipe($.cache($.imagemin({
 {% endhighlight %}
 
-**USAGE**  
+#### Usage
 Just include the images using the path `assets/graphics/[graphic-type]/[graphic-name]`.  
 All available images can be found [here](assets/graphics/).

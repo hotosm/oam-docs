@@ -8,6 +8,9 @@
   box-shadow: 0 4px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
   border-radius: $base-border-radius;
   background: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+
   > *:first-child:not(.docs-example__inset) {
     margin-top: 0;
   }
@@ -179,8 +182,7 @@
 
 
 .launcher__item-button {
-  @extend .button, .button--achromic;
-  min-width: 8rem;
+  @extend .button, .button--base;
   &:after {
     @extend %oam-ds-icon-sm-chevron-right;
   }
