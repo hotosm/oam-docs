@@ -3,7 +3,7 @@ layout: article
 id: Iconography
 parent: Design System
 
-permalink: design-system/oam-icons/
+permalink: design-system/iconography/
 
 title: Iconography
 introduction: Showcase and instructions for the OAM UI icon library.
