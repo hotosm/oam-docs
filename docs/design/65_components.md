@@ -68,7 +68,7 @@ introduction: Reusable components, including buttons, drops, alerts and more.
 ### Iconified
 
 <div class="docs-example">
-  <button class="button button--achromic button--text-hidden" type="button"><i class="meh oam-ds-icon-clock"></i><span>Hidden text</span></button>
+  <button class="button button--achromic button--text-hidden" type="button"><i class="oam-ds-icon-clock"></i><span>Hidden text</span></button>
   <button class="button button--achromic" type="button"><i class="oam-ds-icon-download"></i> <span>Visible text</span></button>
   <button class="button button--achromic button--example-icon" type="button"><span>Pseudo-element</span></button>
 

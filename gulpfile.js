@@ -59,7 +59,7 @@ gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
 
-gulp.task('serve', ['vendorScripts', 'javascript', 'styles', 'jekyll'], function () {
+gulp.task('serve', ['vendorScripts', 'oam-icons:catalog', 'javascript', 'styles', 'jekyll'], function () {
   browserSync({
     port: 3000,
     server: {
@@ -214,7 +214,7 @@ gulp.task('jekyll', function (done) {
 // ----------------------------------------------------------------------------//
 
 gulp.task('build', ['collecticons'], function () {
-  gulp.start(['vendorScripts', 'javascript', 'styles', 'jekyll'], function () {
+  gulp.start(['vendorScripts', 'oam-icons:catalog', 'javascript', 'styles', 'jekyll'], function () {
     gulp.start(['html', 'images'], function () {
       return gulp.src('_site/**/*')
         .pipe($.size({title: 'build', gzip: true}))
@@ -278,4 +278,31 @@ gulp.task('images', function () {
       svgoPlugins: [{cleanupIDs: false}]
     })))
     .pipe(gulp.dest('_site/assets/graphics'));
+});
+
+// Create the icons catalog for the showcase.
+gulp.task('oam-icons:catalog', function (done) {
+  let data = fs.readFileSync(OAM_ADDONS.scssPath + '/oam-design-system/_oam-ds-icons.scss', 'utf8');
+  let regex = new RegExp('%(oam-ds-icon-[a-z0-9-]+) {', 'mg');
+
+  let icons = [];
+  do {
+    let matches = regex.exec(data);
+    if (!matches) break;
+
+    icons.push(matches[1]);
+  } while (true);
+
+  fs.mkdir('docs/_data', (err, res) => {
+    if (err && err.code !== 'EEXIST') {
+      console.log('err', err);
+      if (prodBuild) {
+        process.exit(1);
+      }
+      this.emit('end');
+      return done();
+    }
+    fs.writeFileSync('docs/_data/oam-icons-catalog.json', JSON.stringify(icons));
+    done();
+  });
 });
