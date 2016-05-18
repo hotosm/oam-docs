@@ -1,0 +1,70 @@
+---
+layout: base
+---
+{% if page.parent %}
+  {% assign for=page.parent %}
+{% else %}
+  {% assign for=page.id %}
+{% endif %}
+
+{% assign subPages = site.pages | where: 'parent', for %}
+
+{% if subPages == empty %}
+  {% assign asided = false %}
+{% else %}
+  {% capture asided %}
+    <aside class="section__aside-content">
+      <h1 class="section__aside-title">In this area</h1>
+      <nav class="section__aside-nav" role="navigation">
+        <ul class="aside-menu">
+          {% for sp in subPages %}
+            {% assign klass = "" %}
+            {% if page.url == sp.url %}
+              {% assign klass = "aside-menu-item--active" %}
+            {% endif %}
+          <li><a href="{{ site.baseurl }}{{ sp.url }}" title="View section" class="aside-menu-item {{ klass }}">{{ sp.id }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </aside>
+  {% endcapture %}
+{% endif %}
+
+<main class="page__body" role="main">
+  <div class="inner">
+  {% if asided %}
+    <article class="section section--asided">
+  {% else %}
+    <article class="section section--simple">
+  {% endif %}
+      <header class="section__header">
+        <div class="inner">
+          <div class="section__headline">
+            {% if page.parent %}
+            <p class="section__subtitle">{{ page.parent }}</p>
+            {% endif %}
+            <h1 class="section__title">{{ page.title }}</h1>
+            {% if page.introduction %}
+            <div class="section__introduction">
+              <p>{{ page.introduction }}</p>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </header>
+      <div class="section__body">
+        <div class="inner">
+
+          {% if asided %}
+            {{ asided }}
+          {% endif %}
+
+          <!-- section main content -->
+          <div class="section__main-content prose prose--responsive">{{ content }}</div>
+          <!--/ section main content -->
+
+        </div>
+      </div>
+    </article>
+  </div>
+</main>

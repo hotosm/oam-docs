@@ -1,5 +1,5 @@
 ---
-layout: asided
+layout: article
 id: Layout
 parent: Design System
 published: false

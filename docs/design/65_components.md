@@ -1,5 +1,5 @@
 ---
-layout: asided
+layout: article
 id: Components
 parent: Design System
 

@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: article
 id: Browser
 
 permalink: browser/getting-started/

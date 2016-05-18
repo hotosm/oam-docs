@@ -1,5 +1,5 @@
 ---
-layout: asided
+layout: article
 id: User Guide
 parent: Browser
 

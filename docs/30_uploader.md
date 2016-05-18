@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: article
 id: Uploader
 
 permalink: uploader/getting-started

@@ -1,5 +1,5 @@
 ---
-layout: asided
+layout: article
 id: Brand
 parent: Design System
 

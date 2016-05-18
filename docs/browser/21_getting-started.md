@@ -1,5 +1,5 @@
 ---
-layout: asided
+layout: article
 id: Getting Started
 parent: Browser
 
