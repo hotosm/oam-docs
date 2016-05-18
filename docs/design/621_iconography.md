@@ -9,17 +9,17 @@ title: Iconography
 introduction: Showcase and instructions for the OAM UI icon library.
 ---
 
-The OAM Design System includes a small library of UI icons based off [Collecticons](http://collecticons.io/) to be used on web applications.
+The OAM Design System includes a small library of UI icons based off [Collecticons](http://collecticons.io/) to be used on web applications. This icon font can be easily customized using just CSS: size, color, drop shadow, etc.
 
 ### Showcase
 
-<ul class="showcase-list">
+<ul class="icons-list">
 {% for icon in site.data.oam-icons-catalog %}
   <li>
-    <div data-title="{{ icon }}">
-      <span class="label">{{ icon }}</span>
+    <figure data-title="{{ icon }}">
       <span class="{{ icon }}"></span>
-    </div>
+      <figcaption class="label">{{ icon }}</figcaption>
+    </figure>
   </li>
 {% endfor %}
 </ul>
