@@ -39,6 +39,7 @@
 
 docs/assets/scripts/config/local.js
 docs/assets/styles/_collecticons.scss
+docs/_data/oam-icons-catalog.json
 _config-dev.yml
 
 

@@ -1,12 +1,12 @@
 ---
-layout: asided
+layout: article
 id: Getting Started
 parent: Browser
 
 permalink: browser/getting-started/
 
 title: Getting Started
-introduction: An introduction to the OAM Browser
+introduction: An introduction to the OAM Browser.
 ---
 
 Imagery from satellites, unmanned aerial vehicles (UAVs) and other aircraft are becoming available at ever increasing rates. It is often difficult to determine what is available and easily access it.

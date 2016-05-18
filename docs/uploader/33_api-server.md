@@ -1,12 +1,12 @@
 ---
-layout: asided
-id: Api server
+layout: article
+id: Api Server
 parent: Uploader
 
 permalink: uploader/api-server/
 
-title: Api server
-introduction: Responsible for handling the imagery upload and token management
+title: Api Server
+introduction: Responsible for handling the imagery upload and token management.
 ---
 
 The API server handles everything related to imagery upload, from user tokens to the actual uploads and processing.

@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: article
 id: Tiler
 
 permalink: tiler/

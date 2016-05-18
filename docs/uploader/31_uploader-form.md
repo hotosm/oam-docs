@@ -1,12 +1,12 @@
 ---
-layout: asided
-id: Uploader form
+layout: article
+id: Uploader Form
 parent: Uploader
 
 permalink: uploader/uploader-form/
 
-title: Uploader form
-introduction: Add imagery to the OAM database with the uploader form
+title: Uploader Form
+introduction: Add imagery to the OAM database with the uploader form.
 ---
 
 The upload form is the way for users to contribute to the OAM imagery database.

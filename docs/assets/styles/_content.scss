@@ -5,7 +5,7 @@
   @extend .clearfix;
   margin: 0 0 ($global-spacing * 1.5) 0;
   padding: ($global-spacing * 1.5);
-  box-shadow: 0 4px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
+  box-shadow: 0 3px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
   border-radius: $base-border-radius;
   background: #fff;
   font-size: 1rem;
@@ -218,4 +218,96 @@
   &--active {
     background: rgba($base-color, 0.08);
   }
+}
+
+
+/* Icons list
+   ========================================================================== */
+
+.icons-list {
+  @extend .clearfix;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  word-spacing: -0.26rem;
+
+  li {
+    display: inline-block;
+    word-spacing: normal;
+    margin: 0 ($global-spacing / 4) ($global-spacing / 4) 0;
+  }
+
+  figure {
+    box-shadow: 0 3px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
+    border-radius: $base-border-radius;
+    background: #fff;
+    font-size: 1rem;
+    line-height: 2rem;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: help;
+    margin: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .label {
+      @extend .visually-hidden;
+    }
+
+    * {
+      vertical-align: top;
+      display: inline-block;
+      line-height: inherit;
+    }
+
+  }
+  @include media(small-up) {
+    li {
+      margin: 0 ($global-spacing / 2) ($global-spacing / 2) 0;
+    }
+    figure {
+      font-size: 2rem;
+      line-height: 4rem;
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+}
+
+*[data-title]:hover {
+  position: relative;
+  &:after {
+    @extend .antialiased, .truncated;
+    content: attr(data-title);
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    z-index: 1400;
+    transform: translate(-50%, 0);
+    width: auto;
+    max-width: 12rem;
+    padding: 0 0.5rem;
+    background: rgba($base-color, 0.8);
+    margin-top: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    text-align: center;
+    border-radius: $base-border-radius;
+    font-family: $base-font-family;
+    font-weight: $base-font-regular;
+    font-style: $base-font-style;
+  }
+}
+
+
+/* Flag construct
+   ========================================================================== */
+
+.flag-construct__media > img {
+  max-width: 10rem;
 }

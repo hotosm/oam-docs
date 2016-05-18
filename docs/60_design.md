@@ -1,5 +1,5 @@
 ---
-layout: asided
+layout: article
 id: Design System
 
 permalink: design-system/getting-started/
