@@ -303,3 +303,11 @@
     font-style: $base-font-style;
   }
 }
+
+
+/* Flag construct
+   ========================================================================== */
+
+.flag-construct__media > img {
+  max-width: 10rem;
+}
