@@ -6,7 +6,7 @@ parent: Design System
 permalink: design-system/oam-icons/
 
 title: Iconography
-introduction: Showcase and instructions for the OAM icon library
+introduction: Showcase and instructions for the OAM UI icon library.
 ---
 
 The OAM Design System includes a small library of UI icons based off [Collecticons](http://collecticons.io/) to be used on web applications.

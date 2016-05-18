@@ -6,7 +6,7 @@ parent: Browser
 permalink: browser/user-guide/
 
 title: User Guide
-introduction: A brief user guide to searching and finding imagery
+introduction: A brief user guide to searching and finding imagery.
 ---
 
 ### How to use? 

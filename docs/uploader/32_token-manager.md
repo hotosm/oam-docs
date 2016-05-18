@@ -1,12 +1,12 @@
 ---
 layout: article
-id: Token manager
+id: Token Manager
 parent: Uploader
 
 permalink: uploader/token-manager/
 
-title: Token manager
-introduction: Admin interface to manage tokens to allow imagery upload
+title: Token Manager
+introduction: Admin interface to manage tokens to allow imagery upload.
 ---
 The token is a hexadecimal access code that allows the upload of imagery to the OAM database.
 Administrators can create and manage tokens using the [admin interface](https://admin.openaerialmap.org).
