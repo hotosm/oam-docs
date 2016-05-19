@@ -11,37 +11,66 @@ introduction: Brand assets and guidelines.
 
 ## Logo
 
-### Design grid
-
-<figure class="docs-example">
-  <img src="{{ site.baseurl }}/assets/graphics/content/oam-logo-constructrion-grid.svg" width="1152" height="960" alt="OpenAerialMap logo construction grid" />
+<figure class="exhibit">
+  <div class="exhibit__content">
+    <img src="{{ site.baseurl }}/assets/graphics/content/oam-logo-constructrion-grid.svg" width="1152" height="960" alt="OpenAerialMap logo construction grid" />
+  </div>
+  <figcaption class="exhibit__caption">
+    <strong class="exhibit__captitle">Construction grid</strong>
+  </figcaption>
 </figure>
 
-### Vertical version
-
-<figure class="docs-example docs-example--logo-v">
-  <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-v-pos.svg" width="576" height="464" alt="OpenAerialMap logo" />
-</figure>
-
-<figure class="docs-example docs-example--dark docs-example--logo-v">
-  <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-v-neg.svg" width="576" height="464" alt="OpenAerialMap logo" />
-</figure>
-
-### Horizontal version
-
-<figure class="docs-example docs-example--logo-h">
-  <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-h-pos.svg" width="832" height="160" alt="OpenAerialMap logo" />
-</figure>
-
-<figure class="docs-example docs-example--dark docs-example--logo-h">
-  <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-h-neg.svg" width="832" height="160" alt="OpenAerialMap logo" />
-</figure>
-
-### Symbol
-
-<figure class="docs-example docs-example--logo-s">
-  <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-symbol.svg" width="640" height="640" alt="OpenAerialMap symbol" />
-</figure>
+<ul class="logo-list">
+  <li>
+    <figure class="exhibit">
+      <div class="exhibit__content">
+        <span class="logotype logotype--v-pos">
+          <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-v-pos.svg" width="576" height="464" alt="OpenAerialMap logo" />
+        </span>
+      </div>
+      <figcaption class="exhibit__caption">
+        <strong class="exhibit__captitle">Vertical positive</strong>
+      </figcaption>
+      </figcaption>
+    </figure>
+  </li>
+  <li>
+    <figure class="exhibit">
+      <div class="exhibit__content exhibit__content--dark">
+        <span class="logotype logotype--v-neg">
+          <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-v-neg.svg" width="576" height="464" alt="OpenAerialMap logo" />
+        </span>
+      </div>
+      <figcaption class="exhibit__caption">
+        <strong class="exhibit__captitle">Vertical negative</strong>
+      </figcaption>
+    </figure>
+  </li>
+  <li>
+    <figure class="exhibit">
+      <div class="exhibit__content">
+        <span class="logotype logotype--h-pos">
+          <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-h-pos.svg" width="832" height="160" alt="OpenAerialMap logo" />
+        </span>
+      </div>
+      <figcaption class="exhibit__caption">
+        <strong class="exhibit__captitle">Horizontal positive</strong>
+      </figcaption>
+    </figure>
+  </li>
+  <li>
+    <figure class="exhibit">
+      <div class="exhibit__content exhibit__content--dark">
+        <span class="logotype logotype--h-neg">
+          <img src="{{ site.baseurl }}/assets/graphics/layout/oam-logo-h-neg.svg" width="832" height="160" alt="OpenAerialMap logo" />
+        </span>
+      </div>
+      <figcaption class="exhibit__caption">
+        <strong class="exhibit__captitle">Horizontal negative</strong>
+      </figcaption>
+    </figure>
+  </li>
+</ul>
 
 ## Typography
 
@@ -53,7 +82,7 @@ The complete family is available under an open license on [Google Fonts](https:/
   <li>
     <figure class="exhibit">
       <div class="exhibit__content">
-      <span class="typecase typecase--light">Aa</span>
+        <span class="typecase typecase--light">Aa</span>
       </div>
       <figcaption class="exhibit__caption">
         <dl class="exhibit__details">
@@ -66,7 +95,7 @@ The complete family is available under an open license on [Google Fonts](https:/
   <li>
     <figure class="exhibit">
       <div class="exhibit__content">
-      <span class="typecase typecase--normal">Aa</span>
+        <span class="typecase typecase--normal">Aa</span>
       </div>
       <figcaption class="exhibit__caption">
         <dl class="exhibit__details">
@@ -79,7 +108,7 @@ The complete family is available under an open license on [Google Fonts](https:/
   <li>
     <figure class="exhibit">
       <div class="exhibit__content">
-      <span class="typecase typecase--bold">Aa</span>
+        <span class="typecase typecase--bold">Aa</span>
       </div>
       <figcaption class="exhibit__caption">
         <dl class="exhibit__details">
@@ -97,7 +126,7 @@ The complete family is available under an open license on [Google Fonts](https:/
   <li>
     <figure class="exhibit">
       <div class="exhibit__content">
-      <span class="swatch swatch--base"></span>
+        <span class="swatch swatch--base"></span>
       </div>
       <figcaption class="exhibit__caption">
         <dl class="exhibit__details">
@@ -111,7 +140,7 @@ The complete family is available under an open license on [Google Fonts](https:/
   <li>
     <figure class="exhibit">
       <div class="exhibit__content">
-      <span class="swatch swatch--primary"></span>
+        <span class="swatch swatch--primary"></span>
       </div>
       <figcaption class="exhibit__caption">
         <dl class="exhibit__details">
@@ -125,7 +154,7 @@ The complete family is available under an open license on [Google Fonts](https:/
   <li>
     <figure class="exhibit">
       <div class="exhibit__content">
-      <span class="swatch swatch--secondary"></span>
+        <span class="swatch swatch--secondary"></span>
       </div>
       <figcaption class="exhibit__caption">
         <dl class="exhibit__details">
@@ -139,7 +168,7 @@ The complete family is available under an open license on [Google Fonts](https:/
   <li>
     <figure class="exhibit">
       <div class="exhibit__content">
-      <span class="swatch swatch--danger"></span>
+        <span class="swatch swatch--danger"></span>
       </div>
       <figcaption class="exhibit__caption">
         <dl class="exhibit__details">
@@ -153,7 +182,7 @@ The complete family is available under an open license on [Google Fonts](https:/
   <li>
     <figure class="exhibit">
       <div class="exhibit__content">
-      <span class="swatch swatch--warning"></span>
+        <span class="swatch swatch--warning"></span>
       </div>
       <figcaption class="exhibit__caption">
         <dl class="exhibit__details">

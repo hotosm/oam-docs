@@ -69,26 +69,6 @@
   }
 }
 
-/* Brand assets */
-
-.docs-example--logo-v,
-.docs-example--logo-s {
-  text-align: center;
-  > img {
-    width: 16rem;
-    height: auto;
-    max-width: 100%;
-  }
-}
-
-.docs-example--logo-h {
-  text-align: center;
-  > img {
-    width: auto;
-    height: 4rem;
-    max-width: 100%;
-  }
-}
 
 
 /* Misc */
@@ -322,21 +302,32 @@
    ========================================================================== */
 
 .exhibit {
-  @extend .clearfix;
-  margin: 0;
+  overflow: hidden;
   box-shadow: 0 3px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
   border-radius: $base-border-radius;
   background: #fff;
   font-size: 1rem;
   line-height: 1.5;
+
+  li > & {
+    margin: 0;
+  }
 }
 
 .exhibit__content,
 .exhibit__caption {
-  padding: $global-spacing;
+  padding: $global-spacing !important;
 
   @include media(medium-up) {
-    padding: $global-spacing * 1.5;
+    padding: $global-spacing * 1.5 !important;
+  }
+}
+
+.exhibit__content {
+  &--dark {
+    @extend .antialiased;
+    background: $base-color;
+    color: #fff;
   }
 }
 
@@ -348,9 +339,73 @@
   }
 }
 
+.exhibit__captitle {
+  @extend .heading-alt;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .exhibit__details {
   dd {
     margin-bottom: 0;
+  }
+}
+
+/* Brand: logo list
+   ========================================================================== */
+
+.logo-list {
+  @extend .clearfix;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    @include col(12/12);
+    margin-bottom: $global-spacing;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include media(small-up) {
+      @include col(6/12, $cycle: 2);
+
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.logotype {
+  text-align: center;
+  display: block;
+  padding: $global-spacing;
+
+  img {
+    vertical-align: top;
+    height: auto;
+    max-width: 100%;
+  }
+
+  &--v-pos,
+  &--v-neg {
+    img {
+      width: 12rem;
+    }
+  }
+
+  &--h-pos,
+  &--h-neg {
+    img {
+      width: 16rem;
+    }
+  }
+
+  &--v-neg,
+  &--h-neg {
+    background: $base-color; 
   }
 }
 
@@ -385,6 +440,7 @@
   }
 }
 
+
 /* Brand: colors list
    ========================================================================== */
 
@@ -408,6 +464,10 @@
 
     @include media(medium-up) {
       @include col(4/12, $uncycle: 2, $cycle: 3);
+
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
     }
   }
 }
