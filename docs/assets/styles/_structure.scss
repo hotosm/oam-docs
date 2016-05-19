@@ -324,6 +324,10 @@
 
   &__main-content {
     @include col(12/12);
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
