@@ -17,6 +17,10 @@
   li > & {
     margin: 0;
   }
+
+  &--clipped {
+    overflow: hidden;
+  }
 }
 
 .exhibit__content,
@@ -506,4 +510,5 @@
 
 .flag-construct__media > img {
   max-width: 10rem;
+  height: auto;
 }
