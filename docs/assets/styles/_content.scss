@@ -1,139 +1,118 @@
-/* Docs examples
+/* ==========================================================================
+   Content
    ========================================================================== */
 
-.docs-example {
+
+/* Exhibit
+   ========================================================================== */
+
+.exhibit {
   @extend .clearfix;
-  margin: 0 0 ($global-spacing * 1.5) 0;
-  padding: ($global-spacing * 1.5);
   box-shadow: 0 3px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
   border-radius: $base-border-radius;
   background: #fff;
   font-size: 1rem;
   line-height: 1.5;
 
-  > *:first-child:not(.docs-example__inset) {
-    margin-top: 0;
+  li > & {
+    margin: 0;
   }
-  > *:last-child:not(.docs-example__inset) {
-    margin-bottom: 0;
-  }
+
   &--clipped {
     overflow: hidden;
   }
+}
+
+.exhibit__content,
+.exhibit__caption,
+.prose .exhibit__caption {
+  padding: $global-spacing;
+  clear: both;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media(medium-up) {
+    padding: $global-spacing * 1.5;
+  }
+}
+
+.exhibit__content {
   &--dark {
     @extend .antialiased;
     background: $base-color;
     color: #fff;
   }
-
-  img {
-    @extend .image-fluid;
-  }
 }
 
-.docs-example__inset {
-  @extend .clearfix;
-  clear: both;
+.exhibit__caption {
   background: rgba($base-color, 0.04);
-  padding: ($global-spacing * 1.5);
+  box-shadow: inset 0 1px 0 $base-alpha-color;
+
   pre {
     padding: 0;
     border-radius: 0;
     box-shadow: none;
     background: none;
   }
-  &:first-child {
-    margin: (- $global-spacing * 1.5) (- $global-spacing * 1.5) ($global-spacing * 1.5) (- $global-spacing * 1.5);
-    box-shadow: inset 0 -1px 0 0 $base-semi-alpha-color;
-  }
-  &:last-child {
-    margin: ($global-spacing * 1.5) (- $global-spacing * 1.5) (- $global-spacing * 1.5) (- $global-spacing * 1.5);
-    box-shadow: inset 0 1px 0 0 $base-semi-alpha-color;
-  }
-  &:only-child {
-    box-shadow: none;
-    margin: (- $global-spacing * 1.5);
-  }
+
   .highlight pre,
   > *:last-child {
     margin-bottom: 0;
   }
-
-  .docs-example--dark & {
-    background: rgba(#fff, 0.04);
-  }
 }
 
-/* Brand assets */
-
-.docs-example--logo-v,
-.docs-example--logo-s {
-  text-align: center;
-  > img {
-    width: 16rem;
-    height: auto;
-    max-width: 100%;
-  }
+.exhibit__captitle {
+  @extend .heading-alt;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
-.docs-example--logo-h {
-  text-align: center;
-  > img {
-    width: auto;
-    height: 4rem;
-    max-width: 100%;
+.exhibit__details {
+  dd {
+    margin-bottom: 0;
   }
 }
 
 
-/* Misc */
+/* Aside menu
+   ========================================================================== */
 
-.button--example-icon:before {
-  @extend %oam-ds-icon-pencil;
-}
+.aside-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: $base-font-bold;
 
-.drop__menu-item--example-icon:before {
-  @extend %oam-ds-icon-download;
-}
-
-.docs-example {
-  > .button,
-  > .button-group,
-  [data-hook="react:drops"] .button {
-    margin: 0 0.5rem 0.5rem 0;
-  }
-  > .drop {
-    float: left;
-    margin: 0 1.5rem 1.5rem 0;
-    .drop__toggle {
-      float: left;
-    }
-    .drop__content {
-      position: relative;
-      float: left;
-      clear: left;
+  > li {
+    margin: 0 0 ($global-spacing / 2) 0;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
+}
 
-  .panel {
-    position: static;
+.aside-menu-item {
+  display: block;
+  line-height: 2rem;
+  font-size: 1rem;
+  padding: 0 ($global-spacing / 2);
+  border-radius: $base-border-radius;
+  &, &:visited {
+    color: $base-font-color;
   }
-
-  .alert--popover {
-    position: relative;
-    bottom: initial;
-    right: initial;
-    margin-bottom: 1rem;
-  }
-
-  .modal {
-    position: relative;
-    margin: - $global-spacing * 1.5 !important;
+  &--active {
+    background: rgba($base-color, 0.08);
   }
 }
 
 
-/* Launcher
+/* Welcome: launcher
    ========================================================================== */
 
 .launcher {
@@ -180,7 +159,6 @@
   }
 }
 
-
 .launcher__item-button {
   @extend .button, .button--base;
   &:after {
@@ -189,39 +167,153 @@
 }
 
 
-/* Aside menu
+/* Design System / Brand: logo list
    ========================================================================== */
 
-.aside-menu {
+.logo-list {
+  @extend .clearfix;
   list-style: none;
   margin: 0;
   padding: 0;
-  font-weight: $base-font-bold;
 
-  > li {
-    margin: 0 0 ($global-spacing / 2) 0;
+  li {
+    @include col(12/12);
+    margin-bottom: $global-spacing;
+
     &:last-child {
       margin-bottom: 0;
     }
+
+    @include media(small-up) {
+      @include col(6/12, $cycle: 2);
+
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .exhibit {
+    overflow: hidden;
   }
 }
 
-.aside-menu-item {
+.logotype {
+  text-align: center;
   display: block;
-  line-height: 2rem;
-  font-size: 1rem;
-  padding: 0 ($global-spacing / 2);
-  border-radius: $base-border-radius;
-  &, &:visited {
-    color: $base-font-color;
+  padding: $global-spacing;
+
+  img {
+    vertical-align: top;
+    height: auto;
+    max-width: 100%;
   }
-  &--active {
-    background: rgba($base-color, 0.08);
+
+  &--v-pos,
+  &--v-neg {
+    img {
+      width: 12rem;
+    }
+  }
+
+  &--h-pos,
+  &--h-neg {
+    img {
+      width: 16rem;
+    }
+  }
+
+  &--v-neg,
+  &--h-neg {
+    background: $base-color; 
   }
 }
 
 
-/* Icons list
+/* Brand: typography list
+   ========================================================================== */
+
+.typography-list {
+  @extend .clearfix;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    @include col(4/12);
+    margin-bottom: 0;
+  }
+}
+
+.typecase {
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+  display: block;
+
+  &--light { font-weight: $base-font-light; }
+  &--normal { font-weight: $base-font-regular; }
+  &--bold { font-weight: $base-font-bold; }
+
+  @include media(small-up) {
+    font-size: 4rem;
+  }
+}
+
+
+/* Brand: colors list
+   ========================================================================== */
+
+.colors-list {
+  @extend .clearfix;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    @include col(12/12);
+    margin-bottom: $global-spacing;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include media(small-up) {
+      @include col(6/12, $cycle: 2);
+    }
+
+    @include media(medium-up) {
+      @include col(4/12, $uncycle: 2, $cycle: 3);
+
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .exhibit {
+    overflow: hidden;
+  }
+
+  .exhibit__content {
+    padding: 0;
+  }
+}
+
+.swatch {
+  height: 8rem;
+  display: block;
+  box-shadow: inset 0 0 0 4px #fff;
+
+  &--base { background: $base-color; }
+  &--primary { background: $primary-color; }
+  &--secondary { background: $secondary-color; }
+  &--danger { background: $danger-color; }
+  &--warning { background: $warning-color; }
+}
+
+
+/* Iconography: icons list
    ========================================================================== */
 
 .icons-list {
@@ -235,28 +327,22 @@
     display: inline-block;
     word-spacing: normal;
     margin: 0 ($global-spacing / 4) ($global-spacing / 4) 0;
+
+    @include media(small-up) {
+      margin: 0 ($global-spacing / 2) ($global-spacing / 2) 0;
+    }
   }
 
-  figure {
-    box-shadow: 0 3px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
-    border-radius: $base-border-radius;
-    background: #fff;
-    font-size: 1rem;
-    line-height: 2rem;
-    height: 2rem;
-    width: 2rem;
-    text-align: center;
-    text-decoration: none;
+  .exhibit {
     cursor: help;
-    margin: 0;
+  }
 
-    &:hover {
-      opacity: 1;
-    }
-
-    .label {
-      @extend .visually-hidden;
-    }
+  .gliph {
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    font-size: 1rem;
+    line-height: 1;
 
     * {
       vertical-align: top;
@@ -264,22 +350,21 @@
       line-height: inherit;
     }
 
-  }
-  @include media(small-up) {
-    li {
-      margin: 0 ($global-spacing / 2) ($global-spacing / 2) 0;
-    }
-    figure {
+    @include media(small-up) {
+      height: 2rem;
+      width: 2rem;
       font-size: 2rem;
-      line-height: 4rem;
-      height: 4rem;
-      width: 4rem;
     }
+  }
+
+  .exhibit__caption {
+    @extend .visually-hidden;
   }
 }
 
 *[data-title]:hover {
   position: relative;
+
   &:after {
     @extend .antialiased, .truncated;
     content: attr(data-title);
@@ -290,11 +375,11 @@
     transform: translate(-50%, 0);
     width: auto;
     max-width: 12rem;
-    padding: 0 0.5rem;
+    padding: 0 ($global-spacing / 2);
     background: rgba($base-color, 0.8);
     margin-top: 0.25rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     color: #fff;
     text-align: center;
     border-radius: $base-border-radius;
@@ -305,9 +390,66 @@
 }
 
 
-/* Flag construct
+/* Design System / Components: misc
    ========================================================================== */
 
-.flag-construct__media > img {
+.button--example-icon:before {
+  @extend %oam-ds-icon-pencil;
+}
+
+.drop__menu-item--example-icon:before {
+  @extend %oam-ds-icon-download;
+}
+
+.exhibit__content {
+  > .button,
+  > .button-group,
+  [data-hook="react:drops"] .button {
+    margin: 0 0.5rem 0.5rem 0;
+  }
+  > .drop {
+    float: left;
+    margin: 0 1.5rem 1.5rem 0;
+    .drop__toggle {
+      float: left;
+    }
+    .drop__content {
+      position: relative;
+      float: left;
+      clear: left;
+    }
+  }
+
+  .panel {
+    position: static;
+  }
+
+  .alert--popover {
+    position: relative;
+    bottom: initial;
+    right: initial;
+    margin-bottom: 1rem;
+  }
+}
+
+.exhibit--modal {
+  overflow: hidden;
+
+  .exhibit__content {
+    padding: 0;
+  }
+
+  .modal {
+    position: relative;
+    z-index: 0;
+  }
+}
+
+
+/* Constructs: flag
+   ========================================================================== */
+
+.exhibit__content .flag-construct__media > img {
   max-width: 10rem;
+  height: auto;
 }

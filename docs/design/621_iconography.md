@@ -16,9 +16,11 @@ The OAM Design System includes a small library of UI icons based off [Collectico
 <ul class="icons-list">
 {% for icon in site.data.oam-icons-catalog %}
   <li>
-    <figure data-title="{{ icon }}">
-      <span class="{{ icon }}"></span>
-      <figcaption class="label">{{ icon }}</figcaption>
+    <figure class="exhibit" data-title="{{ icon }}">
+    	<div class="exhibit__content">
+        <span class="gliph {{ icon }}"></span>
+      </div>
+      <figcaption class="exhibit__caption">{{ icon }}</figcaption>
     </figure>
   </li>
 {% endfor %}

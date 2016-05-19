@@ -17,16 +17,18 @@ Available `<h1>` through `<h6>`, and through `.heading--xxsmall`  to `.heading--
 
 A special appearance of heading is also posible via `.heading-alt`. Used in table headings, definition list terms, etc.
 
-<div class="docs-example">
-  <h1>This is an h1 heading</h1>
-  <h2>This is an h2 heading</h2>
-  <h3>This is an h3 heading</h3>
-  <h4>This is an h4 heading</h4>
-  <h5>This is an h5 heading</h5>
-  <h6>This is an h6 heading</h6>
-  <h6 class="heading-alt">This an alt heading</h6>
+<div class="exhibit">
+  <div class="exhibit__content">
+    <h1>This is an h1 heading</h1>
+    <h2>This is an h2 heading</h2>
+    <h3>This is an h3 heading</h3>
+    <h4>This is an h4 heading</h4>
+    <h5>This is an h5 heading</h5>
+    <h6>This is an h6 heading</h6>
+    <h6 class="heading-alt">This an alt heading</h6>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <h1>This is an h1 heading</h1>
 <h2>This is an h2 heading</h2>
@@ -41,10 +43,12 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 ### Lead
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   <p class="lead">This is a lead paragraph. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.</p>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <p class="lead">This is a lead paragraph. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.</p>
 {% endhighlight %}                  
@@ -53,7 +57,8 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 ### Blockquotes
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   <blockquote>
     <p>As my fellow HTML5 Doctor, Oli Studholme has showed, people seldom quote exactly 
     – so sacrosanctity of the quoted text isn’t a useful ideal – and in print etc, 
@@ -62,8 +67,9 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
       <cite><a href="http://www.brucelawson.co.uk/2013/on-citing-quotations-again/">Bruce Lawson</a></cite>
     </footer>
   </blockquote>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <blockquote>
   <p>As my fellow HTML5 Doctor, Oli Studholme has showed, people seldom quote exactly 
@@ -79,12 +85,14 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 ### Inline text elements
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   <p><mark>Highlight</mark>. <del>Deleted</del>. <s>Innacurate or irrelevant</s>.</p>
   <p><ins>Added</ins>. <u>Underlined</u>. <small>Small text</small>.</p>
   <p><strong>Bold</strong>. <em>Italicized</em>.</p>
-  <p>The abbr tag is used to represent an <abbr title="attribute">abbreviation</abbr>.</p>
-  <div class="docs-example__inset">
+  <p>The abbr tag is used to represent an <abbr title="attribute">abbreviation</abbr>.</p>  </div>
+
+  <div class="exhibit__caption">
 {% highlight html %}
 <p><mark>Highlight</mark>. <del>Deleted</del>. <s>Innacurate or irrelevant</s>.</p>
 <p><ins>Added</ins>. <u>Underlined</u>. <small>Small text</small>.</p>
@@ -98,7 +106,8 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 #### Unordered
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   <ul>
     <li>Lorem ipsum dolor sit amet</li>
     <li>Nulla volutpat aliquam velit
@@ -110,8 +119,9 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
     <li>Faucibus porta lacus fringilla vel</li>
     <li>Aenean sit amet erat nunc</li>
   </ul>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <ul>
   <li>Lorem ipsum dolor sit amet</li>
@@ -130,7 +140,8 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 #### Ordered
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   <ol>
     <li>Lorem ipsum dolor sit amet</li>
     <li>Consectetur adipiscing elit</li>
@@ -142,8 +153,9 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
     <li>Faucibus porta lacus fringilla vel</li>
     <li>Aenean sit amet erat nunc</li>
   </ol>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <ol>
   <li>Lorem ipsum dolor sit amet</li>
@@ -162,7 +174,8 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 #### Descriptive
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   <dl>
     <dt>Description list term</dt>
     <dd>Description list description.</dd>
@@ -175,8 +188,9 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
     <dt>Yet another term</dt>
     <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
   </dl>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <dl>
   <dt>Description list term</dt>
@@ -196,7 +210,8 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 #### Horizontal Descriptive
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   <dl class="dl-horizontal">
     <dt>Description list term</dt>
     <dd>Description list description.</dd>
@@ -209,8 +224,9 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
     <dt>Yet another term</dt>
     <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
   </dl>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <dl class="dl-horizontal">
   <dt>Description list term</dt>
@@ -230,10 +246,12 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 ### Horizontal rulers
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   <hr />
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <hr />
 {% endhighlight %}                  
@@ -244,7 +262,8 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 ### Example
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   <table class="table">
     <thead>
       <tr>
@@ -275,8 +294,9 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
       </tr>
     </tbody>
   </table>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <table class="table">
   <thead>
@@ -314,7 +334,8 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 ### Zebra
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   <table class="table table--zebra">
     <thead>
       <tr>
@@ -345,8 +366,9 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
       </tr>
     </tbody>
   </table>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <table class="table table--zebra">
   <thead>
@@ -386,10 +408,12 @@ A special appearance of heading is also posible via `.heading-alt`. Used in tabl
 
 ### Inline
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   This contains code rendered inline: <code>&lt;article&gt;</code>.
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 This contains code rendered inline: <code>&lt;article&gt;</code>.
 {% endhighlight %}                  
@@ -398,10 +422,12 @@ This contains code rendered inline: <code>&lt;article&gt;</code>.
 
 ### Preformatted
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
 <pre>&lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;</pre>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 <pre>&lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;</pre>
 {% endhighlight %}                  
@@ -410,10 +436,12 @@ This contains code rendered inline: <code>&lt;article&gt;</code>.
 
 ### User input
 
-<div class="docs-example">
+<div class="exhibit">
+  <div class="exhibit__content">
   This contains instructions: lorem ipsum <kbd>cd</kbd> dolor sit <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+  </div>
 
-  <div class="docs-example__inset">
+  <div class="exhibit__caption">
 {% highlight html %}
 This contains instructions: lorem ipsum <kbd>cd</kbd> dolor sit <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 {% endhighlight %}                  
