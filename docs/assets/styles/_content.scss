@@ -3,6 +3,78 @@
    ========================================================================== */
 
 
+/* Exhibit
+   ========================================================================== */
+
+.exhibit {
+  @extend .clearfix;
+  box-shadow: 0 3px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
+  border-radius: $base-border-radius;
+  background: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  li > & {
+    margin: 0;
+  }
+}
+
+.exhibit__content,
+.exhibit__caption,
+.prose .exhibit__caption {
+  padding: $global-spacing;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media(medium-up) {
+    padding: $global-spacing * 1.5;
+  }
+}
+
+.exhibit__content {
+  &--dark {
+    @extend .antialiased;
+    background: $base-color;
+    color: #fff;
+  }
+}
+
+.exhibit__caption {
+  background: rgba($base-color, 0.04);
+  box-shadow: inset 0 1px 0 $base-alpha-color;
+
+  pre {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+  }
+
+  .highlight pre,
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.exhibit__captitle {
+  @extend .heading-alt;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.exhibit__details {
+  dd {
+    margin-bottom: 0;
+  }
+}
+
+
 /* Docs examples
    ========================================================================== */
 
@@ -206,74 +278,6 @@
 }
 
 
-
-
-
-/* Flag construct
-   ========================================================================== */
-
-.flag-construct__media > img {
-  max-width: 10rem;
-}
-
-
-/* Exhibit
-   ========================================================================== */
-
-.exhibit {
-  @extend .clearfix;
-  box-shadow: 0 3px 0 0 $base-semi-alpha-color, 0 0 0 1px $base-alpha-color;
-  border-radius: $base-border-radius;
-  background: #fff;
-  font-size: 1rem;
-  line-height: 1.5;
-
-  li > & {
-    margin: 0;
-  }
-}
-
-.exhibit__content,
-.exhibit__caption {
-  padding: $global-spacing !important;
-
-  > *:last-child {
-    margin-bottom: 0;
-  }
-
-  @include media(medium-up) {
-    padding: $global-spacing * 1.5 !important;
-  }
-}
-
-.exhibit__content {
-  &--dark {
-    @extend .antialiased;
-    background: $base-color;
-    color: #fff;
-  }
-}
-
-.exhibit__caption {
-  background: rgba($base-color, 0.04);
-  box-shadow: inset 0 1px 0 $base-alpha-color;
-  > *:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.exhibit__captitle {
-  @extend .heading-alt;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.exhibit__details {
-  dd {
-    margin-bottom: 0;
-  }
-}
-
 /* Brand: logo list
    ========================================================================== */
 
@@ -397,25 +401,26 @@
       }
     }
   }
+
+  .exhibit {
+    overflow: hidden;
+  }
+
+  .exhibit__content {
+    padding: 0;
+  }
 }
 
 .swatch {
   height: 8rem;
   display: block;
-  margin: - $global-spacing;
   box-shadow: inset 0 0 0 4px #fff;
-  border-radius: $base-border-radius; 
 
   &--base { background: $base-color; }
   &--primary { background: $primary-color; }
   &--secondary { background: $secondary-color; }
   &--danger { background: $danger-color; }
   &--warning { background: $warning-color; }
-
-  @include media(medium-up) {
-    margin: - $global-spacing * 1.5;
-    font-size: 4rem;
-  }
 }
 
 
@@ -493,4 +498,12 @@
     font-weight: $base-font-regular;
     font-style: $base-font-style;
   }
+}
+
+
+/* Constructs: flag
+   ========================================================================== */
+
+.flag-construct__media > img {
+  max-width: 10rem;
 }
