@@ -21,4 +21,4 @@ It features an interactive grid that simplifies the process of finding imagery f
 The images can be freely downloaded and used, and some also have a map layer available which can be used with different programs.
 
 ### Source code and development
-The `oam-browser` is completely open source and the [code and instructions](https://github.com/hotosm/oam-browser) are available on github under the [LICENSE] license.
+The `oam-browser` is completely open source and the [code and instructions](https://github.com/hotosm/oam-browser) are available on github under the **BSD 3-Clause license**.

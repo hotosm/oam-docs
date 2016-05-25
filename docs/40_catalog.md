@@ -26,4 +26,4 @@ Check out the full [API documentation](http://hotosm.github.io/oam-catalog/) for
 Having the catalog up and running is crucial for the whole OAM Ecosystem. Its status is monitored and is available at [status.openaerialmap.org](http://status.openaerialmap.org).
 
 ### Source code and development
-The `oam-catalog` is completely open source and the [code and instructions](https://github.com/hotosm/oam-catalog) are available on github under the [LICENSE] license.
+The `oam-catalog` is completely open source and the [code and instructions](https://github.com/hotosm/oam-catalog) are available on github under the **BSD 3-Clause license**.
