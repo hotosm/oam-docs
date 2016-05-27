@@ -24,4 +24,4 @@ Tokens can have an expiracy date, a feature that is useful if the token is being
 </figure>
 
 ### Source code and development
-The `oam-uploader-admin` is completely open source and the [code and instructions](https://github.com/hotosm/oam-uploader-admin) are available on github under the [LICENSE] license.
+The `oam-uploader-admin` is completely open source and the [code and instructions](https://github.com/hotosm/oam-uploader-admin) are available on github under the **BSD 3-Clause license**.

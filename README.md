@@ -65,3 +65,6 @@ In this particular case, Travis will be looking for any changes to the repo and 
 ## Linting
 Code follows the `semistandard` code style and should be linted.
 - `npm run lint` - will run linter and warn of any errors.
+
+## License
+Oam Docs is licensed under **BSD 3-Clause License**, see the [LICENSE](LICENSE) file for more details.

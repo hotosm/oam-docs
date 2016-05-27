@@ -10,7 +10,7 @@
     "name": "Development Seed",
     "url": "https://developmentseed.org"
   },
-  "license": "",
+  "license": "BSD 3-Clause",
   "bugs": {
     "url": "https://github.com/hotosm/oam-docs/issues"
   },

@@ -24,4 +24,4 @@ The token can be requested either by email or through a github issue. When done 
 *To be developed. Good things come to those who wait...*
 
 ### Source code and development
-The `oam-uploader` is completely open source and the [code and instructions](https://github.com/hotosm/oam-uploader) are available on github under the [LICENSE] license.
+The `oam-uploader` is completely open source and the [code and instructions](https://github.com/hotosm/oam-uploader) are available on github under the **BSD 3-Clause license**.
