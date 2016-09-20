@@ -134,7 +134,7 @@
   }
 
   @include media(medium-up) {
-    @include col(4/12, $uncycle: 2, $cycle: 3);
+    @include col(4/12, $cycle: 3);
   }
 }
 
@@ -283,7 +283,7 @@
     }
 
     @include media(medium-up) {
-      @include col(4/12, $uncycle: 2, $cycle: 3);
+      @include col(4/12, $cycle: 3);
 
       &:nth-last-child(2) {
         margin-bottom: 0;
