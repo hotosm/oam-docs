@@ -21,7 +21,7 @@ The token can be requested either by email or through a github issue. When done 
 
 ### Contributing
 
-In order to upload imagery to OAM, you will need to have your files stored in a publicly accessible location. This means you cannot have your files only stored on your computer, but need to stored in a location that allows downloads. Services like Dropbox and Google Drive provide easy to use file storage with methods for publicly sharing. 
+In order to upload imagery to OAM, you will need to have your files stored in a publicly accessible location. This means you cannot have your files only stored on your computer, but need to stored in a location that allows downloads. Services like [Dropbox](https://www.dropbox.com) and [Google Drive](https://drive.google.com) provide easy to use file storage with methods for publicly sharing. 
 
 #### via Dropbox
 
@@ -41,6 +41,8 @@ You can connect your Google Drive folder and individually select files to be upl
 4. The window will change to the "Sharing settings", click "Change" for "Who has access"
 5. Select "On - Public on the web" or "On - Anyone with the link" to enable public sharing
 6. Ensure "Access:Anyone (no sign-in required)" is set to "Can View"
+
+Read more on the [Google Drive support forum](https://support.google.com/drive/answer/2494822?hl=en&ref_topic=7000947).
 
 #### via public URL
 
