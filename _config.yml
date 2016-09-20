@@ -4,7 +4,7 @@ exclude:
   - assets/scripts
   - assets/styles
   - assets/graphics/collecticons
-baseurl: https://hotosm.github.io/oam-docs
+baseurl: https://docs.openaerialmap.org
 kramdown:
   input: GFM
   syntax_highlighter: rouge
