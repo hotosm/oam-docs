@@ -19,7 +19,7 @@
   "scripts": {
     "install": "bundle install --path bundle/cache",
     "postinstall": "[ -f _config-dev.yml ] || touch _config-dev.yml",
-    "serve": "gulp collecticons && gulp serve --incremental --watch",
+    "serve": "gulp collecticons && gulp serve",
     "build": "DS_ENV=production NODE_ENV=production gulp",
     "lint": "eslint docs/assets/scripts/ --ext .js",
     "test": "echo \"No tests\" && exit 0"
