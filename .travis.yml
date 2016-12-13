@@ -6,7 +6,7 @@ env:
   global:
   - CXX=g++-4.8
   - DEPLOY_BRANCH=master
-  - secure: "hOHJjE6LZzHVkGJvAx4ekNsQjvHA9WWKBXktIRL2gBrWcXituV1377+S4NrRbGaMlrEOPe+u3oDIgi6b/5OSlOIL9VatvgSjCni7ZUq3Q+dzi0NdC38QoXwyctGD6NfzzdH2/kQ3R/amEVTKcG0dM9ym3FQL4/xayVRh3+XPhzibK7oR5ddm66aBjBr2f3YDYppsmvQDNFtSogZHHhuv8A03OzVKS3KmNmgN3PNzrY8+h3VtqOfVNC+G5x5aP13PTPQ/MnF8RqooLmiTar3+iFp2m1wE05xESCGn/s05VRbZdcwgXDq6hy8kS1Fqesn6I8UbthUIyOjtKf9ax+JHr4CctMoIgNzCXvm76BJ+9RLFf4cdu5xfF3dNpbPXNtSpPQVg3Ecxe9x1EyNUmo+BpJXWTv2GLqFIKH4JHBJtMejQpOifSzJlDH8kkPHkGLxQFEq/Y82jfA55CqqH0hwcCVN6d3kpIsyUgkWRRwi9z1+mZxmq7xrCWL/FfrwDm75lhdLJzkd3oxQVAW18cWGnc4iO4v/MVd3MwGK0fpxxUgtchIfFqFU2wU2dIKPF3cfDKk581W9tu1pdstR+kxd7yQ3VOwO8azYt/4pwYP0z1ou5du43GrELY0lUNlgDWI/EoF6KOYwbWB/W9vtEOFEcflPfxt8YLhrusbbaehcuDVI=" # GH_TOKEN
+  - secure: "xOwYpR/WMRcwIS+lZXhxwVXfrYB+8X8T9gXgOQGYosSlz4FN3/T7KlIMhyzjEpF7hb1hcX2dpvPDG0Mq3cc6H6a59Rh4qmIornyKKvTIA2cLPo24SHPzYIrM5WGg5vOkszmMX6kRJOTwEZwlUOQe9lM8kfMTzHn5Irq527U0TiQiPvfG0u6yTA3XWfndPL9Dx3hXgjiF0omAwcGIeB21+t49QrbJYfj7WphdXFMNMWcXQSioa7RipPX+rGvUOdA1rJ9Km9g0PeYLrO4kZwUrlpTlpOcaikocu976Q83IR0Zcbf9w+NthlJEs6/DS4PaZehxVB4IuGye0Fj0BBcke7sVsfb9d6YOLZC/xAMNG9YBkMCMt5MiewGOu8Jugxgin3m4Hj57c0f8nEH2Dq/7jE1yinssScuhCKKf4ff9JtBSJo1PFS79KYovQpV1oQsg23fcZmMigXgQgfQBWzXr/qIT3ZgmOyJw5Ti/dJE9nn73T+APTvWaQgOkKo30SVMj54GD6lqiqSKb5vwtN79V+V6UbXwPD6wdysYQYuDzewqKCUcqxww0u1WKhOKCisn+UOWZEnT+3nvLDQGUYbo9pA9qZRJgMHA/3JVDvFGs4J2kVY49OpMOgATIFCBYgxirUcM1a+CU72jAGiJkXFd+fHC5YN2QF1TOaqVDiY8VfjY4=" # GH_TOKEN
 
 addons:
   apt:
@@ -24,10 +24,9 @@ cache:
 before_install:
 - rvm install 2.1
 - chmod +x ./.build_scripts/deploy.sh
-- chmod +x ./.build_scripts/lint.sh
 
 before_script:
-- ./.build_scripts/lint.sh
+- npm run lint
 - npm test
 
 script:
