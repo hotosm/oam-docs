@@ -34,13 +34,13 @@ The OAM Uploader API is built using two sub-components. The worker processes upl
 - [Link to Github](https://github.com/hotosm/oam-uploader-api)
 - [Link to Documentation]({{ site.baseurl }}/uploader/api-server)
 
-### API subcomponent
+**API subcomponent**
 Written in NodeJS
 
 - Manages access tokens and authentication
 - Receives imagery data (via remote url or file upload). This data is then stored in a database (MongoDB) as jobs to be later processed by the worker.
   
-### Worker subcomponent
+**Worker subcomponent**
 Written in NodeJS
 
 - Processes the jobs from the database. This is an asynchronous process that happens periodically.
