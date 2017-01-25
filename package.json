@@ -21,6 +21,7 @@
     "postinstall": "[ -f _config-dev.yml ] || touch _config-dev.yml",
     "serve": "gulp collecticons && gulp serve",
     "build": "DS_ENV=production NODE_ENV=production gulp",
+    "stage": "DS_ENV=staging NODE_ENV=staging gulp",
     "lint": "eslint docs/assets/scripts/ --ext .js",
     "test": "echo \"No tests\" && exit 0"
   },
