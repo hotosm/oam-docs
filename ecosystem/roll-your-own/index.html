@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="An overview of the OpenAerialMap components and how they connect with each other." />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<title>Ecosystem — OpenAerialMap Docs</title>
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@hotosm" />
+<meta name="twitter:title" content="Ecosystem — OpenAerialMap Docs">
+<meta name="twitter:description" content="An overview of the OpenAerialMap components and how they connect with each other." />
+<meta name="twitter:image:src" content="https://docs.openaerialmap.org/assets/graphics/meta/default-meta-image.png" />
+<!--/ Twitter --> 
+
+<!-- OG -->
+<meta property="og:site_name" content="OpenAerialMap Docs" />
+<meta property="og:title" content="Ecosystem — OpenAerialMap Docs" />
+<meta property="og:url" content="https://docs.openaerialmap.org/ecosystem/roll-your-own/" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="An overview of the OpenAerialMap components and how they connect with each other." />
+<meta property="og:image" content="https://docs.openaerialmap.org/assets/graphics/meta/default-meta-image.png" />
+<!--/ OG -->
+
+<link rel="shortcut icon" href="https://docs.openaerialmap.org/assets/graphics/meta/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://docs.openaerialmap.org/assets/graphics/meta/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://docs.openaerialmap.org/assets/graphics/meta/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://docs.openaerialmap.org/assets/graphics/meta/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://docs.openaerialmap.org/assets/graphics/meta/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://docs.openaerialmap.org/assets/graphics/meta/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://docs.openaerialmap.org/assets/graphics/meta/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://docs.openaerialmap.org/assets/graphics/meta/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://docs.openaerialmap.org/assets/graphics/meta/apple-touch-icon-152x152.png" />
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" />
+
+    
+
+    <link rel="stylesheet" href="https://docs.openaerialmap.org/assets/styles/main-4854b73462.css">
+    <link rel="author" type="text/plain" href="humans.txt" />
+    
+  </head>
+  <body class="page page--docs">
+    <div class="page__inner">
+      <header class="page__header" role="banner">
+  <div class="inner">
+    <div class="page__headline">
+      <h1 class="page__title">
+        <a href="https://docs.openaerialmap.org" title="Visit homepage">
+          <span class="mast-logo mast-logo--h">
+            <img src="https://docs.openaerialmap.org/assets/graphics/layout/oam-logo-h-pos.svg" width="832" height="160" alt="OpenAerialMap logo" class="mast-logo__image" />
+            <strong class="mast-logo__text">OpenAerialMap</strong>
+            <small class="mast-logo__label">Docs</small>
+          </span>
+        </a>
+      </h1>        
+    </div>
+    <nav class="page__prime-nav" role="navigation">
+      <h2 class="toggle-menu"><a href="#global-menu" title="Show/hide menu" data-hook="global-menu:trigger"><span>Browse</span></a></h2>
+      <div class="menu-wrapper" data-hook="global-menu:wrapper">
+        <ul class="global-menu" id="global-menu">
+          
+            
+              
+              
+              <li>
+                <a href="https://docs.openaerialmap.org/" title="Visit page" class="global-menu-item "><span>Welcome</span></a>
+              </li>
+            
+          
+            
+              
+              
+              <li>
+                <a href="https://docs.openaerialmap.org/ecosystem/getting-started/" title="Visit page" class="global-menu-item global-menu-item--active"><span>Ecosystem</span></a>
+              </li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              <li>
+                <a href="https://docs.openaerialmap.org/browser/getting-started/" title="Visit page" class="global-menu-item "><span>Browser</span></a>
+              </li>
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              <li>
+                <a href="https://docs.openaerialmap.org/uploader/getting-started/" title="Visit page" class="global-menu-item "><span>Uploader</span></a>
+              </li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              <li>
+                <a href="https://docs.openaerialmap.org/catalog/" title="Visit page" class="global-menu-item "><span>Catalog</span></a>
+              </li>
+            
+          
+            
+              
+              
+              <li>
+                <a href="https://docs.openaerialmap.org/tiler/" title="Visit page" class="global-menu-item "><span>Tiler</span></a>
+              </li>
+            
+          
+            
+              
+              
+              <li>
+                <a href="https://docs.openaerialmap.org/design-system/getting-started/" title="Visit page" class="global-menu-item "><span>Design System</span></a>
+              </li>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+      
+
+
+
+
+
+<main class="page__body" role="main">
+  <div class="inner">
+  
+    <article class="section section--asided">
+  
+      <header class="section__header">
+        <div class="inner">
+          <div class="section__headline">
+            
+            <p class="section__subtitle">Ecosystem</p>
+            
+            <h1 class="section__title">Ecosystem</h1>
+            
+            <div class="section__introduction">
+              <p>An overview of the OpenAerialMap components and how they connect with each other.</p>
+            </div>
+            
+          </div>
+        </div>
+      </header>
+      <div class="section__body">
+        <div class="inner">
+
+          
+            
+    <aside class="section__aside-content">
+      <h1 class="section__aside-title">In this area</h1>
+      <nav class="section__aside-nav" role="navigation">
+        <ul class="aside-menu">
+          
+            
+            
+          <li><a href="https://docs.openaerialmap.org/ecosystem/getting-started/" title="View section" class="aside-menu-item ">Getting Started</a></li>
+          
+            
+            
+          <li><a href="https://docs.openaerialmap.org/ecosystem/catalog-group/" title="View section" class="aside-menu-item ">Catalog Components</a></li>
+          
+            
+            
+          <li><a href="https://docs.openaerialmap.org/ecosystem/contributor-group/" title="View section" class="aside-menu-item ">Contributor Components</a></li>
+          
+            
+            
+          <li><a href="https://docs.openaerialmap.org/ecosystem/roll-your-own/" title="View section" class="aside-menu-item aside-menu-item--active">Roll your own OAM</a></li>
+          
+        </ul>
+      </nav>
+    </aside>
+  
+          
+
+          <!-- section main content -->
+          <div class="section__main-content prose prose--responsive"><p>For development purposes, you can roll parts of OpenAerialMap locally. Detailed docs exist in the README section of each component. This document is an overview of the interdependencies and configuring the development environment as a functional whole.</p>
+
+<h2 id="development-requirements">Development Requirements</h2>
+<ul>
+  <li>
+    <p>It will be necessary to use <a href="https://github.com/creationix/nvm">nvm</a> during development - some applications will need Node v4, others will use Node v0.12</p>
+  </li>
+  <li>
+    <p>In some components (the web frontends) configuration variables can be added to <code class="highlighter-rouge">app/assets/scripts/config/local.js</code>, and will override any other references to the config object throughout the project. For example, The Token Manager and Imagery Uploader must be configured to search for the Uploader API at the correct path, which is port 4000 by default. You would have use the point to a local API URL by adding the following to the configuration files in each of the apps:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>module.exports = {
+  OAMUploaderApi: 'http://localhost:4000'
+};
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Server applications such as the Catalog API and Uploader API need to have environment variables set before starting them. Please refer to the list of environment variables are listed in the README docs in the code repositories.</p>
+  </li>
+  <li>
+    <p>Certain components require the installation of third party libraries and applications (such as MongoDB). Refer to the list of dependencies in the READMEs.</p>
+  </li>
+  <li>
+    <p>OpenAerialMap is a catalog of images stored on the Open Imagery Network. OIN is a specification and a set of imagery buckets provided under a free license. The OAM Catalog reads a file (the registry) to determine which buckets to index in order to form the catalog. The OAM Uploader pushes data to a specific registered bucket (the OpenAerialMap bucket). Since the Catalog and Uploader depend on the Open Imagery Network, you will have to replicate OIN locally. This means having an <a href="https://aws.amazon.com/s3/">Amazon S3</a> bucket available for development, as well as creating a hosted register file for the Catalog API to read (see further details below).</p>
+  </li>
+</ul>
+
+<h2 id="list-of-components">List of components</h2>
+
+<h3 id="the-oam-uploader-ecosystem">The OAM uploader ecosystem</h3>
+
+<p>At a high-level, the OAM uploader software ecosystem consists of three GitHub repositories housing the <a href="https://github.com/hotosm/oam-uploader-api">API</a>, the <a href="https://github.com/hotosm/oam-uploader-admin">administrative panel</a>, and the front-end <a href="https://github.com/hotosm/oam-uploader">uploader form</a>.</p>
+
+<p><strong>The Uploader API (<a href="https://github.com/hotosm/oam-uploader-api">oam-uploader-api</a>)</strong></p>
+
+<p>The API provides the endpoints used by the upload submission form, including routes for authenticating the session via a database of approved tokens, adding image URLs and metadata to the processing queue database, checking the status of a user’s uploads, and checking the status of specific uploads.</p>
+
+<p>It also provides the API endpoints used for managing users through the administrative form, including adding, removing and editing tokens.</p>
+
+<p>Finally, it manages a queue of images by checking for new submissions to the database at regular intervals, downloading them, processing them to a standardized TIFF specification, generating metadata and thumbnails, and uploading them to an Amazon S3 bucket. The token manager and imagery uploader require a connection to the API to function.</p>
+
+<ul>
+  <li>
+    <p>When launching the API, several environment variables must be set. We suggest that you duplicate <code class="highlighter-rouge">local.sample.env</code> to <code class="highlighter-rouge">local.env</code> and fill in the data. Contact a maintainer for the full AWS credentials and database paths.</p>
+  </li>
+  <li>
+    <p>You will need an Amazon S3 bucket to test uploads.</p>
+  </li>
+  <li>
+    <p>To run, load the variables with <code class="highlighter-rouge">source local.env</code> and start the app with <code class="highlighter-rouge">npm start</code>.</p>
+  </li>
+</ul>
+
+<p><strong>The Token Manager (<a href="https://github.com/hotosm/oam-uploader">oam-uploader-admin</a>)</strong></p>
+
+<p><em>This web application depends on the Uploader API</em></p>
+
+<p>The administrative panel uses the API calls to add, remove, and edit authenticated tokens, which substitute for users in the upload system.</p>
+
+<p>The uploader admin provides a user interface to manage these tokens. During development is a good idea to have this running to facilitate access to the tokens. The tokens can also be viewed directly in the uploader-api database.</p>
+
+<p><strong>The Imagery Uploader (<a href="https://github.com/hotosm/oam-uploader">oam-uploader</a>)</strong></p>
+
+<p><em>This web application depends on the Uploader API</em></p>
+
+<p>This repo contains the front-end form which allows authenticated users to publish images to the processing queue, and to check the processing status of submitted tasks.</p>
+
+<p>It depends on a connection to the API in order to submit datasets and associated metadata to the processing queue, check upload status, and authenticate tokens. As described above, this page depends on the API for most of its functionality, and depends on the admin panel to generate tokens for authentication, so both components must be active during development.</p>
+
+<h3 id="the-oam-catalog-ecosystem">The OAM catalog ecosystem</h3>
+
+<p>The OAM catalog software ecosystem consists of three GitHub repositories housing the <a href="https://github.com/hotosm/oam-catalog">API</a>, the <a href="https://github.com/hotosm/oam-browser">Imagery Browser</a>, and the <a href="https://github.com/hotosm/openaerialmap.org">OAM Landing Page</a>.</p>
+
+<p><strong>The Catalog API (<a href="https://github.com/hotosm/oam-catalog">oam-catalog</a>)</strong></p>
+
+<p>The API provides the endpoints for browsing the available indexed imagery which feeds into the Imagery Browser. Other routes provide statistics that power the OpenAerialMap homepage.</p>
+
+<p>This code repository also contains a worker that can index Open Imagery Network metadata from Amazon S3 buckets. The worker first reads the “OIN Register File” to determine which buckets it needs to read and process.</p>
+
+<ul>
+  <li>If you want to catalog data that is not available in the Open Imagery Network, provide an environment variable that points to a hosted register file <a href="https://github.com/openimagerynetwork/oin-register/blob/master/master.json">in the same format</a>. You will also have to store the data in an Amazon S3 bucket using the <a href="https://github.com/openimagerynetwork/oin-metadata-spec">OIN specification</a>.</li>
+</ul>
+
+<p><strong>The Imagery Browser (<a href="https://github.com/hotosm/oam-browser">oam-browser</a>)</strong></p>
+
+<p><em>This web application depends on the Catalog API</em></p>
+
+<p>The Imagery Browser visualizes the data available in the catalog by polling the OAM Catalog API. It provides views such as latest uploaded imagery, imagery from different periods in time and different resolutions. The imagery is also downloadable.</p>
+
+<p><strong>The OpenAerialMap Landing Page (<a href="https://github.com/hotosm/openaerialmap.org">openaerialmap.org</a>)</strong></p>
+
+<p><em>This web application depends on the Catalog API</em></p>
+
+<p>The website landing page shows latest imagery available in the catalog as well as statistics such as number of images catalogued and number of providers.</p>
+</div>
+          <!--/ section main content -->
+
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+
+      <footer class="page__footer" role="contentinfo">
+  <div class="inner">
+    <p>Made with love by <a href="https://developmentseed.org" title="Visit Development Seed website">Development Seed</a> and <a href="http://hot.openstreetmap.org/" title="Visit the Humanitarian OpenStreetMap Team website">HOT</a>.</p>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["setDomains", ["*.hotosm.github.io/oam-docs"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.hotosm.org/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 9]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//piwik.hotosm.org/piwik.php?idsite=9" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+
+
+    <script src="https://docs.openaerialmap.org/assets/scripts/vendor-01a01df5d2.js"></script>
+    <script src="https://docs.openaerialmap.org/assets/scripts/bundle-b20cd9acab.js"></script>
+
+  </body>
+</html>
