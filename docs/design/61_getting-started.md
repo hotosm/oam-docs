@@ -99,4 +99,4 @@ gulp.task('images', function () {
 
 #### Usage
 Just include the images using the path `assets/graphics/[graphic-type]/[graphic-name]`.  
-All available images can be found [here](assets/graphics/).
+All available images can be found [here](https://github.com/hotosm/oam-design-system/tree/develop/assets/graphics).
