@@ -20,7 +20,7 @@ The Catalog API is split into three available endpoints:
 To get started, you can access the metadata endpoint here: [http://api.openaerialmap.org/meta](http://api.openaerialmap.org/meta). 
 
 ### Further documentation 
-Check out the full [API documentation](http://hotosm.github.io/oam-catalog/) for methods to filter and limit results, get an individual image metadata, or add TMS endpoints to the listing.
+Check out the full [API documentation](https://hotosm.github.io/oam-api/) for methods to filter and limit results, get an individual image metadata, or add TMS endpoints to the listing.
 
 ### Catalog status
 Having the catalog up and running is crucial for the whole OAM Ecosystem. Its status is monitored and is available at [status.openaerialmap.org](http://status.openaerialmap.org).
